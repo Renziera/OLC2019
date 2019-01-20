@@ -44,6 +44,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('jadwal') }}">{{ __('Jadwal') }}</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('pembayaran') }}">{{ __('Cek Pembayaran') }}</a>
+                            </li>
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">

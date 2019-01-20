@@ -20,6 +20,10 @@ Route::view('/jadwal', 'jadwal')->name('jadwal');
 Route::view('/daftar', 'daftar')->name('daftar');
 Route::post('/daftar', 'DaftarController@daftar');
 
+Route::view('/cek', 'pembayaran')->name('pembayaran');
+
+//Di bawah sini hanya untuk panitia
+
 // Authentication Routes...
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('login', 'Auth\LoginController@login');

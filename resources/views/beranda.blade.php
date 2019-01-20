@@ -69,6 +69,7 @@
                 <div class="top-right links">
                     <a href="{{ route('daftar') }}">Daftar</a>
                     <a href="{{ route('jadwal') }}">Jadwal</a>
+                    <a href="{{ route('pembayaran') }}">Cek Pembayaran</a>
                     @auth
                         <a href="{{ route('admin') }}">Admin Panel</a>
                     @else

@@ -23,7 +23,7 @@ class CreatePesertaTable extends Migration
             $table->boolean('kelas_ternak_lele');
             $table->boolean('kelas_panen_meme');
             $table->string('bukti_pembayaran', 255)->nullable(true);
-            $table->integer('biaya');
+            $table->integer('biaya')->unsigned();
             $table->boolean('sudah_bayar');
             $table->timestamps();
         });
