@@ -12,17 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('beranda');
+    return view('welcome');
 });
 
-Route::view('/jadwal', 'jadwal');
+Auth::routes();
 
-Route::view('/daftar', 'daftar');
-
-Route::view('/pembayaran', 'cekpembayaran');
-
-Route::post('/daftar', 'DaftarController@daftar');
-
-Auth::routes(['register' => false]);
-
-Route::get('/admin', 'AdminController@index')->name('admin');
+Route::get('/home', 'HomeController@index')->name('home');
