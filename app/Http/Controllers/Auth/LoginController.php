@@ -36,4 +36,11 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+
+    //biar login pake username
+    public function username()
+    {
+    return 'username';
+    }
+
 }
