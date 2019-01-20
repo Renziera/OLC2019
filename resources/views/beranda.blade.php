@@ -67,10 +67,12 @@
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
+                    <a href="{{ route('daftar') }}">Daftar</a>
+                    <a href="{{ route('jadwal') }}">Jadwal</a>
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ route('admin') }}">Admin Panel</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('login') }}">Login Panitia</a>
 
                         @if (Route::has('register'))
                             <a href="{{ route('register') }}">Register</a>
@@ -81,17 +83,11 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    O L C
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    OmahTI Learning Center 2019
                 </div>
             </div>
         </div>

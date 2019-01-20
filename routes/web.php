@@ -12,9 +12,25 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('beranda');
 });
 
-Auth::routes();
+Route::view('/jadwal', 'jadwal')->name('jadwal');
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::view('/daftar', 'daftar')->name('daftar');
+Route::post('/daftar', 'DaftarController@daftar');
+
+// Authentication Routes...
+Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('login', 'Auth\LoginController@login');
+Route::post('logout', 'Auth\LoginController@logout')->name('logout');
+
+// Registration Routes...
+/**
+ * Uncomment untuk enable registration sementara
+ * yang bisa login hanya admin, jgn sampai di enable pas deploy
+ */
+//Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
+//Route::post('register', 'Auth\RegisterController@register');
+
+Route::get('/admin', 'AdminController@index')->name('admin');
