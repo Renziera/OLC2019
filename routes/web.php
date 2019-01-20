@@ -12,5 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('beranda');
 });
+
+Route::view('/jadwal', 'jadwal');
+
+Route::view('/daftar', 'daftar');
+
+Route::view('/pembayaran', 'cekpembayaran');
+
+Route::post('/daftar', 'DaftarController@daftar');
+
+Auth::routes(['register' => false]);
+
+Route::get('/admin', 'AdminController@index')->name('admin');
