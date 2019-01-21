@@ -22,7 +22,13 @@ class DaftarController extends Controller
             // 'ternak_lele' => 'required_without_all: mancing_mania, panen_meme',
             // 'panen_meme' => 'required_without_all: mancing_mania, ternak_lele',
         ]);
-        
+        if($request['ternak_lele']==null){
+            if($request['mancing_mania']==null){
+                if($request['ternak_meme']==null){
+                    return redirect('daftar')->with('alert','Silahkan Centang Salah Satu');
+                }
+            }
+        }
         $biaya = 0;
         if($request['mancing_mania']){
             $biaya = $biaya + $this->hargaMancing;
@@ -30,11 +36,13 @@ class DaftarController extends Controller
         if($request['ternak_lele']){
             $biaya = $biaya + $this->hargaLele;
         }
-        if($request['ternak_lele']){
+        if($request['ternak_meme']){
             $biaya = $biaya + $this->hargaMeme;
         }
 
         $kode = $this->generateKodePeserta();
+
+        
 
         $peserta = new Peserta;
         $peserta->nama = $request['nama'];
