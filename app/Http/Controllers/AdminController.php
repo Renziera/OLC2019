@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Peserta;
 
 class AdminController extends Controller
 {
@@ -23,6 +24,24 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view('admin');
+        $allPeserta = Peserta::all();
+
+        return view('admin')->with('pesertas', $allPeserta);
+    }
+
+    public function approvePay(Request $request){
+        $request->validate([
+            'kode' => 'bail|required|max:5'
+        ]);
+
+        $kode = $request['kode'];
+        
+        $peserta = Peserta::where('kode_peserta', '=', $kode)->first();
+        if($peserta != null){
+            $peserta->sudah_bayar = true;
+            $peserta->save();
+        }
+
+        return redirect('admin');
     }
 }

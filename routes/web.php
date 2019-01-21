@@ -40,3 +40,4 @@ Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 //Route::post('register', 'Auth\RegisterController@register');
 
 Route::get('/admin', 'AdminController@index')->name('admin');
+Route::post('/admin', 'AdminController@approvePay');
