@@ -18,7 +18,7 @@ class CreatePesertaTable extends Migration
             $table->string('nama', 255);
             $table->string('nomor_identitas', 32);
             $table->string('nomor_telp', 16);
-            $table->string('kode_peserta', 5);
+            $table->string('kode_peserta', 5)->unique();
             $table->boolean('kelas_mancing_mania');
             $table->boolean('kelas_ternak_lele');
             $table->boolean('kelas_panen_meme');

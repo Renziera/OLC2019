@@ -21,6 +21,8 @@ Route::view('/daftar', 'daftar')->name('daftar');
 Route::post('/daftar', 'DaftarController@daftar');
 
 Route::view('/cek', 'pembayaran')->name('pembayaran');
+Route::post('/cek', 'PembayaranController@pembayaran');
+Route::put('/cek', 'PembayaranController@uploadBukti');
 
 //Di bawah sini hanya untuk panitia
 
