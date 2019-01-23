@@ -44,4 +44,23 @@ class AdminController extends Controller
 
         return redirect('admin');
     }
+    public function kelas1(){
+        $allPeserta = Peserta::where([
+            'kelas_mancing_mania' => '1'
+        ])->get();
+        return view('kelas1')->with('pesertas',$allPeserta);
+    }
+    public function kelas2(){
+        $allPeserta = Peserta::where([
+            'kelas_ternak_lele' => '1'
+        ])->get();
+        return view('kelas2')->with('pesertas',$allPeserta);
+    }
+    public function kelas3(){
+        $allPeserta = Peserta::where([
+            'kelas_panen_meme' => '1'
+        ])->get();
+        return view('kelas3')->with('pesertas',$allPeserta);
+    }
+
 }

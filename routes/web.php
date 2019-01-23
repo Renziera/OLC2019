@@ -32,3 +32,6 @@ Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 //Route::post('register', 'Auth\RegisterController@register');
 Route::get('/admin', 'AdminController@index')->name('admin');
 Route::post('/admin', 'AdminController@approvePay');
+Route::get('/admin/kelas1','AdminController@kelas1');
+Route::get('/admin/kelas2','AdminController@kelas2');
+Route::get('/admin/kelas3','AdminController@kelas3');

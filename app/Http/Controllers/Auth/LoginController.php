@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
-
+use App\User;
 class LoginController extends Controller
 {
     /*
@@ -37,9 +37,4 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-    //login with username
-    public function username()
-    {
-        return 'username';
-    }
 }
