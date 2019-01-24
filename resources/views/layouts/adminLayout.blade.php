@@ -49,7 +49,8 @@
                                 </li>
                             @endif
                         @else
-                            <a href="/admin/daftar">daftar</a>
+                            <a href="/admin/daftar">daftar </a>
+                            <a href="/admin/cari">cari</a>
                             <li class="nav-item dropdown">
                            
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

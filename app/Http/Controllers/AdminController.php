@@ -65,4 +65,8 @@ class AdminController extends Controller
     public function daftar(){
         return view('daftarAdmin');
     }
+    public function cari()
+    {
+        return view('cari');
+    }
 }

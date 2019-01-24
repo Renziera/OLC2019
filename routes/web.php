@@ -37,3 +37,6 @@ Route::get('/admin/kelas2','AdminController@kelas2')->name('admin');
 Route::get('/admin/kelas3','AdminController@kelas3')->name('admin');
 Route::get('/admin/daftar',"AdminController@daftar")->name('admin');
 Route::post('/admin/daftar',"DaftarController@daftarAdmin")->name('admin');
+Route::get('admin/cari',"AdminController@cari")->name('admin');
+Route::post('admin/cari/nama',"FindController@nama")->name('admin');
+Route::post('admin/cari/code','FindController@code')->name('admin');
