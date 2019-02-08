@@ -62,5 +62,11 @@ class AdminController extends Controller
         ])->get();
         return view('kelas3')->with('pesertas',$allPeserta);
     }
-
+    public function daftar(){
+        return view('daftarAdmin');
+    }
+    public function cari()
+    {
+        return view('cari');
+    }
 }

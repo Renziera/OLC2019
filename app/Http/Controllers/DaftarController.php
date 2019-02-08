@@ -29,21 +29,12 @@ class DaftarController extends Controller
                 }
             }
         }
-        $biaya = 0;
-        if($request['mancing_mania']){
-            $biaya = $biaya + $this->hargaMancing;
-        }
-        if($request['ternak_lele']){
-            $biaya = $biaya + $this->hargaLele;
-        }
-        if($request['ternak_meme']){
-            $biaya = $biaya + $this->hargaMeme;
-        }
-
-        $kode = $this->generateKodePeserta();
-
         
-
+         $mancing_mania = $request['mancing_mania'];
+         $ternak_lele = $request['ternak_lele'];
+         $ternak_meme =  $request['ternak_meme'];
+        $kode = $this->generateKodePeserta();
+        $biaya = $this->hitungUang($mancing_mania,$ternak_lele,$ternak_meme);
         $peserta = new Peserta;
         $peserta->nama = $request['nama'];
         $peserta->nomor_identitas = $request['nomor_identitas'];
@@ -62,5 +53,40 @@ class DaftarController extends Controller
 
     function generateKodePeserta($length = 5) {
         return substr(str_shuffle(str_repeat($x='0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil($length/strlen($x)) )),1,$length);
+    }
+    function hitungUang($mancing_mania,$ternak_lele,$ternak_meme){
+        $biaya = 0;
+        if($mancing_mania){
+            $biaya = $biaya + $this->hargaMancing;
+        }
+        if($ternak_lele){
+            $biaya = $biaya + $this->hargaLele;
+        }
+        if($ternak_meme){
+            $biaya = $biaya + $this->hargaMeme;
+        }
+        return $biaya;
+    }
+
+    public function daftarAdmin(Request $request){
+        $mancing_mania = $request['mancing_mania'];
+        $ternak_lele = $request['ternak_lele'];
+        $ternak_meme =  $request['ternak_meme'];
+        $biaya = $this->hitungUang($mancing_mania,$ternak_lele,$ternak_meme);
+        $kode = $this->generateKodePeserta();
+        $peserta = new Peserta;
+        $peserta->nama = $request['nama'];
+        $peserta->nomor_identitas = $request['nomor_identitas'];
+        $peserta->nomor_telp = $request['nomor_telp'];
+        $peserta->kelas_mancing_mania = $request['mancing_mania'] ? 1 : 0;
+        $peserta->kelas_ternak_lele = $request['ternak_lele'] ? 1 : 0;
+        $peserta->kelas_panen_meme = $request['panen_meme'] ? 1 : 0;
+        $peserta->kode_peserta = $kode;
+        $peserta->biaya = $biaya;
+        $peserta->bukti_pembayaran = null;
+        $peserta->sudah_bayar = true;
+        $peserta->save();
+        
+        return redirect('/admin');
     }
 }
