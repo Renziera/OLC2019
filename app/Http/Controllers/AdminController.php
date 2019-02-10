@@ -48,49 +48,49 @@ class AdminController extends Controller
         $allPeserta = Peserta::where([
             'Web_Apps' => '1'
         ])->get();
-        return view('kelas1')->with('pesertas',$allPeserta);
+        return view('kelas')->with('pesertas',$allPeserta);
     }
     public function kelas2(){
         $allPeserta = Peserta::where([
             'Database' => '1'
         ])->get();
-        return view('kelas2')->with('pesertas',$allPeserta);
+        return view('kelas')->with('pesertas',$allPeserta);
     }
     public function kelas3(){
         $allPeserta = Peserta::where([
             'Motion_Graphic' => '1'
         ])->get();
-        return view('kelas3')->with('pesertas',$allPeserta);
+        return view('kelas')->with('pesertas',$allPeserta);
     }
     public function kelas4(){
         $allPeserta = Peserta::where([
             'Cyber_Security' => '1'
         ])->get();
-        return view('kelas4')->with('pesertas',$allPeserta);
+        return view('kelas')->with('pesertas',$allPeserta);
     }
     public function kelas5(){
         $allPeserta = Peserta::where([
             'Graphic_Design' => '1'
         ])->get();
-        return view('kelas5')->with('pesertas',$allPeserta);
+        return view('kelas')->with('pesertas',$allPeserta);
     }
     public function kelas6(){
         $allPeserta = Peserta::where([
             'Game_Development' => '1'
         ])->get();
-        return view('kelas6')->with('pesertas',$allPeserta);
+        return view('kelas')->with('pesertas',$allPeserta);
     }
     public function kelas7(){
         $allPeserta = Peserta::where([
             'Android_Apps' => '1'
         ])->get();
-        return view('kelas7')->with('pesertas',$allPeserta);
+        return view('kelas')->with('pesertas',$allPeserta);
     }
     public function kelas8(){
         $allPeserta = Peserta::where([
             'Web_Design' => '1'
         ])->get();
-        return view('kelas8')->with('pesertas',$allPeserta);
+        return view('kelas')->with('pesertas',$allPeserta);
     }
     
     public function daftar(){

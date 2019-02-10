@@ -3,9 +3,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">
-                Admin Panel
+                <a href="/admin">Semua</a> 
                 <a href="/admin/kelas1">Web Apps</a>   
                 <a href="/admin/kelas2">Database</a>
                 <a href="/admin/kelas3">Motion Graphic</a>
@@ -13,8 +11,12 @@
                 <a href="/admin/kelas5">Graphic Design</a>
                 <a href="/admin/kelas6">Game Development</a>
                 <a href="/admin/kelas7">Android Apps</a>   
-                <a href="/admin/kelas8">Web Desing</a>
+                <a href="/admin/kelas8">Web Design</a>
+            <div class="card">
+                <div class="card-header">
+                Admin Panel
                 </div>
+
                 <div class="card-body">
                 <table>
                 <table>

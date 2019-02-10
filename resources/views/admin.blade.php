@@ -4,9 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">
-                Admin Panel
+                <a href="/admin">Semua</a> 
                 <a href="/admin/kelas1">Web Apps</a>   
                 <a href="/admin/kelas2">Database</a>
                 <a href="/admin/kelas3">Motion Graphic</a>
@@ -14,7 +12,10 @@
                 <a href="/admin/kelas5">Graphic Design</a>
                 <a href="/admin/kelas6">Game Development</a>
                 <a href="/admin/kelas7">Android Apps</a>   
-                <a href="/admin/kelas8">Web Desing</a>
+                <a href="/admin/kelas8">Web Design</a>
+            <div class="card">
+                <div class="card-header">
+                Admin Panel
                 </div>
 
                 <div class="card-body">
@@ -36,14 +37,29 @@
                             <td>{{ $peserta->nomor_identitas }}</td>
                             <td>{{ $peserta->nomor_telp }}</td>
                             <td>
-                                @if($peserta->kelas_mancing_mania)
-                                    Mancing Mania <br>
+                                @if($peserta->Web_Apps)
+                                    Web Apps <br>
                                 @endif
-                                @if($peserta->kelas_ternak_lele)
-                                    Ternak Lele <br>
+                                @if($peserta->Database)
+                                    Database <br>
                                 @endif
-                                @if($peserta->kelas_panen_meme)
-                                    Panen Meme <br>
+                                @if($peserta->Motion_Graphic)
+                                    Motion Graphic <br>
+                                @endif
+                                @if($peserta->Graphic_Design)
+                                    Graphic Design <br>
+                                @endif
+                                @if($peserta->Game_Development)
+                                    Game Development <br>
+                                @endif
+                                @if($peserta->Android_Apps)
+                                    Android Apps <br>
+                                @endif
+                                @if($peserta->Web_Design)
+                                    Web Design <br>
+                                @endif
+                                @if($peserta->Cyber_Security)
+                                    Cyber Security <br>
                                 @endif
                             </td>
                             <td>{{ $peserta->biaya }}</td>
