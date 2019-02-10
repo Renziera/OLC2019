@@ -46,22 +46,53 @@ class AdminController extends Controller
     }
     public function kelas1(){
         $allPeserta = Peserta::where([
-            'kelas_mancing_mania' => '1'
+            'Web_Apps' => '1'
         ])->get();
         return view('kelas1')->with('pesertas',$allPeserta);
     }
     public function kelas2(){
         $allPeserta = Peserta::where([
-            'kelas_ternak_lele' => '1'
+            'Database' => '1'
         ])->get();
         return view('kelas2')->with('pesertas',$allPeserta);
     }
     public function kelas3(){
         $allPeserta = Peserta::where([
-            'kelas_panen_meme' => '1'
+            'Motion_Graphic' => '1'
         ])->get();
         return view('kelas3')->with('pesertas',$allPeserta);
     }
+    public function kelas4(){
+        $allPeserta = Peserta::where([
+            'Cyber_Security' => '1'
+        ])->get();
+        return view('kelas4')->with('pesertas',$allPeserta);
+    }
+    public function kelas5(){
+        $allPeserta = Peserta::where([
+            'Graphic_Design' => '1'
+        ])->get();
+        return view('kelas5')->with('pesertas',$allPeserta);
+    }
+    public function kelas6(){
+        $allPeserta = Peserta::where([
+            'Game_Development' => '1'
+        ])->get();
+        return view('kelas6')->with('pesertas',$allPeserta);
+    }
+    public function kelas7(){
+        $allPeserta = Peserta::where([
+            'Android_Apps' => '1'
+        ])->get();
+        return view('kelas7')->with('pesertas',$allPeserta);
+    }
+    public function kelas8(){
+        $allPeserta = Peserta::where([
+            'Web_Design' => '1'
+        ])->get();
+        return view('kelas8')->with('pesertas',$allPeserta);
+    }
+    
     public function daftar(){
         return view('daftarAdmin');
     }

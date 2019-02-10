@@ -1,12 +1,10 @@
 @extends('layouts.adminlayout')
-
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">
-                Admin Panel
                 <a href="/admin/kelas1">Web Apps</a>   
                 <a href="/admin/kelas2">Database</a>
                 <a href="/admin/kelas3">Motion Graphic</a>
@@ -16,15 +14,14 @@
                 <a href="/admin/kelas7">Android Apps</a>   
                 <a href="/admin/kelas8">Web Desing</a>
                 </div>
-
                 <div class="card-body">
-                    <table>
+                <table>
+                <table>
                         <tr>
                             <th>Nama peserta</th>
                             <th>Kode Peserta</th>
                             <th>Nomor identitas</th>
                             <th>Nomor HP</th>
-                            <th>Kelas yang diikuti</th>
                             <th>Biaya</th>
                             <th>Bukti bayar</th>
                             <th>Status</th>
@@ -35,17 +32,7 @@
                             <td>{{ $peserta->kode_peserta }}</td>
                             <td>{{ $peserta->nomor_identitas }}</td>
                             <td>{{ $peserta->nomor_telp }}</td>
-                            <td>
-                                @if($peserta->kelas_mancing_mania)
-                                    Mancing Mania <br>
-                                @endif
-                                @if($peserta->kelas_ternak_lele)
-                                    Ternak Lele <br>
-                                @endif
-                                @if($peserta->kelas_panen_meme)
-                                    Panen Meme <br>
-                                @endif
-                            </td>
+                            
                             <td>{{ $peserta->biaya }}</td>
                             <td>
                                 @if ($peserta->bukti_pembayaran != null)
@@ -70,6 +57,7 @@
                         </tr>
                         @endforeach
                     </table>
+                   
                 </div>
             </div>
         </div>

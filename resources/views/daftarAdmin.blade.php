@@ -62,19 +62,41 @@
                         <label for="daftar_kelas" class="col-md-4 col-form-label text-md-right">{{ __('Mendaftar kelas') }}</label>
                             <div class="col-md-6">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="mancing_mania" id="mancing_mania" value="1" {{ old('mancing_mania') ? 'checked' : '' }}>
+                                
+                                <input class="form-check-input" type="checkbox" name="Web_Apps" id="mancing_mania" value="1" {{ old('mancing_mania') ? 'checked' : '' }}>
                                     <label class="form-check-label" for="mancing_mania">
-                                        {{ __('Mancing Mania') }}
+                                        {{ __('Web Apps') }}
                                     </label>
                                     <br>
-                                    <input class="form-check-input" type="checkbox" name="ternak_lele" id="ternak_lele" value="1" {{ old('ternak_lele') ? 'checked' : '' }}>
+                                    <input class="form-check-input" type="checkbox" name="Database" id="ternak_lele" value="1" {{ old('ternak_lele') ? 'checked' : '' }}>
                                     <label class="form-check-label" for="ternak_lele">
-                                        {{ __('Ternak Lele') }}
+                                        {{ __('Database') }}
                                     </label>
                                     <br>
-                                    <input class="form-check-input" type="checkbox" name="panen_meme" id="panen_meme" value="1" {{ old('panen_meme') ? 'checked' : '' }}>
+                                    <input class="form-check-input" type="checkbox" name="Motion_Graphic" id="panen_meme" value="1" {{ old('panen_meme') ? 'checked' : '' }}>
                                     <label class="form-check-label" for="panen_meme">
-                                        {{ __('Panen Meme') }}
+                                        {{ __('Motion Graphic') }}
+                                    </label><br>
+                                    <input class="form-check-input" type="checkbox" name="Cyber_Security" id="panen_meme" value="1" {{ old('panen_meme') ? 'checked' : '' }}>
+                                    <label class="form-check-label" for="panen_meme">
+                                        {{ __('Cyber Security') }}
+                                    </label><br>
+                                    <input class="form-check-input" type="checkbox" name="Graphic_Design" id="panen_meme" value="1" {{ old('panen_meme') ? 'checked' : '' }}>
+                                    <label class="form-check-label" for="panen_meme">
+                                        {{ __('Graphic Design') }}
+                                    </label><br>
+                                    <input class="form-check-input" type="checkbox" name="Game_Development" id="panen_meme" value="1" {{ old('panen_meme') ? 'checked' : '' }}>
+                                    <label class="form-check-label" for="panen_meme">
+                                        {{ __('Game Development') }}
+                                    </label><br>
+                
+                                    <input class="form-check-input" type="checkbox" name="Android_Apps" id="panen_meme" value="1" {{ old('panen_meme') ? 'checked' : '' }}>
+                                    <label class="form-check-label" for="panen_meme">
+                                        {{ __('Android Apps') }}
+                                    </label><br>
+                                    <input class="form-check-input" type="checkbox" name="Web_Design" id="panen_meme" value="1" {{ old('panen_meme') ? 'checked' : '' }}>
+                                    <label class="form-check-label" for="panen_meme">
+                                        {{ __('Web Design') }}
                                     </label>
                                 </div>
                             </div>

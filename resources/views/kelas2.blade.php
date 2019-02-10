@@ -6,9 +6,15 @@
             <div class="card">
                 <div class="card-header">
                 Admin Panel
-                <a href="/admin/kelas1">kelas_mancing_mania</a>   
-                <a href="/admin/kelas2">kelas_panen_meme</a>
-                <a href="/admin/kelas3">kelas_ternak_lele</a>
+                <a href="/admin/kelas1">Web Apps</a>   
+                <a href="/admin/kelas2">Database</a>
+                <a href="/admin/kelas3">Motion Graphic</a>
+                <a href="/admin/kelas4">Cyber Security</a>   
+                <a href="/admin/kelas5">Graphic Design</a>
+                <a href="/admin/kelas6">Game Development</a>
+                <a href="/admin/kelas7">Android Apps</a>   
+                <a href="/admin/kelas8">Web Desing</a>
+               
                 </div>
 
                 <div class="card-body">
