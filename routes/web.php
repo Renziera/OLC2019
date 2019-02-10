@@ -28,20 +28,20 @@ Route::post('logout', 'Auth\LoginController@logout')->name('logout');
  * Uncomment untuk enable registration sementara
  * yang bisa login hanya admin, jgn sampai di enable pas deploy
  */
-Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
-Route::post('register', 'Auth\RegisterController@register');
+//Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
+//Route::post('register', 'Auth\RegisterController@register');
 Route::get('/admin', 'AdminController@index')->name('admin');
 Route::post('/admin', 'AdminController@approvePay');
-Route::get('/admin/kelas1','AdminController@kelas1')->name('admin');
-Route::get('/admin/kelas2','AdminController@kelas2')->name('admin');
-Route::get('/admin/kelas3','AdminController@kelas3')->name('admin');
-Route::get('/admin/kelas4','AdminController@kelas4')->name('admin');
-Route::get('/admin/kelas5','AdminController@kelas5')->name('admin');
-Route::get('/admin/kelas6','AdminController@kelas6')->name('admin');
-Route::get('/admin/kelas7','AdminController@kelas7')->name('admin');
-Route::get('/admin/kelas8','AdminController@kelas8')->name('admin');
-Route::get('/admin/daftar',"AdminController@daftar")->name('admin');
-Route::post('/admin/daftar',"DaftarController@daftarAdmin")->name('admin');
-Route::get('admin/cari',"AdminController@cari")->name('admin');
-Route::post('admin/cari/nama',"FindController@nama")->name('admin');
-Route::post('admin/cari/code','FindController@code')->name('admin');
+Route::get('/admin/kelas1','AdminController@kelas1');
+Route::get('/admin/kelas2','AdminController@kelas2');
+Route::get('/admin/kelas3','AdminController@kelas3');
+Route::get('/admin/kelas4','AdminController@kelas4');
+Route::get('/admin/kelas5','AdminController@kelas5');
+Route::get('/admin/kelas6','AdminController@kelas6');
+Route::get('/admin/kelas7','AdminController@kelas7');
+Route::get('/admin/kelas8','AdminController@kelas8');
+Route::get('/admin/daftar',"AdminController@daftar");
+Route::post('/admin/daftar',"DaftarController@daftarAdmin");
+Route::get('admin/cari',"AdminController@cari");
+Route::post('admin/cari/nama',"FindController@nama");
+Route::post('admin/cari/code','FindController@code');
