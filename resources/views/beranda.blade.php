@@ -23,34 +23,15 @@
 <body>
 
     <!--Navbar-->
-
-    
-    
-    <div id="sidebar">
-       
-        <a href="{{ route('daftar') }}">Daftar</a>
-                    <a href="{{ route('jadwal') }}">Jadwal</a>
-                    <a href="{{ route('pembayaran') }}">Cek Pembayaran</a>
-                    @auth
-                        <a href="{{ route('admin') }}">Admin Panel</a>
-                    @else
-                        <a href="{{ route('login') }}">Login Panitia</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-     
-        
-    </div>
     <nav>
         <div class="container">
-           @if (Route::has('login'))
-           <div class="kanan"></div>
-            <a class="" href="#">Yusuf</a>
-            
+
             <div class="kiri">
-                <a href="{{ route('daftar') }}">Daftar</a>
+                <a class="" href="">OLC 2019</a>
+            </div>
+
+            <div class="kiri">
+                    <a href="{{ route('daftar') }}">Daftar</a>
                     <a href="{{ route('jadwal') }}">Jadwal</a>
                     <a href="{{ route('pembayaran') }}">Cek Pembayaran</a>
                     @auth
@@ -62,24 +43,13 @@
                             <a href="{{ route('register') }}">Register</a>
                         @endif
                     @endauth
-                
-            
-            </div>
-            
-            
+            </div>           
         </div>
- 
-        
     </nav>
-    @endif
     <div class="toggle-btn">
-          
            <a class="fa fa-bars hamburger" onclick="openside()"></a>
            <a class="fa fa-times silang" onclick="closeside()"></a>
-           
        </div>
-    
-    
 
     <!--Akhir Navbar-->
 <br>
@@ -132,7 +102,7 @@
         
            <div class="card col-lg-3">
                <img src="{{URL::asset('/img/webapps.png')}}" alt="profile Pic" class="img-fluid" width="100" height="100">
-               <h2>Web Apss</h2>
+               <h2>Web Apps</h2>
                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
 
            </div>
