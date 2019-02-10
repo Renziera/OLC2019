@@ -26,6 +26,24 @@
     <nav>
         <div class="container">
 
+        <div id="sidebar">
+       
+        <a href="{{ route('daftar') }}">Daftar</a>
+                    <a href="{{ route('jadwal') }}">Jadwal</a>
+                    <a href="{{ route('pembayaran') }}">Cek Pembayaran</a>
+                    @auth
+                        <a href="{{ route('admin') }}">Admin Panel</a>
+                    @else
+                        <a href="{{ route('login') }}">Login Panitia</a>
+
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}">Register</a>
+                        @endif
+                    @endauth
+     
+        
+        </div>
+
             <div class="kiri">
                 <a class="" href="">OLC 2019</a>
             </div>
