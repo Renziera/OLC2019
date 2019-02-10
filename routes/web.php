@@ -28,10 +28,10 @@ Route::post('logout', 'Auth\LoginController@logout')->name('logout');
  * Uncomment untuk enable registration sementara
  * yang bisa login hanya admin, jgn sampai di enable pas deploy
  */
-Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
-Route::post('register', 'Auth\RegisterController@register');
+// Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
+// Route::post('register', 'Auth\RegisterController@register');
 Route::get('/admin', 'AdminController@index')->name('admin');
-Route::post('/admin', 'AdminController@approvePay');
+Route::post('/admin', 'AdminController@approvePay')->name('admin');
 Route::get('/admin/kelas1','AdminController@kelas1')->name('admin');
 Route::get('/admin/kelas2','AdminController@kelas2')->name('admin');
 Route::get('/admin/kelas3','AdminController@kelas3')->name('admin');
