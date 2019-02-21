@@ -4,7 +4,8 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -34,8 +35,7 @@
                     @auth
                         <a href="{{ route('admin') }}">Admin Panel</a>
                     @else
-                        <a href="{{ route('login') }}">Login Panitia</a>
-
+                       <a class="nav-item btn btn-light tombol2" href="{{ route('login') }}">Login Panitia</a>
                         @if (Route::has('register'))
                             <a href="{{ route('register') }}">Register</a>
                         @endif
@@ -47,7 +47,7 @@
         <div class="container">
            @if (Route::has('login'))
            <div class="kanan"></div>
-            <a class="" href="#">Yusuf</a>
+            <a href=""><img src="{{URL::asset('/img/logoOLC.png')}}" width="100px" alt=""></a>
             
             <div class="kiri">
                 <a href="{{ route('daftar') }}">Daftar</a>
@@ -56,7 +56,8 @@
                     @auth
                         <a href="{{ route('admin') }}">Admin Panel</a>
                     @else
-                        <a class="tombol" href="{{ route('login') }}">Login Panitia</a>
+                     
+                        
 
                         @if (Route::has('register'))
                             <a href="{{ route('register') }}">Register</a>
@@ -65,6 +66,7 @@
                 
             
             </div>
+            <a class="nav-item btn btn-light tombol2" href="{{ route('login') }}">Login Panitia</a>
             
             
         </div>
@@ -93,6 +95,7 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4">OMAHTI LEARNING CENTER <br> 2019</h1>
+            <br>
             <a class="nav-item btn btn-light tombol" href="#">About</a>
 
         </div>
@@ -201,16 +204,16 @@
     <!--Kelas-->
     
 <!--Galri-->
-   <h1>See the Moment</h1>
+   <h1 class="judulkelas seethe">See The Moment</h1>
    
    
        <div class="gallery">
-           <a href="{{URL::asset('/img/exfoto.png')}}"><img src="{{URL::asset('/img/fototh.png')}}" alt=""></a>
-           <a href="{{URL::asset('/img/exfoto.png')}}"><img src="{{URL::asset('/img/fototh.png')}}" alt=""></a>
-           <a href="{{URL::asset('/img/exfoto.png')}}"><img src="{{URL::asset('/img/fototh.png')}}" alt=""></a>
-           <a href="{{URL::asset('/img/exfoto.png')}}"><img src="{{URL::asset('/img/fototh.png')}}" alt=""></a>
-           <a href="{{URL::asset('/img/exfoto.png')}}"><img src="{{URL::asset('/img/fototh.png')}}" alt=""></a>
-           <a href="{{URL::asset('/img/exfoto.png')}}"><img src="{{URL::asset('/img/fototh.png')}}" alt=""></a>
+           <img src="{{URL::asset('/img/docu1.jpg')}}" alt="">
+            <img src="{{URL::asset('/img/docu2.jpg')}}" alt="">
+            <img src="{{URL::asset('/img/docu3.jpg')}}" alt="">
+           <img src="{{URL::asset('/img/docu4.jpg')}}" alt="">
+            <img src="{{URL::asset('/img/docu5.jpg')}}" alt="">
+            <img src="{{URL::asset('/img/docu6.jpg')}}" alt="">
            
            
        </div>

@@ -1,14 +1,12 @@
-
-
-body{
+body {
     overflow-x: hidden;
-   background-color: #273040;
+    background-color: #273040;
 }
 
 
 /*Navbar*/
 
-nav{
+nav {
     background-color: #273040;
     opacity: 0.9;
     text-transform: uppercase;
@@ -19,82 +17,109 @@ nav{
 
 }
 
-nav .kiri {
-    display: none;
-    margin-left: 100px;
-}
 
-nav .kiri a{
-       text-decoration: none;
-    padding: 10px;
-    font-family: viga;
+
+.tombol2 {
+    box-shadow: 0 1px 16px 0 #00e7ea;
+    background-color: #00e1ff;
+    border-radius: 18px;
+    padding: 7px 13px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 1s;
+    border-color: white;
+    color: #273040;
+   text-transform: none;
+    font-family: sans-serif;
  
 }
 
+.tombol2:hover {
+    background: none;
+    color: white;
+
+    border-radius: 18px;
+
+    border-color: #00e1ff;
+    
 
 
-#sidebar
-{
+}
+
+
+nav .kiri a {
+    text-decoration: none;
+    padding: 10px;
+    font-family: viga;
+
+}
+
+
+
+
+
+
+#sidebar {
     position: fixed;
     width: 100%;
     height: 100%;
     background: #273040;
     z-index: 2;
     opacity: 0.9;
-  left: -100%;
+    left: -100%;
     transition: 0.75s;
 }
 
 
-#sidebar a{
+#sidebar a {
     display: block;
     color: white;
     padding: 15px 10px;
 }
 
-.toggle-btn{
-  
-/*    margin-left: 88%;*/
+.toggle-btn {
+
+    /*    margin-left: 88%;*/
     top: 20px;
     position: fixed;
     z-index: 3;
-   
-    color: aqua;
+
+    color: #00e7ea;
     text-align: left;
     left: 83%;
 }
 
-.toggle-btn a{
+.toggle-btn a {
     position: absolute;
     font-size: 35px;
     margin: 10px;
     color: #00e1ff;
-    
-    
-   
+
+
+
 }
 
-.toggle-btn .silang{
+.toggle-btn .silang {
     display: none;
 }
 
 
 .tombol {
-    text-transform: uppercase;
-    border-radius: 4px;
-    color: white;
     background: none;
-    width: 180px;
-    height: 40px;
-    border: 1px solid aqua;
+    color: white;
+    padding: 10px 40px;
     font-size: 18px;
-    font-family: viga;
+    border-radius: 18px;
+    font-weight: 500;
+    border-color: #00e1ff;
+    transition: 1s;
+
 }
 
-.tombol:hover{
-    box-shadow: 0 1px 16px 0  #00e7ea;
-    background-color: #273040;
-    color: aqua;
+.tombol:hover {
+    box-shadow: 0 1px 16px 0 #00e7ea;
+    background-color: #00e1ff;
+    color: #273040;
 }
 
 /*Navbar*/
@@ -103,35 +128,30 @@ nav .kiri a{
 
 /*Jumbotron*/
 .jumbotron {
- background-image: url(../img/bgjumbo.png);
-   
+    background-color: #273040;
+
     background-size: cover;
     /*biar gambar dk tepotong*/
     height: 640px;
-    color: aqua;
+    color: #00e7ea;
+    text-align: center;
     font-family: viga;
     font-weight: 500;
 
 }
 
-.jumbotron h1{
-    margin-top: 90px;
-    font-weight: bold;
-    animation: texth1 3s 1;
-}
+@keyframes texth1 {
+    0% {
+        color: #273040;
 
-@keyframes texth1{
-    0%{
-        color:#273040;
-        
     }
-    
-    55%{
+
+    55% {
         letter-spacing: 7px;
     }
-    
-    
-    
+
+
+
 }
 
 
@@ -140,27 +160,8 @@ nav .kiri a{
 
 /*about*/
 
-.about{
-    text-align: center;
-    margin-top: 30px;
-   margin-left: 27px;
-   width: auto;
-    width: 120%;
-       
-    
-}
 
-
-.about h3{
-        font-size: 52px;
-        font-weight: 200;
-        text-transform: uppercase;
-        letter-spacing: 10px;
-        margin-top: 40px;
-        color: #00e7ea;
-    }
-
-.about p{
+.about p {
     color: #7c8898;
     font-size: 20px;
     margin-top: 20px;
@@ -169,30 +170,20 @@ nav .kiri a{
 /*about*/
 
 /*Kelas*/
-.kelas .judulkelas{
-    text-align: center;
-    font-weight: 500;
-    margin-top: 110px;
-    color: #00e7ea;
-    margin-left: 65px;
-    width: 100%;
-    
-    
-    
-}
 
-.judulkelas::after{
+
+.judulkelas::after {
     content: '';
     display: block;
-    padding:10px;
-    border-bottom: 2px solid #0b8793;
+    padding: 10px;
+    border-bottom: 2px solid #00e7ea;
     width: 70px;
     margin: auto;
 }
 
-.course{
+.course {
     text-align: center;
-   
+
 }
 
 .course .card {
@@ -200,24 +191,24 @@ nav .kiri a{
     display: inline-block;
     padding: 30px;
     margin: 20px;
-    border:none;
+    border: none;
     background-color: #273040;
     width: 400px;
     transition: 0.3s;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     color: white;
-   
+
 }
 
-.course .card img{
+.course .card img {
     padding-bottom: 20px;
 }
 
-.course .card:hover{
-     box-shadow: 0 8px 16px 0 #00e7ea;
+.course .card:hover {
+    box-shadow: 0 8px 16px 0 #00e7ea;
 }
 
-.card p{
+.card p {
     color: #c2c2c2;
 }
 
@@ -225,99 +216,192 @@ nav .kiri a{
 /*Kelas*/
 
 /*Galeri*/
-.gallery{
-    margin: 10px 50px;
-}
-
-.gallery img{
-    width: 230px;
-    padding: 5px;
-    filter: grayscale(100%);
-    transition: 1s;
-    border-radius: 30px;
-}
-
-.gallery img:hover{
-    filter: grayscale(0);
-    transform: scale(1.1);
-}
-
-/*Galeri*/
-
-/*Dekstop*/
-@media (min-width: 992px) {
-    
-    .toggle-btn{
-        display: none;
-    }
-
-/*Nav Mobile*/
-    nav .kiri {
-        display: inline-block;
-      
-        text-align: center;
-        
-    }
-
-    nav .kiri a{
-        margin-left: 16px;
-        margin-right: 16px;
-        font-weight: 400;
-        font-size: 14px;
-        color: white;
-    }
-
-/*Jumvotron*/
-    .jumbotron h1{
-    font-size: 70px;
-    font-weight: bold;
-        margin-top: 110px;
-
-}
-/*Jumbotrn*/
-
-    /*ABout*/
-    .about{
-    text-align: center;
-    margin-top: 30px;
-        width: 100%;
-
-}
-
-    
-    .about img{
-    }
-    .about p{
-        text-align: left;
-        color: gray;
-        
-    }
-    
-    .about h3{
-        font-size: 52px;
-        font-weight: 200;
-        text-transform: uppercase;
-        text-align: left;
-        letter-spacing: 10px;
-        padding-right: 30px;
-    }
-
-    /*about*/
-
-    
-        
-    .kelas .judulkelas{
+.seethe {
     text-align: center;
     font-weight: 500;
     margin-top: 110px;
     color: #00e7ea;
-        margin-left: 0px;
-        animation: texth1 3s 1;
-    
-    
-    
-    
+    margin-left: 0px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
+.gallery {
+    margin: 10px 50px;
+}
+
+.gallery img {
+    width: 380px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+    border-radius: 24px;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.toggle-btn {
+    display: none;
+}
+
+
+nav .kiri {
+    display: inline-block;
+
+    text-align: center;
+
+}
+
+nav .kiri a {
+    margin-left: 16px;
+    margin-right: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+}
+
+.toggle-btn {
+    display: none;
+}
+
+/*Galeri*/
+
+
+nav .kiri {
+    display: inline-block;
+
+    text-align: center;
+
+}
+
+nav .kiri a {
+    margin-left: 16px;
+    margin-right: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+}
+
+/*Jumvotron*/
+.jumbotron h1 {
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 110px;
+    animation: texth1 3s 1;
+
+}
+
+/*Jumbotrn*/
+
+/*ABout*/
+.about {
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+
+}
+
+
+
+.about p {
+    text-align: left;
+    color: gray;
+
+}
+
+.about h3 {
+    font-size: 52px;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 10px;
+    padding-right: 30px;
+    color: #00e7ea;
+}
+
+/*about*/
+
+
+
+.kelas .judulkelas {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 110px;
+    color: #00e7ea;
+    margin-left: 0px;
+    animation: texth1 3s 1;
+
+
+
+
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+
+    /*Nav*/
+
+    .toggle-btn {
+        display: block;
+    }
+
+    nav .kiri {
+        display: none;
+        margin-left: 100px;
+    }
+
+    /*Nav*/
+
+    .kelas .judulkelas {
+        text-align: center;
+        font-weight: 500;
+        margin-top: 110px;
+        color: #00e7ea;
+        margin-left: 65px;
+
+
+
+
+    }
+
+    .jumbotron h1 {
+        margin-top: 90px;
+        font-weight: bold;
+        animation: texth1 3s 1;
+    }
+
+
+    .about h3 {
+        font-size: 52px;
+        font-weight: 200;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        margin-top: 40px;
+        color: #00e7ea;
+    }
+
+    .about {
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 27px;
+        width: auto;
+
+
+    }
 
 }
