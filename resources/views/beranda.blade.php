@@ -154,25 +154,9 @@
 
         </div>
 
-
-        <div class="card col-lg-3">
-            <img src="{{URL::asset('/img/motion.png')}}" alt="profile Pic" class="img-fluid" width="100" height="100">
-            <h2>Motion Graphic</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
-
-        </div>
-
         <div class="card col-lg-3">
             <img src="{{URL::asset('/img/cyber.png')}}" alt="profile Pic" class="img-fluid" width="60" height="50">
             <h2>Cyber Security</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
-
-        </div>
-
-
-        <div class="card col-lg-3">
-            <img src="{{URL::asset('/img/grafik.png')}}" alt="profile Pic" class="img-fluid" width="90" height="90">
-            <h2>Graphic Design</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
 
         </div>
