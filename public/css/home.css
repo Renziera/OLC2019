@@ -18,12 +18,18 @@ nav {
 }
 
 
+.logindaftar a{
+    padding-right: 20px;
+    margin-right: 200px;
+}
+
+
 
 .tombol2 {
     box-shadow: 0 1px 16px 0 #00e7ea;
     background-color: #00e1ff;
     border-radius: 18px;
-    padding: 7px 13px;
+    padding: 7px 15px;
     font-size: 18px;
     font-weight: 500;
     transition: 1s;
@@ -31,6 +37,8 @@ nav {
     color: #273040;
    text-transform: none;
     font-family: sans-serif;
+    margin-left: 20px;
+    
  
 }
 

@@ -60,7 +60,7 @@
 
            
             <div class="kiri">
-                <a href="{{ route('daftar') }}">Daftar</a>
+                
                 <a href="{{ route('jadwal') }}">Jadwal</a>
                 <a href="{{ route('pembayaran') }}">Cek Pembayaran</a>
                 @auth
@@ -77,7 +77,11 @@
 
 
             </div>
+            
+                <a class="nav-item btn btn-light tombol2" href="{{ route('daftar') }}">Daftar</a>
             <a class="nav-item btn btn-light tombol2" href="{{ route('login') }}">Login Panitia</a>
+           
+            
 
 
 
