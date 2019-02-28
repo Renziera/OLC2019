@@ -13,10 +13,27 @@
     <!--CSS ane-->
     <link rel="stylesheet" type="text/css" href="{!! asset('css/home.css') !!}">
 
+    <link rel="stylesheet" type="text/css" href="{!! asset('css/hamburgers.css') !!}">
+
+    <link rel="stylesheet" type="text/css" href="{!! asset('css/animate.css') !!}">
+
+
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
+
+
+    <!--JS-->
+    <script src="{!! asset('js/wow.min.js') !!}"></script>
+    
+    <script src="{!! asset('js/typed.js') !!}"></script>
+    
+    <script>
+        new WOW().init();
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <title>OLC 2019</title>
 </head>
@@ -24,7 +41,7 @@
 <body>
 
     <!--Navbar-->
-    <nav>
+    
         <div class="container">
 
             <div id="sidebar">
@@ -40,27 +57,27 @@
                 <a href="{{ route('register') }}">Register</a>
                 @endif
                 @endauth
-
+                <a class="nav-item btn btn-light tombol2 logdaf" href="{{ route('daftar') }}">Daftar</a>
 
             </div>
 
         </div>
 
-    </nav>
-    <nav>
+    
+    <nav id="navbar" class="wow fadeInRightBig" data-wow-duration="0.5s">
         <div class="container">
             @if (Route::has('login'))
-            
-                <a href=""><img src="{{URL::asset('/img/logoOLC.png')}}" width="100px" alt=""></a>
-  
-@endif
+
+            <a href=""><img src="{{URL::asset('/img/logoOLC.png')}}" width="100px" alt=""></a>
+
+            @endif
 
 
 
 
-           
+
             <div class="kiri">
-                
+
                 <a href="{{ route('jadwal') }}">Jadwal</a>
                 <a href="{{ route('pembayaran') }}">Cek Pembayaran</a>
                 @auth
@@ -77,20 +94,25 @@
 
 
             </div>
-            
-                <a class="nav-item btn btn-light tombol2" href="{{ route('daftar') }}">Daftar</a>
-            <a class="nav-item btn btn-light tombol2" href="{{ route('login') }}">Login Panitia</a>
-           
-            
+
+            <a class="nav-item btn btn-light tombol2 logdaf" href="{{ route('daftar') }}">Daftar</a>
+            <a class="nav-item btn btn-light tombol2 logdaf" href="{{ route('login') }}">Login Panitia</a>
 
 
 
-
+        
+        
         </div>
+        
+        
     </nav>
     <div class="toggle-btn">
-        <a class="fa fa-bars hamburger" onclick="openside()"></a>
-        <a class="fa fa-times silang" onclick="closeside()"></a>
+        <div class="hamburger hamburger--collapse" onclick="openside()">
+            <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+            </div>
+        </div>
+
     </div>
 
     <!--Akhir Navbar-->
@@ -102,28 +124,30 @@
     <!--Course-->
 
     <!--JumboTron-->
-    <div class="jumbotron jumbotron-fluid">
+    <div   class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-4">OMAHTI LEARNING CENTER <br> 2019</h1>
-            <br>
-            <a class="nav-item btn btn-light tombol" href="#">About</a>
+           
+            <h1 class="intro-oti"></h1>
+            <h1 class="tahun"></h1>
+           
+            <a class="nav-item btn btn-light tombol wow fadeInDownBig" data-wow-duration="2s" href="#">About</a>
 
         </div>
     </div>
 
     <!--Akhir JUmbotron-->
-
+ 
 
     <!--ABout-->
 
     <div class="row about">
-        <div class="col-lg-6">
+        <div class="col-lg-6 wow fadeInLeftBig" data-wow-duration="2s">
             <img src="{{URL::asset('/img/workingspace.png')}}" alt="profile Pic" class="img-fluid">
 
         </div>
-        <div class="col-lg-5">
-            <h3>APA <span>ITU</span> OLC ? </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus praesentium atque, maxime id Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, repellat.</p>
+        <div class="col-lg-5 wwow fadeInRightBig" data-wow-duration="2s">
+            <h3 class="wow fadeInRightBig" data-wow-duration="2s">APA <span>ITU</span> OLC ? </h3>
+            <p class="wow fadeInLeftBig" data-wow-duration="2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus praesentium atque, maxime id Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, repellat.</p>
         </div>
 
     </div>
@@ -132,7 +156,7 @@
     <!--ABout-->
 
     <!--Kelas-->
-    <div class="kelas">
+    <div class="kelas wow fadeInLeftBig" data-wow-duration="2s">
         <h1 class="judulkelas">WHAT'S THE COURSE?</h1>
 
 
@@ -143,14 +167,14 @@
 
 
 
-        <div class="card col-lg-3">
+        <div class="card col-lg-3 wow fadeInDown" data-wow-duration="2s">
             <img src="{{URL::asset('/img/webapps.png')}}" alt="profile Pic" class="img-fluid" width="100" height="100">
             <h2>Web Apps</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
 
         </div>
 
-        <div class="card col-lg-3">
+        <div class="card col-lg-3 wow fadeInDown" data-wow-duration="2s">
             <img src="{{URL::asset('/img/db.png')}}" alt="profile Pic" class="img-fluid" width="100" height="100">
 
             <h2>Database</h2>
@@ -158,35 +182,34 @@
 
         </div>
 
-        <div class="card col-lg-3">
+        <div class="card col-lg-3 wow fadeInDown" data-wow-duration="2s">
             <img src="{{URL::asset('/img/cyber.png')}}" alt="profile Pic" class="img-fluid" width="60" height="50">
             <h2>Cyber Security</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
 
         </div>
 
-        <div class="card col-lg-3 ">
+        <div class="card col-lg-3 wow fadeInUp" data-wow-duration="2s ">
             <img src="{{URL::asset('/img/game.png')}}" alt="profile Pic" class="img-fluid" width="150" height="145">
             <h2>Game Development</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
 
         </div>
 
- 
-        <div class="card col-lg-3">
+
+        <div class="card col-lg-3 wow fadeInUp" data-wow-duration="2s">
             <img src="{{URL::asset('/img/android.png')}}" alt="profile Pic" class="img-fluid" width="80" height="80">
             <h2>Android Apps</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
 
         </div>
 
-        <div class="card col-lg-3">
+        <div class="card col-lg-3 wow fadeInUp" data-wow-duration="2s">
             <img src="{{URL::asset('/img/wd.png')}}" alt="profile Pic" class="img-fluid" width="100" height="100">
             <h2>Web Design</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
 
         </div>
-
 
 
     </div>
@@ -198,16 +221,25 @@
     <!--Kelas-->
 
     <!--Galri-->
-    <h1 class="judulkelas seethe">See The Moment</h1>
+    <h1 class="judulkelas seethe wow fadeInUpBig" data-wow-duration="2s">See The Moment</h1>
 
 
     <div class="gallery">
-        <img src="{{URL::asset('/img/docu1.jpg')}}" alt="">
-        <img src="{{URL::asset('/img/docu2.jpg')}}" alt="">
-        <img src="{{URL::asset('/img/docu3.jpg')}}" alt="">
-        <img src="{{URL::asset('/img/docu4.jpg')}}" alt="">
-        <img src="{{URL::asset('/img/docu5.jpg')}}" alt="">
-        <img src="{{URL::asset('/img/docu6.jpg')}}" alt="">
+        <div class="img1 wow fadeInRightBig" data-wow-duration="2s ">
+            <img src="{{URL::asset('/img/docu1.jpg')}}" alt="">
+            <img src="{{URL::asset('/img/docu2.jpg')}}" alt="">
+            <img src="{{URL::asset('/img/docu3.jpg')}}" alt="">
+
+        </div>
+
+        <div class="img2 wow fadeInLeftBig" data-wow-duration="2s">
+            <img src="{{URL::asset('/img/docu4.jpg')}}" alt="">
+            <img src="{{URL::asset('/img/docu5.jpg')}}" alt="">
+            <img src="{{URL::asset('/img/docu6.jpg')}}" alt="">
+
+        </div>
+
+
 
 
     </div>
@@ -221,23 +253,74 @@
     <!-- Optional JavaScript -->
 
     <script>
+        
+        //side bar
         function openside() {
-            document.getElementById("sidebar").style.left = "0";
+            var side = document.getElementById("sidebar");
 
-            document.getElementsByClassName("hamburger")[0].style.display = "none";
+            var icon = document.getElementsByClassName("hamburger");
 
-            document.getElementsByClassName("silang")[0].style.display = "block";
-
-        }
-
-        function closeside() {
-            document.getElementById("sidebar").style.left = "-100%";
-            document.getElementsByClassName("silang")[0].style.display = "none";
-            document.getElementsByClassName("hamburger")[0].style.display = "block";
-
-
+            if (side.style.left == "-100%") {
+                side.style.left = "0";
+                icon[0].classList.add("is-active");
+            } else {
+                side.style.left = "-100%";
+                icon[0].classList.remove("is-active");
+            }
 
         }
+
+
+//menambahkan background pas scroll
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                if (scroll > 150) {
+                    $("#navbar").css("background", "#1c232e");
+                } else {
+                    $("#navbar").css("background", "none");
+                }
+            })
+        })
+
+
+//hide nav pas scroll down and show it when scroll up
+        var prevScrollpos = window.pageYOffset;
+        var humbuerger
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if ($(window).scrollTop() > $(window).height() - 200){
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("navbar").style.top = "0";
+         document.getElementsByClassName("toggle-btn")[0].style.top ="20px";
+                } else {
+                    document.getElementById("navbar").style.top = "-110px";
+                    document.getElementsByClassName("toggle-btn")[0].style.top ="-50px";
+                }
+            prevScrollpos = currentScrollPos;
+                
+            }
+                
+        }
+        
+        
+        //typed js
+        
+        $('document').ready(function(){
+            var typee = new Typed('.intro-oti',{
+               strings: ["OMAHTI LEARNING CENTER"],
+               
+               backSpeed: 40,
+               typeSpeed: 40,
+               startDelay: 500
+           });
+            var typed = new Typed('.tahun',{
+               strings: ["2019"],
+               backSpeed: 40,
+               typeSpeed: 50,
+               startDelay: 2100
+           });
+       });
     </script>
 
 
