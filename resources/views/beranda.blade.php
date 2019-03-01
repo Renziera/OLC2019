@@ -207,7 +207,7 @@
         <div class="card col-lg-3 wow fadeInUp" data-wow-duration="2s">
             <img src="{{URL::asset('/img/wd.png')}}" alt="profile Pic" class="img-fluid" width="100" height="100">
             <h2>Web Design</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
 
         </div>
 
