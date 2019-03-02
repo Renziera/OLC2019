@@ -46,13 +46,13 @@
 
             <div id="sidebar">
 
-                <a href="{{ route('daftar') }}">Daftar</a>
+                <a href="{{ route('daftar') }}" style="display:none;">Daftar</a>
                 <a href="{{ route('jadwal') }}">Jadwal</a>
                 <a href="{{ route('pembayaran') }}">Cek Pembayaran</a>
                 @auth
                 <a href="{{ route('admin') }}">Admin Panel</a>
                 @else
-                <a class="nav-item btn btn-light tombol2" href="{{ route('login') }}">Login Panitia</a>
+                <a class="nav-item btn btn-light tombol2" href="{{ route('login') }}"style="display:none;">Login Panitia</a>
                 @if (Route::has('register'))
                 <a href="{{ route('register') }}">Register</a>
                 @endif
@@ -95,8 +95,8 @@
 
             </div>
 
-            <a class="nav-item btn btn-light tombol2 logdaf" href="{{ route('daftar') }}">Daftar</a>
-            <a class="nav-item btn btn-light tombol2 logdaf" href="{{ route('login') }}">Login Panitia</a>
+            <a class="nav-item btn btn-light tombol2 logdaf tot" href="{{ route('daftar') }}">Daftar</a>
+            <a class="nav-item btn btn-light tombol2 logdaf" href="{{ route('login') }}" style="display:none;">Login Panitia</a>
 
 
 
@@ -129,8 +129,11 @@
            
             <h1 class="intro-oti"></h1>
             <h1 class="tahun"></h1>
-           
-            <a class="nav-item btn btn-light tombol wow fadeInDownBig" data-wow-duration="2s" href="#">About</a>
+
+            <div class="buttons">
+                <a class="nav-item btn btn-light tombol wow fadeIn" data-wow-duration="3s" data-wow-delay="3s" href="#">About</a>
+                <a class="nav-item btn btn-light tombol wow fadeIn" data-wow-duration="3s" data-wow-delay="3s" href="#course">Course</a>
+            </div>
 
         </div>
     </div>
@@ -147,7 +150,17 @@
         </div>
         <div class="col-lg-5 wwow fadeInRightBig" data-wow-duration="2s">
             <h3 class="wow fadeInRightBig" data-wow-duration="2s">APA <span>ITU</span> OLC ? </h3>
-            <p class="wow fadeInLeftBig" data-wow-duration="2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus praesentium atque, maxime id Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, repellat.</p>
+            <p class="wow fadeInLeftBig" data-wow-duration="2s">
+            OmahTI Learning Center (OLC) merupakan kegiatan tahunan yang diselenggarakan OmahTI dalam 
+            rangka memberikan edukasi dan pelatihan teknologi untuk masyarakat.
+            </p>
+            <p class="wow fadeInLeftBig" data-wow-duration="2s">
+            Dalam kegiatannya, OLC dikemas menjadi pembelajaran tentang berbagai teknologi informasi 
+            seperti pada umumnya. Peserta akan diberikan materi dan dilatih oleh pembicara yang sudah
+             berpengalaman dibidang yang sesuai dengan kelas yang diambil. OLC kali ini membuka kelas
+              yang dikelompokkan berdasarkan 6 kategori, yaitu: Web Apps, Android Apps,
+               Web Design, Cyber Security, Game Development, dan Database.
+            </p>
         </div>
 
     </div>
@@ -156,8 +169,8 @@
     <!--ABout-->
 
     <!--Kelas-->
-    <div class="kelas wow fadeInLeftBig" data-wow-duration="2s">
-        <h1 class="judulkelas">WHAT'S THE COURSE?</h1>
+    <div class="kelas wow fadeIn" data-wow-duration="2s">
+        <h1 class="judulkelas" id="course">WHAT'S THE COURSE?</h1>
 
 
     </div>
@@ -167,14 +180,14 @@
 
 
 
-        <div class="card col-lg-3 wow fadeInDown" data-wow-duration="2s">
+        <div class="card col-lg-3 wow fadeInUp" data-wow-duration="2s">
             <img src="{{URL::asset('/img/webapps.png')}}" alt="profile Pic" class="img-fluid" width="100" height="100">
             <h2>Web Apps</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
 
         </div>
 
-        <div class="card col-lg-3 wow fadeInDown" data-wow-duration="2s">
+        <div class="card col-lg-3 wow fadeInUp" data-wow-duration="2s">
             <img src="{{URL::asset('/img/db.png')}}" alt="profile Pic" class="img-fluid" width="100" height="100">
 
             <h2>Database</h2>
@@ -182,7 +195,7 @@
 
         </div>
 
-        <div class="card col-lg-3 wow fadeInDown" data-wow-duration="2s">
+        <div class="card col-lg-3 wow fadeInUp" data-wow-duration="2s">
             <img src="{{URL::asset('/img/cyber.png')}}" alt="profile Pic" class="img-fluid" width="60" height="50">
             <h2>Cyber Security</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
@@ -311,14 +324,15 @@
                strings: ["OMAHTI LEARNING CENTER"],
                
                backSpeed: 40,
-               typeSpeed: 40,
-               startDelay: 500
+               typeSpeed: 70,
+               startDelay: 200
            });
             var typed = new Typed('.tahun',{
                strings: ["2019"],
                backSpeed: 40,
-               typeSpeed: 50,
-               startDelay: 2100
+               typeSpeed: 70,
+               startDelay: 2400,
+               
            });
        });
     </script>
