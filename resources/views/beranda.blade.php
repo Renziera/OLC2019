@@ -131,7 +131,7 @@
             <h1 class="tahun"></h1>
 
             <div class="buttons">
-                <a class="nav-item btn btn-light tombol wow fadeIn" data-wow-duration="3s" data-wow-delay="3s" href="#">About</a>
+                <a class="nav-item btn btn-light tombol wow fadeIn" data-wow-duration="3s" data-wow-delay="3s" href="#about">About</a>
                 <a class="nav-item btn btn-light tombol wow fadeIn" data-wow-duration="3s" data-wow-delay="3s" href="#course">Course</a>
             </div>
 
@@ -143,7 +143,7 @@
 
     <!--ABout-->
 
-    <div class="row about">
+    <div class="row about" id="about">
         <div class="col-lg-6 wow fadeInLeftBig" data-wow-duration="2s">
             <img src="{{URL::asset('/img/workingspace.png')}}" alt="profile Pic" class="img-fluid">
 
@@ -180,49 +180,49 @@
 
 
 
-        <div class="card col-lg-3 wow fadeInUp" data-wow-duration="2s">
+        <a class="card col-lg-3 wow fadeInUp" data-wow-duration="2s" href="#">
             <img src="{{URL::asset('/img/webapps.png')}}" alt="profile Pic" class="img-fluid" width="100" height="100">
             <h2>Web Apps</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
 
-        </div>
+        </a>
 
-        <div class="card col-lg-3 wow fadeInUp" data-wow-duration="2s">
+        <a class="card col-lg-3 wow fadeInUp" data-wow-duration="2s" href="#">
             <img src="{{URL::asset('/img/db.png')}}" alt="profile Pic" class="img-fluid" width="100" height="100">
 
             <h2>Database</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
 
-        </div>
+        </a>
 
-        <div class="card col-lg-3 wow fadeInUp" data-wow-duration="2s">
+        <a class="card col-lg-3 wow fadeInUp" data-wow-duration="2s" href="#">
             <img src="{{URL::asset('/img/cyber.png')}}" alt="profile Pic" class="img-fluid" width="60" height="50">
             <h2>Cyber Security</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
 
-        </div>
+        </a>
 
-        <div class="card col-lg-3 wow fadeInUp" data-wow-duration="2s ">
+        <a class="card col-lg-3 wow fadeInUp" data-wow-duration="2s" href="#">
             <img src="{{URL::asset('/img/game.png')}}" alt="profile Pic" class="img-fluid" width="150" height="145">
             <h2>Game Development</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
 
-        </div>
+        </a>
 
 
-        <div class="card col-lg-3 wow fadeInUp" data-wow-duration="2s">
+        <a class="card col-lg-3 wow fadeInUp" data-wow-duration="2s" href="#">
             <img src="{{URL::asset('/img/android.png')}}" alt="profile Pic" class="img-fluid" width="80" height="80">
             <h2>Android Apps</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
 
-        </div>
+        </a>
 
-        <div class="card col-lg-3 wow fadeInUp" data-wow-duration="2s">
+        <a class="card col-lg-3 wow fadeInUp" data-wow-duration="2s" href="#">
             <img src="{{URL::asset('/img/wd.png')}}" alt="profile Pic" class="img-fluid" width="100" height="100">
             <h2>Web Design</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
 
-        </div>
+        </a>
 
 
     </div>
@@ -238,25 +238,29 @@
 
 
     <div class="gallery">
-        <div class="img1 wow fadeInRightBig" data-wow-duration="2s ">
+        <div class="img1 wow fadeInUpBig" data-wow-duration="2s ">
             <img src="{{URL::asset('/img/docu1.jpg')}}" alt="">
             <img src="{{URL::asset('/img/docu2.jpg')}}" alt="">
             <img src="{{URL::asset('/img/docu3.jpg')}}" alt="">
 
         </div>
 
-        <div class="img2 wow fadeInLeftBig" data-wow-duration="2s">
+        <div class="img2 wow fadeInUpBig" data-wow-duration="2s">
             <img src="{{URL::asset('/img/docu4.jpg')}}" alt="">
             <img src="{{URL::asset('/img/docu5.jpg')}}" alt="">
             <img src="{{URL::asset('/img/docu6.jpg')}}" alt="">
 
         </div>
-
-
-
-
     </div>
-
+    <footer class="wow fadeInUpBig" data-wow-duration="2s">
+        <p>
+            Informasi lebih lanjut: 
+                <a href="http://line.me/ti/p/@app3977t" target="_blank"><i class="fab fa-line"></i></a>
+                <a href="https://web.facebook.com/OmahTI.UGM" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/omahti_ugm" target="_blank"><i class="fab fa-instagram"></i></a>
+        </p>
+        <span>&copy; 2019 OmahTI</span>
+    </footer>
 
 
 
