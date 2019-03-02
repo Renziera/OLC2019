@@ -222,7 +222,7 @@ nav .kiri a {
     transition: 0.3s;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     color: white;
-
+    transition: 0.7s;
 }
 
 .course .card img {
@@ -231,6 +231,8 @@ nav .kiri a {
 
 .course .card:hover {
     box-shadow: 0 8px 16px 0 #00e7ea;
+    text-decoration: none;
+    transform: scale(1.02);
 }
 
 .card p {
@@ -372,6 +374,39 @@ nav .kiri a {
 }
 .tahun{
     margin-bottom: 40px;
+}
+footer{
+    background: #1c232e;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+footer p{
+    color: #00e7ea;
+    display: inline-block;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 13px;
+    margin-bottom: -2px;
+}
+footer p a{
+    color: #00e7ea;
+    font-size: 16px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: -2px;
+}
+footer p a:hover{
+    text-decoration: none;
+    transform: scale(2);
+    color: #11bdc0;
+}
+footer span{
+    color: #00e7ea;
+    float: right;
+    text-align: right;
+    margin-right: 35px;
+    font-size: 13px;
+    margin-bottom: -10px;
 }
 
 /*Hamburger icon*/
