@@ -13,6 +13,39 @@ body {
     background-color: #273040;
 }
 
+
+/*Jadwal*/
+
+.info{
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
+
+tr{
+    color: #c2c2c2;
+}
+
+.table-bordered td, .table-bordered th{
+    border : 1px solid #00e7ea;
+}
+
+.course-info{
+    padding-bottom: 56px;
+}
+
+.break{
+    background: #00e7ea;
+    color: #273040;
+    
+}
+
+
+
+
+
+/*end of Jadwal*/
+
 .tombol2 {
     box-shadow: 0 1px 16px 0 #00e7ea;
     background-color: #00e1ff;
@@ -153,12 +186,12 @@ nav .kiri a {
 
 /*Jumbotron*/
 .jumbotron {
-    background-image: url(../img/jum.png);
     
-    margin-top: -25px;
+    background-color: #273040;
+    margin-top: -50px;
     background-size: cover;
     /*biar gambar dk tepotong*/
-    height: 640px;
+    height: 360px;
     color: #00e7ea;
     text-align: center;
     

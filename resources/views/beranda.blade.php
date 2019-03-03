@@ -26,10 +26,10 @@
 
     <!--JS-->
     <script src="{!! asset('js/wow.min.js') !!}"></script>
-    
-    
+
+
     <script src="{!! asset('js/typed.js') !!}"></script>
-    
+
     <script>
         new WOW().init();
     </script>
@@ -42,29 +42,30 @@
 <body>
 
     <!--Navbar-->
-    
-        <div class="container">
 
-            <div id="sidebar">
+    <div class="container">
 
-                <a href="{{ route('daftar') }}" style="display:none;">Daftar</a>
-                <a href="{{ route('jadwal') }}">Jadwal</a>
-                <a href="{{ route('pembayaran') }}">Cek Pembayaran</a>
-                @auth
-                <a href="{{ route('admin') }}">Admin Panel</a>
-                @else
-                <a class="nav-item btn btn-light tombol2" href="{{ route('login') }}"style="display:none;">Login Panitia</a>
-                @if (Route::has('register'))
-                <a href="{{ route('register') }}">Register</a>
-                @endif
-                @endauth
-                <a class="nav-item btn btn-light tombol2 logdaf" href="{{ route('daftar') }}">Daftar</a>
+        <div id="sidebar">
 
-            </div>
+       
+            <a href="{{ route('jadwal') }}">Jadwal</a>
+             <a href="{{ route('jadwal') }}">Kelas</a>
+            <a href="{{ route('pembayaran') }}">Cek Pembayaran</a>
+            @auth
+            <a href="{{ route('admin') }}">Admin Panel</a>
+            @else
+            <a class="nav-item btn btn-light tombol2" href="{{ route('login') }}" style="display:none;">Login Panitia</a>
+            @if (Route::has('register'))
+            <a href="{{ route('register') }}">Register</a>
+            @endif
+            @endauth
+            <a class="nav-item btn btn-light tombol2 logdaf" href="{{ route('daftar') }}">Daftar</a>
 
         </div>
 
-    
+    </div>
+
+
     <nav id="navbar" class="wow fadeInRightBig" data-wow-duration="0.5s">
         <div class="container">
             @if (Route::has('login'))
@@ -80,6 +81,7 @@
             <div class="kiri">
 
                 <a href="{{ route('jadwal') }}">Jadwal</a>
+                 <a href="{{ route('jadwal') }}">Kelas</a>
                 <a href="{{ route('pembayaran') }}">Cek Pembayaran</a>
                 @auth
                 <a href="{{ route('admin') }}">Admin Panel</a>
@@ -101,11 +103,11 @@
 
 
 
-        
-        
+
+
         </div>
-        
-        
+
+
     </nav>
     <div class="toggle-btn">
         <div class="hamburger hamburger--collapse" onclick="openside()">
@@ -125,9 +127,9 @@
     <!--Course-->
 
     <!--JumboTron-->
-    <div   class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid">
         <div class="container">
-           
+
             <h1 class="intro-oti"></h1>
             <h1 class="tahun"></h1>
 
@@ -140,7 +142,7 @@
     </div>
 
     <!--Akhir JUmbotron-->
- 
+
 
     <!--ABout-->
 
@@ -152,15 +154,15 @@
         <div class="col-lg-5 wwow fadeInRightBig" data-wow-duration="2s">
             <h3 class="wow fadeInRightBig" data-wow-duration="2s">APA <span>ITU</span> OLC ? </h3>
             <p class="wow fadeInLeftBig" data-wow-duration="2s">
-            OmahTI Learning Center (OLC) merupakan kegiatan tahunan yang diselenggarakan OmahTI dalam 
-            rangka memberikan edukasi dan pelatihan teknologi untuk masyarakat.
+                OmahTI Learning Center (OLC) merupakan kegiatan tahunan yang diselenggarakan OmahTI dalam
+                rangka memberikan edukasi dan pelatihan teknologi untuk masyarakat.
             </p>
             <p class="wow fadeInLeftBig" data-wow-duration="2s">
-            Dalam kegiatannya, OLC dikemas menjadi pembelajaran tentang berbagai teknologi informasi 
-            seperti pada umumnya. Peserta akan diberikan materi dan dilatih oleh pembicara yang sudah
-             berpengalaman dibidang yang sesuai dengan kelas yang diambil. OLC kali ini membuka kelas
-              yang dikelompokkan berdasarkan 6 kategori, yaitu: Web Apps, Android Apps,
-               Web Design, Cyber Security, Game Development, dan Database.
+                Dalam kegiatannya, OLC dikemas menjadi pembelajaran tentang berbagai teknologi informasi
+                seperti pada umumnya. Peserta akan diberikan materi dan dilatih oleh pembicara yang sudah
+                berpengalaman dibidang yang sesuai dengan kelas yang diambil. OLC kali ini membuka kelas
+                yang dikelompokkan berdasarkan 6 kategori, yaitu: Web Apps, Android Apps,
+                Web Design, Cyber Security, Game Development, dan Database.
             </p>
         </div>
 
@@ -204,8 +206,8 @@
         </a>
 
         <a class="card wow fadeInUp" data-wow-duration="2s" href="#">
-            <img src="{{URL::asset('/img/game.png')}}" alt="profile Pic" class="img-fluid" width="150" height="145">
-            <h2>Game Development</h2>
+            <img src="{{URL::asset('/img/ds.png')}}" alt="profile Pic" class="img-fluid" width="120" height="120">
+            <h2>Data Science</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
 
         </a>
@@ -253,25 +255,86 @@
 
         </div>
     </div>
+    
+     <!--End of Galeri-->
+     
+<!--Logo-->
+    <div class="logo wow fadeInRightBig" data-wow-duration="2s">
+        <img src="{{URL::asset('/img/logohimakom.png')}}" alt="" width="10%" class="wow fadeInRightBig" data-wow-duration="2s">
+        <img src="{{URL::asset('/img/logooti.png')}}" alt="" width="15%" class="wow fadeInLeftBig" data-wow-duration="2s">
+        
+        
+        
+    </div>
+    
+    
+    
+    
+    
+<!--End of Logo-->
+     
+     
+     
     <footer class="wow fadeInUpBig" data-wow-duration="2s">
-        <p>
-            Informasi lebih lanjut: 
-                <a href="http://line.me/ti/p/@app3977t" target="_blank"><i class="fab fa-line"></i></a>
-                <a href="https://web.facebook.com/OmahTI.UGM" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/omahti_ugm" target="_blank"><i class="fab fa-instagram"></i></a>
+        <div class="container">
+            <div class="links">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h3>Related</h3>
+
+                        <ul>
+                            <li><a href="http://omahti.web.id">OmahTI</a></li>
+                            <li><a href="http://himakom.ugm.ac.id">Himakom UGM</a></li>
+                            <li><a href="http://ugm.ac.id">UGM</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <h3>Support</h3>
+
+                        <ul>
+                            <li>Line: @app3977t</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <h3>Other</h3>
+
+                        <ul>
+                            <li><a href="http://omahti.web.id/blog">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="infolanjut">
+            <p>
+            Informasi lebih lanjut:
+            <a href="http://line.me/ti/p/@app3977t" target="_blank"><i class="fab fa-line"></i></a>
+            <a href="https://web.facebook.com/OmahTI.UGM" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/omahti_ugm" target="_blank"><i class="fab fa-instagram"></i></a>
         </p>
         <span>&copy; 2019 OmahTI</span>
+            
+            
+        </div>
+
+        
     </footer>
 
 
 
 
-    <!--Galeri-->
+   
 
     <!-- Optional JavaScript -->
 
     <script>
-        
         //side bar
         function openside() {
             var side = document.getElementById("sidebar");
@@ -289,7 +352,7 @@
         }
 
 
-//menambahkan background pas scroll
+        //menambahkan background pas scroll
         $(document).ready(function() {
             $(window).scroll(function() {
                 var scroll = $(window).scrollTop();
@@ -302,44 +365,44 @@
         })
 
 
-//hide nav pas scroll down and show it when scroll up
+        //hide nav pas scroll down and show it when scroll up
         var prevScrollpos = window.pageYOffset;
         var humbuerger
         window.onscroll = function() {
             var currentScrollPos = window.pageYOffset;
-            if ($(window).scrollTop() > $(window).height() - 200){
+            if ($(window).scrollTop() > $(window).height() - 200) {
                 if (prevScrollpos > currentScrollPos) {
                     document.getElementById("navbar").style.top = "0";
-         document.getElementsByClassName("toggle-btn")[0].style.top ="20px";
+                    document.getElementsByClassName("toggle-btn")[0].style.top = "20px";
                 } else {
                     document.getElementById("navbar").style.top = "-110px";
-                    document.getElementsByClassName("toggle-btn")[0].style.top ="-50px";
+                    document.getElementsByClassName("toggle-btn")[0].style.top = "-50px";
                 }
-            prevScrollpos = currentScrollPos;
-                
+                prevScrollpos = currentScrollPos;
+
             }
-                
+
         }
-        
-        
+
+
         //typed js
-        
-        $('document').ready(function(){
-            var typee = new Typed('.intro-oti',{
-               strings: ["OMAHTI LEARNING CENTER"],
-               
-               backSpeed: 40,
-               typeSpeed: 70,
-               startDelay: 200
-           });
-            var typed = new Typed('.tahun',{
-               strings: ["2019"],
-               backSpeed: 40,
-               typeSpeed: 70,
-               startDelay: 2400,
-               
-           });
-       });
+
+        $('document').ready(function() {
+            var typee = new Typed('.intro-oti', {
+                strings: ["OMAHTI LEARNING CENTER"],
+
+                backSpeed: 40,
+                typeSpeed: 70,
+                startDelay: 200
+            });
+            var typed = new Typed('.tahun', {
+                strings: ["2019"],
+                backSpeed: 40,
+                typeSpeed: 70,
+                startDelay: 2400,
+
+            });
+        });
     </script>
 
 
