@@ -153,8 +153,9 @@ nav .kiri a {
 
 /*Jumbotron*/
 .jumbotron {
-    background-color: #273040;
-    margin: auto;
+    background-image: url(../img/jum.png);
+    
+    margin-top: -25px;
     background-size: cover;
     /*biar gambar dk tepotong*/
     height: 640px;
@@ -208,6 +209,7 @@ nav .kiri a {
 
 .course {
     text-align: center;
+   
 
 }
 
@@ -337,7 +339,7 @@ nav .kiri a {
 
 .about p {
     text-align: left;
-    color: gray;
+    color: #c2c2c2;
     font-size: 15px;
 
 }
@@ -415,6 +417,12 @@ footer span{
 
 
  @media (max-width: 768px) {
+     .course{
+         margin-left: 5px;
+     }
+     
+     
+     
     .toggle-btn {
         display: block;
     }

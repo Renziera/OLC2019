@@ -27,6 +27,7 @@
     <!--JS-->
     <script src="{!! asset('js/wow.min.js') !!}"></script>
     
+    
     <script src="{!! asset('js/typed.js') !!}"></script>
     
     <script>
@@ -180,14 +181,14 @@
 
 
 
-        <a class="card col-lg-3 wow fadeInUp" data-wow-duration="2s" href="#">
+        <a class="card wow fadeInUp" data-wow-duration="2s" href="#">
             <img src="{{URL::asset('/img/webapps.png')}}" alt="profile Pic" class="img-fluid" width="100" height="100">
             <h2>Web Apps</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
 
         </a>
 
-        <a class="card col-lg-3 wow fadeInUp" data-wow-duration="2s" href="#">
+        <a class="card wow fadeInUp" data-wow-duration="2s" href="#">
             <img src="{{URL::asset('/img/db.png')}}" alt="profile Pic" class="img-fluid" width="100" height="100">
 
             <h2>Database</h2>
@@ -195,14 +196,14 @@
 
         </a>
 
-        <a class="card col-lg-3 wow fadeInUp" data-wow-duration="2s" href="#">
+        <a class="card wow fadeInUp" data-wow-duration="2s" href="#">
             <img src="{{URL::asset('/img/cyber.png')}}" alt="profile Pic" class="img-fluid" width="60" height="50">
             <h2>Cyber Security</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
 
         </a>
 
-        <a class="card col-lg-3 wow fadeInUp" data-wow-duration="2s" href="#">
+        <a class="card wow fadeInUp" data-wow-duration="2s" href="#">
             <img src="{{URL::asset('/img/game.png')}}" alt="profile Pic" class="img-fluid" width="150" height="145">
             <h2>Game Development</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
@@ -210,14 +211,14 @@
         </a>
 
 
-        <a class="card col-lg-3 wow fadeInUp" data-wow-duration="2s" href="#">
+        <a class="card wow fadeInUp" data-wow-duration="2s" href="#">
             <img src="{{URL::asset('/img/android.png')}}" alt="profile Pic" class="img-fluid" width="80" height="80">
             <h2>Android Apps</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
 
         </a>
 
-        <a class="card col-lg-3 wow fadeInUp" data-wow-duration="2s" href="#">
+        <a class="card wow fadeInUp" data-wow-duration="2s" href="#">
             <img src="{{URL::asset('/img/wd.png')}}" alt="profile Pic" class="img-fluid" width="100" height="100">
             <h2>Web Design</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
