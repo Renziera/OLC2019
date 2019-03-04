@@ -2423,23 +2423,18 @@ fieldset:disabled a.btn {
     pointer-events: none
 }
 
-
-
-
 .btn-primary {
     
-    box-shadow: 0 1px 16px 0 #00e7ea;
-    background-color: #00e1ff;
-    border-radius: 18px;
-    padding: 7px 24px;
+    background-color: #00e7ea;
+    border-radius: 24px;
     font-size: 18px;
-    font-weight: 500;
-    transition: 1s;
-    border-color: white;
-    color: #273040;
-   text-transform: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 200;
     font-family: sans-serif;
-    margin-left: 20px;
+    color: #273040;
     
 }
 
@@ -4424,13 +4419,11 @@ input[type=submit].btn-block {
 .navbar-light .navbar-nav .nav-link {
     color: white;
     padding-right: 30px;
-    padding-left: 30px;
 }
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-    color:#00e7ea;
-    border-bottom: 1.5px solid #00e7ea;
+    color: rgba(0, 0, 0, .7)
 }
 
 .navbar-light .navbar-nav .nav-link.disabled {
