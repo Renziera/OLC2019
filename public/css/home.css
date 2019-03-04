@@ -154,7 +154,6 @@ nav .kiri a {
 /*Jumbotron*/
 .jumbotron {
     background-image: url(../img/jum.png);
-    
     margin-top: -25px;
     background-size: cover;
     /*biar gambar dk tepotong*/
@@ -273,7 +272,22 @@ nav .kiri a {
 .gallery img:hover {
     transform: scale(1.1);
 }
-
+.links ul li a{
+    color: #00e7ea;
+    transition: 0.75s;
+}
+.indent li{
+    margin-left: -18px;
+}
+.links ul li{
+    color: #00e7ea;
+    transition: 0.75s;
+    margin-left: -40px;
+}
+.links ul li a:hover{
+    text-decoration: none;
+    color: #00abad;
+}
 /* .toggle-btn {
     display: none;
 } */
@@ -483,7 +497,6 @@ li{
         width: 100vw;
         display: flex;
         flex-wrap: wrap;
-        background: #273040;
     }
     .jumbotron h1 {
         margin-top: 90px;
