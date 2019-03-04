@@ -478,7 +478,22 @@ li{
     background-color:  #121417;
     padding: 10px;
 }
-
+.links ul li a{
+    color: #00e7ea;
+    transition: 0.75s;
+}
+.indent li{
+    margin-left: -18px;
+}
+.links ul li{
+    color: #00e7ea;
+    transition: 0.75s;
+    margin-left: -40px;
+}
+.links ul li a:hover{
+    text-decoration: none;
+    color: #00abad;
+}
 
 
 
