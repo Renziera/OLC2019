@@ -162,7 +162,7 @@
                 seperti pada umumnya. Peserta akan diberikan materi dan dilatih oleh pembicara yang sudah
                 berpengalaman dibidang yang sesuai dengan kelas yang diambil. OLC kali ini membuka kelas
                 yang dikelompokkan berdasarkan 6 kategori, yaitu: Web Apps, Android Apps,
-                Web Design, Cyber Security, Game Development, dan Database.
+                Web Design, Cyber Security, Data Science, dan Database.
             </p>
         </div>
 
@@ -282,7 +282,7 @@
                     <div class="col-sm-4">
                         <h3>Related</h3>
 
-                        <ul>
+                        <ul class="indent">
                             <li><a href="http://omahti.web.id">OmahTI</a></li>
                             <li><a href="http://himakom.ugm.ac.id">Himakom UGM</a></li>
                             <li><a href="http://ugm.ac.id">UGM</a></li>
@@ -300,7 +300,7 @@
                     <div class="col-sm-4">
                         <h3>Other</h3>
 
-                        <ul>
+                        <ul class="indent">
                             <li><a href="http://omahti.web.id/blog">Blog</a></li>
                         </ul>
                     </div>
