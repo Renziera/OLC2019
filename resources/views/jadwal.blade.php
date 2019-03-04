@@ -186,7 +186,7 @@
                     <div class="col-sm-4">
                         <h3>Related</h3>
 
-                        <ul>
+                        <ul class="indent">
                             <li><a href="http://omahti.web.id">OmahTI</a></li>
                             <li><a href="http://himakom.ugm.ac.id">Himakom UGM</a></li>
                             <li><a href="http://ugm.ac.id">UGM</a></li>
@@ -204,7 +204,7 @@
                     <div class="col-sm-4">
                         <h3>Other</h3>
 
-                        <ul>
+                        <ul class="indent">
                             <li><a href="http://omahti.web.id/blog">Blog</a></li>
                         </ul>
                     </div>
