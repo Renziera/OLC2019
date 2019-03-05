@@ -183,14 +183,14 @@
 
 
 
-        <a class="card wow fadeInUp" data-wow-duration="2s" href="#">
+        <a class="card wow fadeInUp" data-wow-duration="2s" href="/course/web_apps">
             <img src="{{URL::asset('/img/webapps.png')}}" alt="profile Pic" class="img-fluid" width="100" height="100">
             <h2>Web Apps</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
 
         </a>
 
-        <a class="card wow fadeInUp" data-wow-duration="2s" href="#">
+        <a class="card wow fadeInUp" data-wow-duration="2s" href="/course/database">
             <img src="{{URL::asset('/img/db.png')}}" alt="profile Pic" class="img-fluid" width="100" height="100">
 
             <h2>Database</h2>
@@ -198,14 +198,14 @@
 
         </a>
 
-        <a class="card wow fadeInUp" data-wow-duration="2s" href="#">
+        <a class="card wow fadeInUp" data-wow-duration="2s" href="/course/cyber_security">
             <img src="{{URL::asset('/img/cyber.png')}}" alt="profile Pic" class="img-fluid" width="60" height="50">
             <h2>Cyber Security</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
 
         </a>
 
-        <a class="card wow fadeInUp" data-wow-duration="2s" href="#">
+        <a class="card wow fadeInUp" data-wow-duration="2s" href="/course/data_science">
             <img src="{{URL::asset('/img/ds.png')}}" alt="profile Pic" class="img-fluid" width="120" height="120">
             <h2>Data Science</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
@@ -213,14 +213,14 @@
         </a>
 
 
-        <a class="card wow fadeInUp" data-wow-duration="2s" href="#">
+        <a class="card wow fadeInUp" data-wow-duration="2s" href="/course/android_apps">
             <img src="{{URL::asset('/img/android.png')}}" alt="profile Pic" class="img-fluid" width="80" height="80">
             <h2>Android Apps</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
 
         </a>
 
-        <a class="card wow fadeInUp" data-wow-duration="2s" href="#">
+        <a class="card wow fadeInUp" data-wow-duration="2s" href="/course/web_design">
             <img src="{{URL::asset('/img/wd.png')}}" alt="profile Pic" class="img-fluid" width="100" height="100">
             <h2>Web Design</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>

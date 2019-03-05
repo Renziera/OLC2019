@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
 
+*{
+    font-family: "museo-sans-rounded", sans-serif;
+}
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -50,6 +53,11 @@ html {
     -ms-text-size-adjust: 100%;
     -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+
+.cari{
+    color: white;
 }
 
 @-ms-viewport {
@@ -182,10 +190,77 @@ sup {
 }
 
 a {
-    color: #3490dc;
+    color: #00e7ea;
+    font-size: 32px;
+    font-weight: bold;
     text-decoration: none;
     background-color: transparent;
     -webkit-text-decoration-skip: objects
+}
+
+.kelas{
+    font-size: 20px;
+    font-weight: 200;
+    display: block;
+}
+
+.judul2{
+    font-size: 36px;
+    
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 24px;
+    color: #00e7ea;
+}
+
+.judul2::after {
+    content: '';
+    display: block;
+    padding: 10px;
+    border-bottom: 3px solid #00e7ea;
+    width: 70px;
+    margin: auto;
+}
+
+.pencarian{
+    border: 1px solid #00e7ea;
+    padding: 32px;
+    border-radius: 12px;
+    
+    
+}
+
+.pilihan{
+    text-align: center;
+}
+
+
+.tom2{
+    box-shadow: 0 1px 16px 0 #00e7ea;
+    background-color: #00e1ff;
+    border-radius: 18px;
+    padding: 7px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 1s;
+    border-color: white;
+    color: #273040;
+   text-transform: none;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 10px 24px;
+    display: inline-block;
+    
+}
+
+.table-bordered, .table-bordered td, .table-bordered th{
+    border : 1px solid #00e7ea;
+}
+
+.tom2:hover{
+    text-decoration: none;
+    background: #273040;
+    color: #00e7ea;
 }
 
 a:hover {
@@ -266,15 +341,21 @@ button:focus {
     outline: 5px auto -webkit-focus-ring-color
 }
 
-button,
+
 input,
 optgroup,
 select,
 textarea {
     margin: 0;
-    font-family: inherit;
+    background-color: #273040;
+    color: white;
+    border: 1px solid aqua;
+    border-radius: 12px;
+    padding: 15px 32px;
     font-size: inherit;
-    line-height: inherit
+    margin-right: 24px;
+    
+        
 }
 
 button,
@@ -299,7 +380,7 @@ html [type=button] {
 [type=submit]::-moz-focus-inner,
 button::-moz-focus-inner {
     padding: 0;
-    border-style: none
+    border-radius: 12px;
 }
 
 input[type=checkbox],
@@ -1648,6 +1729,10 @@ pre code {
     background-color: #f8fafc
 }
 
+.tabel{
+    text-align: center;
+}
+
 .table-sm td,
 .table-sm th {
     padding: .3rem
@@ -1656,7 +1741,12 @@ pre code {
 .table-bordered,
 .table-bordered td,
 .table-bordered th {
-    border: 1px solid #dee2e6
+    border : 1px solid #00e7ea;
+    padding: 7px 40px;
+    text-align: center;
+    color: white;
+    margin-left: -300px;
+   
 }
 
 .table-bordered thead td,
@@ -3289,7 +3379,7 @@ input[type=submit].btn-block {
     height: 0;
     margin: .5rem 0;
     overflow: hidden;
-    border-top: 1px solid #e9ecef
+    border-top: 1px solid #e9ecef;
 }
 
 .dropdown-item {
@@ -3302,7 +3392,9 @@ input[type=submit].btn-block {
     text-align: inherit;
     white-space: nowrap;
     background-color: transparent;
-    border: 0
+    border: 0;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 .dropdown-item:focus,
@@ -4139,7 +4231,8 @@ input[type=submit].btn-block {
     margin-right: 1rem;
     font-size: 1.125rem;
     line-height: inherit;
-    white-space: nowrap
+    white-space: nowrap;
+    color: white;
 }
 
 .navbar-brand:focus,
@@ -4425,6 +4518,7 @@ input[type=submit].btn-block {
     color: white;
     padding-right: 30px;
     padding-left: 30px;
+    font-size: 16px;
 }
 
 .navbar-light .navbar-nav .nav-link:focus,
@@ -4434,18 +4528,18 @@ input[type=submit].btn-block {
 }
 
 .navbar-light .navbar-nav .nav-link.disabled {
-    color: rgba(0, 0, 0, .3)
+    color: #00e7ea;;
 }
 
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show > .nav-link {
-    color: rgba(0, 0, 0, .9)
+    color: #00e7ea;
 }
 
 .navbar-light .navbar-toggler {
-    color: rgba(0, 0, 0, .5);
+    color: #00e7ea;
     border-color: rgba(0, 0, 0, .1)
 }
 

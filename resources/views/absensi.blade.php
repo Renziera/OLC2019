@@ -4,47 +4,60 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-                <a href="/admin/daftar">Daftar on the spot</a>
+                <div class="pilihan">
+                <a class="tom2" href="/admin/daftar">Daftar on the spot</a>
+
+
+                <a class="tom2" href="/admin">Pencarian</a>
+ </div>
+           <br>
+           <br>
+            
+               <div class="pencarian">
                 <br>
-                Cari Nama
+                <h4 class="judul2">Absensi</h4>
+                <h4 class="cari">Cari Nama</h4>
                 <form action="/admin/absen/nama" method="post">
                     @csrf
                     <input type="text" name="nama">
                     <input type="submit" value="Cari">
                 </form>
                 <br>
-                Cari Kode
+                <h4 class="cari">Cari Kode</h4>
                 <form action="/admin/absen/kode" method="post">
                     @csrf
                     <input type="text" name="kode" size="5" maxlength="5" style="text-transform:uppercase">
                     <input type="submit" value="Cari">
                 </form>
                 <br>
-                <a href="/admin">Semua</a> 
-                <a href="/admin/kelas/web_apps">Web Apps</a>   
-                <a href="/admin/kelas/database">Database</a>
-                <a href="/admin/kelas/cyber_security">Cyber Security</a>   
-                <a href="/admin/kelas/data_science">Data Science</a>
-                <a href="/admin/kelas/android_apps">Android Apps</a>   
-                <a href="/admin/kelas/web_design">Web Design</a>
                 <br>
-                Absensi
+                <h4 class="cari">Cari Berdasarkan : </h4>
                 <br>
-                <a href="/admin/absen/semua">Semua</a> 
-                <a href="/admin/absen/web_apps">Web Apps</a>   
-                <a href="/admin/absen/database">Database</a>
-                <a href="/admin/absen/cyber_security">Cyber Security</a>   
-                <a href="/admin/absen/data_science">Data Science</a>
-                <a href="/admin/absen/android_apps">Android Apps</a>   
-                <a href="/admin/absen/web_design">Web Design</a>
+                <a  class="kelas" href="/admin/absen/semua">Semua</a> 
+                <a class="kelas"  href="/admin/absen/web_apps">Web Apps</a>   
+                <a  class="kelas" href="/admin/absen/database">Database</a>
+                <a  class="kelas" href="/admin/absen/cyber_security">Cyber Security</a>   
+                <a  class="kelas" href="/admin/absen/data_science">Data Science</a>
+                <a  class="kelas" href="/admin/absen/android_apps">Android Apps</a>   
+                <a   class="kelas" href="/admin/absen/web_design">Web Design</a>
                 <br>
-            <div class="card">
-                <div class="card-header">
-                Absensi
-                </div>
 
-                <div class="card-body">
-                    <table>
+
+</div>
+           
+               
+         </div>       
+           <br>
+            <br>
+            
+            
+            <br>
+            <br>
+                <div class="tabel">
+                  <br>
+                  <br>
+                   <h4 class="judul2">Absen Peserta </h4>
+                    <table class="table-bordered" style="margin-left:-20px;">
                         <tr>
                             <th>Nama peserta</th>
                             <th>Kode Peserta</th>
@@ -110,9 +123,9 @@
                         </tr>
                         @endforeach
                     </table>
-                </div>
-            </div>
+        </div>
+            
         </div>
     </div>
-</div>
+
 @endsection
