@@ -31,28 +31,42 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="nomor_identitas" class="col-md-4 col-form-label text-md-right">{{ __('Nomor identitas') }}</label>
+                            <label for="instansi" class="col-md-4 col-form-label text-md-right">{{ __('Instansi') }}</label>
 
                             <div class="col-md-6">
-                                <input id="nomor_identitas" type="number" class="form-control{{ $errors->has('nomor_identitas') ? ' is-invalid' : '' }}" name="nomor_identitas" value="{{ old('nomor_identitas') }}" required autofocus>
+                                <input id="instansi" type="text" class="form-control{{ $errors->has('instansi') ? ' is-invalid' : '' }}" name="instansi" value="{{ old('instansi') }}" required autofocus>
 
-                                @if ($errors->has('nomor_identitas'))
+                                @if ($errors->has('instansi'))
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('no_identitas') }}</strong>
+                                        <strong>{{ $errors->first('instansi') }}</strong>
                                     </span>
                                 @endif
                             </div>
                         </div>
 
                         <div class="form-group row">
-                            <label for="nomor_telp" class="col-md-4 col-form-label text-md-right">{{ __('Nomor telepon/HP') }}</label>
+                            <label for="kontak" class="col-md-4 col-form-label text-md-right">{{ __('Kontak (Line/WA)') }}</label>
 
                             <div class="col-md-6">
-                                <input id="nomor_telp" type="number" class="form-control{{ $errors->has('nomor_telp') ? ' is-invalid' : '' }}" name="nomor_telp" value="{{ old('nomor_telp') }}" required autofocus>
+                                <input id="kontak" type="text" class="form-control{{ $errors->has('kontak') ? ' is-invalid' : '' }}" name="kontak" value="{{ old('kontak') }}" required autofocus>
 
-                                @if ($errors->has('nomor_telp'))
+                                @if ($errors->has('kontak'))
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('no_telepon') }}</strong>
+                                        <strong>{{ $errors->first('kontak') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-mail') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
+
+                                @if ($errors->has('email'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('email') }}</strong>
                                     </span>
                                 @endif
                             </div>
@@ -62,39 +76,32 @@
                         <label for="daftar_kelas" class="col-md-4 col-form-label text-md-right">{{ __('Mendaftar kelas') }}</label>
                             <div class="col-md-6">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="Web_Apps" id="mancing_mania" value="1" {{ old('mancing_mania') ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="mancing_mania">
+                                    <input class="form-check-input" type="checkbox" name="web_apps" value="1">
+                                    <label class="form-check-label">
                                         {{ __('Web Apps') }}
                                     </label>
                                     <br>
-                                    <input class="form-check-input" type="checkbox" name="Database" id="ternak_lele" value="1" {{ old('ternak_lele') ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="ternak_lele">
+                                    <input class="form-check-input" type="checkbox" name="database" value="1">
+                                    <label class="form-check-label">
                                         {{ __('Database') }}
                                     </label>
                                     <br>
-                                    <input class="form-check-input" type="checkbox" name="Motion_Graphic" id="panen_meme" value="1" {{ old('panen_meme') ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="panen_meme">
-                                        {{ __('Motion Graphic') }}
-                                    </label><br>
-                                    <input class="form-check-input" type="checkbox" name="Cyber_Security" id="panen_meme" value="1" {{ old('panen_meme') ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="panen_meme">
+                                    <input class="form-check-input" type="checkbox" name="cyber_security" value="1">
+                                    <label class="form-check-label">
                                         {{ __('Cyber Security') }}
                                     </label><br>
-                                    <input class="form-check-input" type="checkbox" name="Graphic_Design" id="panen_meme" value="1" {{ old('panen_meme') ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="panen_meme">
-                                        {{ __('Graphic Design') }}
-                                    </label><br>
-                                    <input class="form-check-input" type="checkbox" name="Game_Development" id="panen_meme" value="1" {{ old('panen_meme') ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="panen_meme">
-                                        {{ __('Game Development') }}
+                                    <br>
+                                    <input class="form-check-input" type="checkbox" name="data_science" value="1">
+                                    <label class="form-check-label">
+                                        {{ __('Data Science') }}
                                     </label><br>
                 
-                                    <input class="form-check-input" type="checkbox" name="Android_Apps" id="panen_meme" value="1" {{ old('panen_meme') ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="panen_meme">
+                                    <input class="form-check-input" type="checkbox" name="android_apps" value="1">
+                                    <label class="form-check-label">
                                         {{ __('Android Apps') }}
                                     </label><br>
-                                    <input class="form-check-input" type="checkbox" name="Web_Design" id="panen_meme" value="1" {{ old('panen_meme') ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="panen_meme">
+                                    <input class="form-check-input" type="checkbox" name="web_design" value="1">
+                                    <label class="form-check-label">
                                         {{ __('Web Design') }}
                                     </label>
                                     

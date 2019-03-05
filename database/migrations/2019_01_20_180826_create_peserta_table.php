@@ -16,17 +16,18 @@ class CreatePesertaTable extends Migration
         Schema::create('peserta', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nama', 255);
-            $table->string('nomor_identitas', 32);
-            $table->string('nomor_telp', 16);
+            $table->string('instansi', 32);
+            $table->string('kontak', 32);
+            $table->string('email', 64);
             $table->string('kode_peserta', 5)->unique();
-            $table->boolean('Web_Apps');
-            $table->boolean('Database');
-            $table->boolean('Motion_Graphic');
-            $table->boolean('Cyber_Security');
-            $table->boolean('Graphic_Design');
-            $table->boolean('Game_Development');
-            $table->boolean('Android_Apps');
-            $table->boolean('Web_Design');
+
+            $table->boolean('web_apps');
+            $table->boolean('database');
+            $table->boolean('cyber_security');
+            $table->boolean('data_science');
+            $table->boolean('android_apps');
+            $table->boolean('web_design');
+            
             $table->string('bukti_pembayaran', 255)->nullable(true);
             $table->integer('biaya')->unsigned();
             $table->boolean('sudah_bayar');

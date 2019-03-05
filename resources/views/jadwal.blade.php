@@ -90,9 +90,6 @@
                 <a href="{{ route('register') }}">Register</a>
                 @endif
                 @endauth
-
-
-
             </div>
 
             <a class="nav-item btn btn-light tombol2 logdaf tot" href="{{ route('daftar') }}">Daftar</a>

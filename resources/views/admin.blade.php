@@ -4,15 +4,29 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
+                <a href="/admin/daftar">Daftar on the spot</a>
+                <br>
+                Cari Nama
+                <form action="/admin/cari/nama" method="post">
+                    @csrf
+                    <input type="text" name="nama">
+                    <input type="submit" value="Cari">
+                </form>
+                <br>
+                Cari Kode
+                <form action="/admin/cari/kode" method="post">
+                    @csrf
+                    <input type="text" name="kode" size="5" maxlength="5" style="text-transform:uppercase">
+                    <input type="submit" value="Cari">
+                </form>
+                <br>
                 <a href="/admin">Semua</a> 
-                <a href="/admin/kelas1">Web Apps</a>   
-                <a href="/admin/kelas2">Database</a>
-                <a href="/admin/kelas3">Motion Graphic</a>
-                <a href="/admin/kelas4">Cyber Security</a>   
-                <a href="/admin/kelas5">Graphic Design</a>
-                <a href="/admin/kelas6">Game Development</a>
-                <a href="/admin/kelas7">Android Apps</a>   
-                <a href="/admin/kelas8">Web Design</a>
+                <a href="/admin/kelas/web_apps">Web Apps</a>   
+                <a href="/admin/kelas/database">Database</a>
+                <a href="/admin/kelas/cyber_security">Cyber Security</a>   
+                <a href="/admin/kelas/data_science">Data Science</a>
+                <a href="/admin/kelas/android_apps">Android Apps</a>   
+                <a href="/admin/kelas/web_design">Web Design</a>
             <div class="card">
                 <div class="card-header">
                 Admin Panel
@@ -23,8 +37,9 @@
                         <tr>
                             <th>Nama peserta</th>
                             <th>Kode Peserta</th>
-                            <th>Nomor identitas</th>
-                            <th>Nomor HP</th>
+                            <th>Instansi</th>
+                            <th>Kontak</th>
+                            <th>Email</th>
                             <th>Kelas yang diikuti</th>
                             <th>Biaya</th>
                             <th>Bukti bayar</th>
@@ -34,31 +49,26 @@
                         <tr>
                             <td>{{ $peserta->nama }}</td>
                             <td>{{ $peserta->kode_peserta }}</td>
-                            <td>{{ $peserta->nomor_identitas }}</td>
-                            <td>{{ $peserta->nomor_telp }}</td>
+                            <td>{{ $peserta->instansi }}</td>
+                            <td>{{ $peserta->kontak }}</td>
+                            <td>{{ $peserta->email }}</td>
                             <td>
-                                @if($peserta->Web_Apps)
+                                @if($peserta->web_apps)
                                     Web Apps <br>
                                 @endif
-                                @if($peserta->Database)
+                                @if($peserta->database)
                                     Database <br>
                                 @endif
-                                @if($peserta->Motion_Graphic)
-                                    Motion Graphic <br>
+                                @if($peserta->data_science)
+                                    Data Science <br>
                                 @endif
-                                @if($peserta->Graphic_Design)
-                                    Graphic Design <br>
-                                @endif
-                                @if($peserta->Game_Development)
-                                    Game Development <br>
-                                @endif
-                                @if($peserta->Android_Apps)
+                                @if($peserta->android_apps)
                                     Android Apps <br>
                                 @endif
-                                @if($peserta->Web_Design)
+                                @if($peserta->web_design)
                                     Web Design <br>
                                 @endif
-                                @if($peserta->Cyber_Security)
+                                @if($peserta->cyber_security)
                                     Cyber Security <br>
                                 @endif
                             </td>
@@ -80,7 +90,7 @@
                                     <input type="submit" value="Approve">
                                 </form>
                                 @else
-                                    -
+                                    Belum Bayar
                                 @endif
                             </td>
                         </tr>
