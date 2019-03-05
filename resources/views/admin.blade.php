@@ -99,7 +99,11 @@
                             @if ($peserta->bukti_pembayaran != null)
                             <a href="{{ '/bukti/' .$peserta->bukti_pembayaran }}" target="_blank">Lihat</a>
                             @else
-                            Belum upload
+                                @if ($peserta->sudah_bayar)
+                                    Bayar cash
+                                @else
+                                    Belum upload
+                                @endif
                             @endif
                         </td>
                         <td>
