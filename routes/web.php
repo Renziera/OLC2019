@@ -12,6 +12,7 @@
 Route::get('/', function () {
     return view('beranda');
 });
+
 Route::view('/jadwal', 'jadwal')->name('jadwal');
 Route::view('/daftar', 'daftar')->name('daftar');
 Route::post('/daftar', 'DaftarController@daftar');
@@ -19,6 +20,12 @@ Route::view('/cek', 'pembayaran')->name('pembayaran');
 Route::post('/cek', 'PembayaranController@pembayaran');
 Route::put('/cek', 'PembayaranController@uploadBukti');
 
+Route::view('/course/android_apps', 'course_android_apps');
+Route::view('/course/cyber_security', 'course_cyber_security');
+Route::view('/course/data_science', 'course_data_science');
+Route::view('/course/database', 'course_database');
+Route::view('/course/web_apps', 'course_web_apps');
+Route::view('/course/web_design', 'course_web_design');
 
 //Di bawah sini hanya untuk panitia
 // Authentication Routes...
@@ -37,3 +44,8 @@ Route::post('/admin/daftar',"AdminController@daftarAdmin");
 
 Route::post('admin/cari/nama',"AdminController@cariNama");
 Route::post('admin/cari/kode','AdminController@cariKode');
+
+Route::get('admin/absen/{kelas}','AdminController@cariKode');
+
+Route::post('admin/absen/nama',"AdminController@cariAbsenNama");
+Route::post('admin/absen/kode','AdminController@cariAbsenKode');
