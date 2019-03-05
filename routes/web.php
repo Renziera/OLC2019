@@ -45,7 +45,8 @@ Route::post('/admin/daftar',"AdminController@daftarAdmin");
 Route::post('admin/cari/nama',"AdminController@cariNama");
 Route::post('admin/cari/kode','AdminController@cariKode');
 
-Route::get('admin/absen/{kelas}','AdminController@cariKode');
+Route::get('admin/absen/{kelas}','AdminController@absensi');
+Route::post('admin/absen','AdminController@absen');
 
 Route::post('admin/absen/nama',"AdminController@cariAbsenNama");
 Route::post('admin/absen/kode','AdminController@cariAbsenKode');

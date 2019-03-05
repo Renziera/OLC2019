@@ -16,7 +16,7 @@ class CreateAbsensiTable extends Migration
         Schema::create('absensi', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nama', 255);
-            $table->string('kode_peserta', 5)->unique();
+            $table->string('kode_peserta', 5);
             $table->string('kelas', 24);
             $table->boolean('pertemuan1');
             $table->boolean('pertemuan2');

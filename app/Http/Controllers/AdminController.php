@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Peserta;
+use App\Absensi;
 
 class AdminController extends Controller
 {
@@ -40,6 +41,72 @@ class AdminController extends Controller
         if($peserta != null){
             $peserta->sudah_bayar = true;
             $peserta->save();
+            if($peserta->web_apps){
+                $absen = new Absensi;
+                $absen->nama = $peserta->nama;
+                $absen->kode_peserta = $peserta->kode_peserta;
+                $absen->kelas = 'web_apps';
+                $absen->pertemuan1 = false;
+                $absen->pertemuan2 = false;
+                $absen->pertemuan3 = false;
+                $absen->pertemuan4 = false;
+                $absen->save();
+            }
+            if($peserta->web_design){
+                $absen = new Absensi;
+                $absen->nama = $peserta->nama;
+                $absen->kode_peserta = $peserta->kode_peserta;
+                $absen->kelas = 'web_design';
+                $absen->pertemuan1 = false;
+                $absen->pertemuan2 = false;
+                $absen->pertemuan3 = false;
+                $absen->pertemuan4 = false;
+                $absen->save();
+            }
+            if($peserta->database){
+                $absen = new Absensi;
+                $absen->nama = $peserta->nama;
+                $absen->kode_peserta = $peserta->kode_peserta;
+                $absen->kelas = 'database';
+                $absen->pertemuan1 = false;
+                $absen->pertemuan2 = false;
+                $absen->pertemuan3 = false;
+                $absen->pertemuan4 = false;
+                $absen->save();
+            }
+            if($peserta->data_science){
+                $absen = new Absensi;
+                $absen->nama = $peserta->nama;
+                $absen->kode_peserta = $peserta->kode_peserta;
+                $absen->kelas = 'data_science';
+                $absen->pertemuan1 = false;
+                $absen->pertemuan2 = false;
+                $absen->pertemuan3 = false;
+                $absen->pertemuan4 = false;
+                $absen->save();
+            }
+            if($peserta->android_apps){
+                $absen = new Absensi;
+                $absen->nama = $peserta->nama;
+                $absen->kode_peserta = $peserta->kode_peserta;
+                $absen->kelas = 'android_apps';
+                $absen->pertemuan1 = false;
+                $absen->pertemuan2 = false;
+                $absen->pertemuan3 = false;
+                $absen->pertemuan4 = false;
+                $absen->save();
+            }
+            if($peserta->cyber_security){
+                $absen = new Absensi;
+                $absen->nama = $peserta->nama;
+                $absen->kode_peserta = $peserta->kode_peserta;
+                $absen->kelas = 'cyber_security';
+                $absen->pertemuan1 = false;
+                $absen->pertemuan2 = false;
+                $absen->pertemuan3 = false;
+                $absen->pertemuan4 = false;
+                $absen->save();
+            }
         }
 
         return redirect('admin');
@@ -94,12 +161,7 @@ class AdminController extends Controller
             $request['cyber_security'],
         );
 
-        date_default_timezone_set('Asia/Jakarta');
-        if(date('Ymd') <= 20190313){
-            $harga = 90000;
-        }else{
-            $harga = 100000;
-        }
+        $harga = 100000;
 
         $biaya = 0;
 
@@ -144,6 +206,73 @@ class AdminController extends Controller
         $peserta->bukti_pembayaran = null;
         $peserta->sudah_bayar = true;
         $peserta->save();
+
+        if($peserta->web_apps){
+            $absen = new Absensi;
+            $absen->nama = $peserta->nama;
+            $absen->kode_peserta = $peserta->kode_peserta;
+            $absen->kelas = 'web_apps';
+            $absen->pertemuan1 = false;
+            $absen->pertemuan2 = false;
+            $absen->pertemuan3 = false;
+            $absen->pertemuan4 = false;
+            $absen->save();
+        }
+        if($peserta->web_design){
+            $absen = new Absensi;
+            $absen->nama = $peserta->nama;
+            $absen->kode_peserta = $peserta->kode_peserta;
+            $absen->kelas = 'web_design';
+            $absen->pertemuan1 = false;
+            $absen->pertemuan2 = false;
+            $absen->pertemuan3 = false;
+            $absen->pertemuan4 = false;
+            $absen->save();
+        }
+        if($peserta->database){
+            $absen = new Absensi;
+            $absen->nama = $peserta->nama;
+            $absen->kode_peserta = $peserta->kode_peserta;
+            $absen->kelas = 'database';
+            $absen->pertemuan1 = false;
+            $absen->pertemuan2 = false;
+            $absen->pertemuan3 = false;
+            $absen->pertemuan4 = false;
+            $absen->save();
+        }
+        if($peserta->data_science){
+            $absen = new Absensi;
+            $absen->nama = $peserta->nama;
+            $absen->kode_peserta = $peserta->kode_peserta;
+            $absen->kelas = 'data_science';
+            $absen->pertemuan1 = false;
+            $absen->pertemuan2 = false;
+            $absen->pertemuan3 = false;
+            $absen->pertemuan4 = false;
+            $absen->save();
+        }
+        if($peserta->android_apps){
+            $absen = new Absensi;
+            $absen->nama = $peserta->nama;
+            $absen->kode_peserta = $peserta->kode_peserta;
+            $absen->kelas = 'android_apps';
+            $absen->pertemuan1 = false;
+            $absen->pertemuan2 = false;
+            $absen->pertemuan3 = false;
+            $absen->pertemuan4 = false;
+            $absen->save();
+        }
+        if($peserta->cyber_security){
+            $absen = new Absensi;
+            $absen->nama = $peserta->nama;
+            $absen->kode_peserta = $peserta->kode_peserta;
+            $absen->kelas = 'cyber_security';
+            $absen->pertemuan1 = false;
+            $absen->pertemuan2 = false;
+            $absen->pertemuan3 = false;
+            $absen->pertemuan4 = false;
+            $absen->save();
+        }
             
         return redirect('/admin');
     }
@@ -166,5 +295,118 @@ class AdminController extends Controller
        
         $peserta = Peserta::where('nama', 'LIKE', '%'. $nama . '%')->get();
         return view('admin')->with('pesertas', $peserta);
+    }
+
+    public function absensi($kelas){
+        $peserta = Absensi::where(['kelas' => $kelas])->get();
+
+        if($peserta->count() == 0){
+            $peserta = Absensi::all();
+        }
+        
+        return view('absensi')->with('pesertas', $this->parseAbsensi($peserta));
+    }
+
+    public function absen(Request $request){
+        $absensi = Absensi::where([ 'kode_peserta' => $request['kode'], 'kelas' => $request['kelas'] ])->first();
+
+        $tanggal = date('Ymd');
+
+        if($tanggal < 20190422){
+            $absensi->pertemuan1 = true;
+        }
+        if($tanggal < 20190429 && $tanggal > 20190422){
+            $absensi->pertemuan2 = true;
+        }
+        if($tanggal < 20190506 && $tanggal > 20190429){
+            $absensi->pertemuan3 = true;
+        }
+        if($tanggal < 20190513 && $tanggal > 20190506){
+            $absensi->pertemuan4 = true;
+        }
+
+        $absensi->save();
+
+        return redirect()->back();
+    }
+
+    public function cariAbsenKode(Request $request)
+    {
+        $kode = $request['kode'];
+   
+        $peserta = Absensi::where([ 'kode_peserta' => $kode ])->get();
+        return view('absensi')->with('pesertas', $this->parseAbsensi($peserta));
+    }
+
+    public function cariAbsenNama(Request $request)
+    {
+        $nama = $request['nama'];
+       
+        $peserta = Absensi::where('nama', 'LIKE', '%'. $nama . '%')->get();
+        return view('absensi')->with('pesertas', $this->parseAbsensi($peserta));
+    }
+
+    function parseAbsensi($pesertas){
+
+        date_default_timezone_set('Asia/Jakarta');
+        foreach ($pesertas as $peserta) {
+            if($peserta->pertemuan1){
+                $peserta->pertemuan1 = 'Hadir';
+            }else{
+                //satu hari di depan biar aman
+                if(date('Ymd') > 20190422){
+                    $peserta->pertemuan1 = 'Bolos';
+                }else{
+                    $peserta->pertemuan1 = 'cek';
+                }
+            }
+    
+            if($peserta->pertemuan2){
+                $peserta->pertemuan2 = 'Hadir';
+            }else{
+                //satu hari di depan biar aman
+                if(date('Ymd') > 20190429){
+                    $peserta->pertemuan2 = 'Bolos';
+                }else{
+                    if(date('Ymd') > 20190422){
+                        $peserta->pertemuan2 = 'cek';
+                    }else{
+                        $peserta->pertemuan2 = '~';
+                    }
+                    
+                }
+            }
+    
+            if($peserta->pertemuan3){
+                $peserta->pertemuan3 = 'Hadir';
+            }else{
+                //satu hari di depan biar aman
+                if(date('Ymd') > 20190506){
+                    $peserta->pertemuan3 = 'Bolos';
+                }else{
+                    if(date('Ymd') > 20190429){
+                        $peserta->pertemuan3 = 'cek';
+                    }else{
+                        $peserta->pertemuan3 = '~';
+                    }
+                }
+            }
+    
+            if($peserta->pertemuan4){
+                $peserta->pertemuan4 = 'Hadir';
+            }else{
+                //satu hari di depan biar aman
+                if(date('Ymd') > 20190513){
+                    $peserta->pertemuan4 = 'Bolos';
+                }else{
+                    if(date('Ymd') > 20190506){
+                        $peserta->pertemuan4 = 'cek';
+                    }else{
+                        $peserta->pertemuan4 = '~';
+                    }
+                }
+            }
+        }
+        return $pesertas;
     }
 }

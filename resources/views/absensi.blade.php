@@ -30,17 +30,17 @@
                 <br>
                 Absensi
                 <br>
-                <a href="/admin">Semua</a> 
-                <a href="/admin/kelas/web_apps">Web Apps</a>   
-                <a href="/admin/kelas/database">Database</a>
-                <a href="/admin/kelas/cyber_security">Cyber Security</a>   
-                <a href="/admin/kelas/data_science">Data Science</a>
-                <a href="/admin/kelas/android_apps">Android Apps</a>   
-                <a href="/admin/kelas/web_design">Web Design</a>
+                <a href="/admin/absen/semua">Semua</a> 
+                <a href="/admin/absen/web_apps">Web Apps</a>   
+                <a href="/admin/absen/database">Database</a>
+                <a href="/admin/absen/cyber_security">Cyber Security</a>   
+                <a href="/admin/absen/data_science">Data Science</a>
+                <a href="/admin/absen/android_apps">Android Apps</a>   
+                <a href="/admin/absen/web_design">Web Design</a>
                 <br>
             <div class="card">
                 <div class="card-header">
-                Admin Panel
+                Absensi
                 </div>
 
                 <div class="card-body">
@@ -48,60 +48,63 @@
                         <tr>
                             <th>Nama peserta</th>
                             <th>Kode Peserta</th>
-                            <th>Instansi</th>
-                            <th>Kontak</th>
-                            <th>Email</th>
-                            <th>Kelas yang diikuti</th>
-                            <th>Biaya</th>
-                            <th>Bukti bayar</th>
-                            <th>Status</th>
+                            <th>Kelas</th>
+                            <th>Pertemuan 1</th>
+                            <th>Pertemuan 2</th>
+                            <th>Pertemuan 3</th>
+                            <th>Pertemuan 4</th>
                         </tr>
                         @foreach ($pesertas as $peserta)
                         <tr>
                             <td>{{ $peserta->nama }}</td>
                             <td>{{ $peserta->kode_peserta }}</td>
-                            <td>{{ $peserta->instansi }}</td>
-                            <td>{{ $peserta->kontak }}</td>
-                            <td>{{ $peserta->email }}</td>
+                            <td>{{ $peserta->kelas }}</td>
                             <td>
-                                @if($peserta->web_apps)
-                                    Web Apps <br>
-                                @endif
-                                @if($peserta->database)
-                                    Database <br>
-                                @endif
-                                @if($peserta->data_science)
-                                    Data Science <br>
-                                @endif
-                                @if($peserta->android_apps)
-                                    Android Apps <br>
-                                @endif
-                                @if($peserta->web_design)
-                                    Web Design <br>
-                                @endif
-                                @if($peserta->cyber_security)
-                                    Cyber Security <br>
-                                @endif
-                            </td>
-                            <td>{{ $peserta->biaya }}</td>
-                            <td>
-                                @if ($peserta->bukti_pembayaran != null)
-                                    <a href="{{ '/bukti/' .$peserta->bukti_pembayaran }}" target="_blank">Lihat</a>   
-                                @else
-                                    Belum upload
-                                @endif
-                            </td>
-                            <td>
-                                @if ($peserta->sudah_bayar)
-                                    Lunas
-                                @elseif ($peserta->bukti_pembayaran != null)
-                                <form action="{{ route('admin') }}" method="post">
+                                @if ($peserta->pertemuan1 == 'cek')
+                                <form action="/admin/absen" method="post">
                                     @csrf
                                     <input type="hidden" name="kode" value="{{ $peserta->kode_peserta }}">
-                                    <input type="submit" value="Approve">
+                                    <input type="hidden" name="kelas" value="{{ $peserta->kelas }}">
+                                    <input type="submit" value="Absen">
                                 </form>
                                 @else
-                                    Belum Bayar
+                                    {{ $peserta->pertemuan1}}
+                                @endif
+                            </td>
+                            <td>
+                                @if ($peserta->pertemuan2 == 'cek')
+                                <form action="/admin/absen" method="post">
+                                    @csrf
+                                    <input type="hidden" name="kode" value="{{ $peserta->kode_peserta }}">
+                                    <input type="hidden" name="kelas" value="{{ $peserta->kelas }}">
+                                    <input type="submit" value="Absen">
+                                </form>
+                                @else
+                                    {{ $peserta->pertemuan2}}
+                                @endif
+                            </td>
+                            <td>
+                                @if ($peserta->pertemuan3 == 'cek')
+                                <form action="/admin/absen" method="post">
+                                    @csrf
+                                    <input type="hidden" name="kode" value="{{ $peserta->kode_peserta }}">
+                                    <input type="hidden" name="kelas" value="{{ $peserta->kelas }}">
+                                    <input type="submit" value="Absen">
+                                </form>
+                                @else
+                                    {{ $peserta->pertemuan3}}
+                                @endif
+                            </td>
+                            <td>
+                                @if ($peserta->pertemuan4 == 'cek')
+                                <form action="/admin/absen" method="post">
+                                    @csrf
+                                    <input type="hidden" name="kode" value="{{ $peserta->kode_peserta }}">
+                                    <input type="hidden" name="kelas" value="{{ $peserta->kelas }}">
+                                    <input type="submit" value="Absen">
+                                </form>
+                                @else
+                                    {{ $peserta->pertemuan4}}
                                 @endif
                             </td>
                         </tr>

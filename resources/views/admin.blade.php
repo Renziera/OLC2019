@@ -27,6 +27,17 @@
                 <a href="/admin/kelas/data_science">Data Science</a>
                 <a href="/admin/kelas/android_apps">Android Apps</a>   
                 <a href="/admin/kelas/web_design">Web Design</a>
+                <br>
+                Absensi
+                <br>
+                <a href="/admin/absen/semua">Semua</a> 
+                <a href="/admin/absen/web_apps">Web Apps</a>   
+                <a href="/admin/absen/database">Database</a>
+                <a href="/admin/absen/cyber_security">Cyber Security</a>   
+                <a href="/admin/absen/data_science">Data Science</a>
+                <a href="/admin/absen/android_apps">Android Apps</a>   
+                <a href="/admin/absen/web_design">Web Design</a>
+                <br>
             <div class="card">
                 <div class="card-header">
                 Admin Panel

@@ -26,7 +26,7 @@ class DaftarController extends Controller
         );
 
         date_default_timezone_set('Asia/Jakarta');
-        if(date('Ymd') <= 20190313){
+        if(date('Ymd') <= 20190320){
             $harga = 90000;
         }else{
             $harga = 100000;
