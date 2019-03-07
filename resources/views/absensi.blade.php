@@ -32,7 +32,6 @@
                 <br>
                 <br>
                 <h4 class="cari">Cari Berdasarkan : </h4>
-                <br>
                 <a  class="kelas" href="/admin/absen/semua">Semua</a> 
                 <a class="kelas"  href="/admin/absen/web_apps">Web Apps</a>   
                 <a  class="kelas" href="/admin/absen/database">Database</a>

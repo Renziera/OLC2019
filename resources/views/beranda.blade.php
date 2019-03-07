@@ -29,6 +29,7 @@
 
 
     <script src="{!! asset('js/typed.js') !!}"></script>
+    <script src="{!! asset('js/clamp.js') !!}"></script>
 
     <script>
         new WOW().init();
@@ -182,33 +183,40 @@
     <div class="course">
 
 
-
-        <a class="card wow fadeInUp" data-wow-duration="2s" href="/course/web_apps">
-            <img src="{{URL::asset('/img/webapps.png')}}" alt="profile Pic" class="img-fluid" width="100" height="100">
-            <h2>Web Apps</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
+        <a class="card wow fadeInUp" data-wow-duration="2s" href="/course/web_design">
+            <img src="{{URL::asset('/img/wd.png')}}" alt="profile Pic" class="img-fluid" width="100" height="100">
+            <h2>Web Design</h2>
+            <p id="wd">Web Design mencakup banyak keterampilan dan disiplin yang berbeda dalam produksi dan pemeliharaan situs web.
+                Berbagai bidang dalam Web Design antara lain desain grafis web, desain antar muka, desain pengalaman pengguna, dan optimasi mesin pencari.
+                Pada pelatihan OLC cabang Web Design, kita akan berfokus pada mendesain antar muka web supaya lebih menarik, tetap informatif, dan memudahkan pengunjung web dalam mengaksesnya.
+            </p>
 
         </a>
-
         <a class="card wow fadeInUp" data-wow-duration="2s" href="/course/database">
             <img src="{{URL::asset('/img/db.png')}}" alt="profile Pic" class="img-fluid" width="100" height="100">
 
             <h2>Database</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
+            <p id="database">Di database kita akan mengupas bagaimana sebuah sistem komputer melihat dan mengolah data. Pada kelas ini, kita akan belajar
+                tentang MySQL, sebuah sistem database yang bersifat relasional. Kita akan mempelajari bagaimana MySQL melihat, memanggil, mengolah data-data yang diterimanya.
+                Sistem database juga digunakan untuk pengolahan dan penyimpanan di web, game, dan masih banyak lagi.
+            </p>
 
         </a>
 
         <a class="card wow fadeInUp" data-wow-duration="2s" href="/course/cyber_security">
             <img src="{{URL::asset('/img/cyber.png')}}" alt="profile Pic" class="img-fluid" width="60" height="50">
             <h2>Cyber Security</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
+            <p id="cybersec">Cyber Security adalah upaya untuk mengamankan sumber daya telematika dari segala upaya tindakan cyber crime.
+                Dalam mempelajarinya, seringkali kita menggunakan permainan Capture the Flag (CTF). Di permainan itu, kita dituntut
+                untuk mencari celah dalam suatu keamanan sumber daya telematika untuk mendapatkan flag yang sudah disematkan di celah tersebut.
+            </p>
 
         </a>
 
         <a class="card wow fadeInUp" data-wow-duration="2s" href="/course/data_science">
             <img src="{{URL::asset('/img/ds.png')}}" alt="profile Pic" class="img-fluid" width="120" height="120">
             <h2>Data Science</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
+            <p id="datasci">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
 
         </a>
 
@@ -216,17 +224,17 @@
         <a class="card wow fadeInUp" data-wow-duration="2s" href="/course/android_apps">
             <img src="{{URL::asset('/img/android.png')}}" alt="profile Pic" class="img-fluid" width="80" height="80">
             <h2>Android Apps</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
+            <p id="android">Pada pelatihan OLC cabang Android Apps, kita akan diajari bagaimana cara membuat aplikasi yang nantinya akan dijalankan di perangkat Android</p>
 
         </a>
-
-        <a class="card wow fadeInUp" data-wow-duration="2s" href="/course/web_design">
-            <img src="{{URL::asset('/img/wd.png')}}" alt="profile Pic" class="img-fluid" width="100" height="100">
-            <h2>Web Design</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
+        <a class="card wow fadeInUp" data-wow-duration="2s" href="/course/web_apps">
+            <img src="{{URL::asset('/img/webapps.png')}}" alt="profile Pic" class="img-fluid" width="100" height="100">
+            <h2>Web Apps</h2>
+            <p id="webapp">Jika pada Web Design kita berbicara bagaimana membuat sebuah halaman web lebih menarik, di Web Apps kita akan
+                mempelajari bagaimana cara membuat web tersebut. Di sini kita akan mempelajari dari dasar, kemudian penggunaan framework, hingga pemanggilan API untuk web.
+            </p>
 
         </a>
-
 
     </div>
 
@@ -409,6 +417,21 @@
 
             });
         });
+
+        //clamp js
+        var webapp = document.getElementById("webapp");
+        var database = document.getElementById("database");
+        var cybersec = document.getElementById("cybersec");
+        var datasci = document.getElementById("datasci");
+        var wd = document.getElementById("wd");
+        var android = document.getElementById("android");
+
+        $clamp(webapp, {clamp: 4});
+        $clamp(database, {clamp: 4});
+        $clamp(cybersec, {clamp: 4});
+        $clamp(datasci, {clamp: 4});
+        $clamp(wd, {clamp: 4});
+        $clamp(android, {clamp: 4});
     </script>
 
 
