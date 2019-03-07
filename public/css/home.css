@@ -155,12 +155,12 @@ nav .kiri a {
 .jumbotron {
     background-image: url(../img/jum.png);
     margin-top: -25px;
-    background-size: cover;
+    background-size:cover;
     /*biar gambar dk tepotong*/
     height: 640px;
     color: #00e7ea;
     text-align: center;
-    
+    width: 1360px;
     font-weight: 500;
 
 }
@@ -257,6 +257,7 @@ nav .kiri a {
 
 .gallery {
     margin: 10px 50px;
+    text-align: center;
 }
 
 .gallery img {
@@ -397,14 +398,17 @@ nav .kiri a {
 
 /*Logo*/
 
+
+
 .logo{
     text-align: center;
-    display: inline-block;
+    padding-bottom: 52px;
+    padding-top: 50px;
    
 }
 
 .logo img{
-     margin: 20px;
+     margin: 24px;
     
 }
 
@@ -467,6 +471,9 @@ li{
 
 
  @media (max-width: 768px) {
+   
+     
+     
      .course{
          margin-left: 5px;
      }
@@ -475,6 +482,7 @@ li{
      
     .toggle-btn {
         display: block;
+        
     }
 
     nav .kiri {
