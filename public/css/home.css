@@ -132,10 +132,10 @@ nav .kiri a {
     top: 20px;
     position: fixed;
     z-index: 6;
-
     color: #00e7ea;
     text-align: left;
-    left: 83%;
+    right: 5%;
+    transform: translateX(5%);
     transition: 1s;
 }
 
@@ -155,12 +155,12 @@ nav .kiri a {
 .jumbotron {
     background-image: url(../img/jum.png);
     margin-top: -25px;
-    background-size:cover;
+    background-size: cover;
     /*biar gambar dk tepotong*/
     height: 640px;
     color: #00e7ea;
     text-align: center;
-    width: 1360px;
+    
     font-weight: 500;
 
 }
@@ -204,6 +204,8 @@ nav .kiri a {
     border-bottom: 2px solid #00e7ea;
     width: 70px;
     margin: auto;
+    margin-bottom: 20px;
+    margin-top: -10px;
 }
 
 .course {
@@ -257,8 +259,10 @@ nav .kiri a {
 }
 
 .gallery {
-    margin: 10px 50px;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .gallery img {
@@ -399,17 +403,14 @@ nav .kiri a {
 
 /*Logo*/
 
-
-
 .logo{
     text-align: center;
-    padding-bottom: 52px;
-    padding-top: 50px;
+    display: inline-block;
    
 }
 
 .logo img{
-     margin: 24px;
+     margin: 20px;
     
 }
 
@@ -472,18 +473,30 @@ li{
 
 
  @media (max-width: 768px) {
-   
-     
+     html, body{
+         overflow-x: hidden;
+         width: 100vw;
+     }
      
      .course{
          margin-left: 5px;
      }
-     
-     
-     
+    .gallery{
+        width: 100vw;
+        margin: auto;
+    }
+    .gallery img{
+        width: 85%;
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+    }
+    .course .card{
+        margin: auto;
+        width: 90%;
+        margin-bottom: 30px;
+    }
     .toggle-btn {
         display: block;
-        
     }
 
     nav .kiri {
@@ -500,7 +513,6 @@ li{
         font-weight: 500;
         margin-top: 110px;
         color: #00e7ea;
-        margin-left: 65px;
     }
     .jumbotron{
         width: 100vw;
@@ -510,6 +522,7 @@ li{
     .jumbotron h1 {
         margin-top: 90px;
         font-weight: bold;
+        font-size: 60px;
         animation: texth1 3s 1;
         text-align: center;
     }
@@ -527,7 +540,7 @@ li{
     .about {
         text-align: center;
         margin-top: 30px;
-        margin-left: 27px;
+        margin: auto;
         width: auto;
     }
     .nav-item{
