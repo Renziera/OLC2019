@@ -174,7 +174,7 @@
 
     <!--Kelas-->
     <div class="kelas wow fadeIn" data-wow-duration="2s">
-        <h1 class="judulkelas" id="course">WHAT'S THE COURSE?</h1>
+        <h1 class="judulkelas">WHAT'S THE COURSE?</h1>
 
 
     </div>
@@ -262,21 +262,19 @@
             <img src="{{URL::asset('/img/docu6.jpg')}}" alt="">
 
         </div>
-        
-        
     </div>
     
      <!--End of Galeri-->
      
 <!--Logo-->
-    
     <div class="logo wow fadeInRightBig" data-wow-duration="2s">
-        <img src="{{URL::asset('/img/logohimakom.png')}}" alt="" width="100px;" class="wow fadeInRightBig" data-wow-duration="2s">
-        <img src="{{URL::asset('/img/logooti.png')}}" alt="" width="200px" class="wow fadeInLeftBig" data-wow-duration="2s">
+        <img src="{{URL::asset('/img/logohimakom.png')}}" alt="" width="10%" class="wow fadeInRightBig" data-wow-duration="2s">
+        <img src="{{URL::asset('/img/logooti.png')}}" alt="" width="15%" class="wow fadeInLeftBig" data-wow-duration="2s">
         
         
         
     </div>
+    
     
     
     
@@ -343,10 +341,6 @@
    
 
     <!-- Optional JavaScript -->
-    
-
-    
-    
 
     <script>
         //side bar
