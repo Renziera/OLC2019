@@ -171,6 +171,75 @@
 
 
     <!--ABout-->
+    
+    
+<!--Sambutan CEO-->
+
+
+<div class="sambutan-ceo">
+    
+    
+    
+    
+<div class="kelas wow fadeIn" data-wow-duration="2s">
+        <h1 class="judulkelas">WELCOME</h1>
+
+
+    </div>
+    <br>
+    <br>
+    
+ <div class="container">
+       <div class="row">
+      <div class="col-md-12 col-lg-4 center">
+          <div class="foto-ceo"><img alt="CEO OMAHTI 2018/2019" src="{{URL::asset('/img/ceo.png')}}" /></div>
+          <br>
+          <div class="ceo-profile" style="text-align:center">
+              <h3 id="nama-ceo">Yusfi Adilaksa</h3>
+
+<h5 style="color:#c2c2c2">CEO OTI 2018/2019</h5>
+
+              
+              
+              
+          </div>
+          
+          
+      </div>
+      
+      
+      <div class="col-md-12 col-lg-8 center">
+         <br>
+          <h4 class="center salam"><strong>Assalamu&#39;alaikum</strong></h4>
+&nbsp;
+          
+          <div class="container">
+              <p id="text-ceo">Kemajuan teknologi sudah di depan mata, sudah siapkah diri kalian? OmahTI Learning Center (OLC) 2019 kembali menghadirkan pelatihan intensif dengan 6 bidang kelas yang pastinya sangat dibutuhkan di masa kini dan mendatang. Dengan tentor yang handal serta dibantu beberapa asisten, OLC 2019 akan membantu masyarakat umum untuk meningkatkan kemampuan mereka di bidang IT dalam suasana kelas yang aktif, kondusif, dan menyenangkan. <br> <br>  So, what are you waiting for? Book your seat now, and see you at OLC 2019! </p>
+              
+          </div>
+          
+          
+      </div>
+      
+      
+      
+      
+      
+      
+  </div>
+     
+     
+ </div>
+
+  
+  </div>
+  
+   
+   
+<!--End of Sambutan CEO-->
+    
+    
+    
 
     <!--Kelas-->
     <div class="kelas wow fadeIn" data-wow-duration="2s">
@@ -244,7 +313,7 @@
 
     <!--Kelas-->
 
-    <!--Galri-->
+    <!--Galeri-->
     <h1 class="judulkelas seethe wow fadeInUpBig" data-wow-duration="2s">See The Moment</h1>
 
 
@@ -267,13 +336,17 @@
      <!--End of Galeri-->
      
 <!--Logo-->
-    <div class="logo wow fadeInRightBig" data-wow-duration="2s">
+   <div class="super-logo">
+       <div class="logo wow fadeInRightBig" data-wow-duration="2s">
         <img src="{{URL::asset('/img/logohimakom.png')}}" alt="" width="10%" class="wow fadeInRightBig" data-wow-duration="2s">
         <img src="{{URL::asset('/img/logooti.png')}}" alt="" width="15%" class="wow fadeInLeftBig" data-wow-duration="2s">
         
         
         
     </div>
+       
+   </div>
+    
     
     
     
