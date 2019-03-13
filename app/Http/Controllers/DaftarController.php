@@ -132,6 +132,8 @@ class DaftarController extends Controller
         $peserta->sudah_bayar = false;
         $peserta->save();
 
+        $biaya = substr_replace($biaya, '.', -3, 0);
+
         return view('berhasildaftar')->with('kode', $kode)->with('biaya', $biaya);
     }
 

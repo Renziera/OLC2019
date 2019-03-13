@@ -12,10 +12,10 @@
                     <br><br>
                     Kode peserta anda
                     <h1>{{ $kode }}</h1> 
-                    Catat kode ini, jangan sampai lupa gan.
+                    Catat kode ini, jangan sampai lupa ya.
                     <br>
-                    Silahkan lunasi biaya pendaftaran sebesar
-                    <h2>{{ $biaya }}</h2>
+                    Selanjutnya, silahkan lunasi biaya pendaftaran sebesar
+                    <h2>Rp{{ $biaya }},00</h2>
                     dengan cara transfer ke rekening BCA 1337428008 a.n. Tan Kiem Liong
                     <br>
                     Setelah itu <a href="{{ route('pembayaran') }}">upload bukti pembayaran.</a>
