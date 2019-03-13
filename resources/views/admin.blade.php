@@ -41,8 +41,10 @@
                 <a class="kelas" href="/admin/kelas/database">Database</a>
                 <a class="kelas" href="/admin/kelas/cyber_security">Cyber Security</a>
                 <a class="kelas" href="/admin/kelas/data_science">Data Science</a>
-                <a class="kelas" href="/admin/kelas/android_apps">Android Apps</a>
-                <a class="kelas" href="/admin/kelas/web_design">Web Design</a>
+                <a class="kelas" href="/admin/kelas/android_apps_1">Android Apps Sesi 1</a>
+                <a class="kelas" href="/admin/kelas/android_apps_2">Android Apps Sesi 2</a>
+                <a class="kelas" href="/admin/kelas/web_design_1">Web Design Sesi 1</a>
+                <a class="kelas" href="/admin/kelas/web_design_2">Web Design Sesi 2</a>
                 <br>
 
 
@@ -84,11 +86,17 @@
                             @if($peserta->data_science)
                             Data Science <br>
                             @endif
-                            @if($peserta->android_apps)
-                            Android Apps <br>
+                            @if($peserta->android_apps_1)
+                            Android Apps Sesi 1<br>
                             @endif
-                            @if($peserta->web_design)
-                            Web Design <br>
+                            @if($peserta->android_apps_2)
+                            Android Apps Sesi 2<br>
+                            @endif
+                            @if($peserta->web_design_1)
+                            Web Design Sesi 1<br>
+                            @endif
+                            @if($peserta->web_design_2)
+                            Web Design Sesi 2<br>
                             @endif
                             @if($peserta->cyber_security)
                             Cyber Security <br>

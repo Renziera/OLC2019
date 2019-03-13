@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Peserta;
+use App\Absensi;
 
 class DaftarController extends Controller
 {
@@ -12,7 +13,27 @@ class DaftarController extends Controller
         if(date('Ymd') > 20190407){
             return view('lewatbatas');
         }
-        return view('daftar');
+        
+        $web_apps_amount = Absensi::where(['kelas' => 'web_apps'])->count();
+        $database_amount = Absensi::where(['kelas' => 'database'])->count();
+        $data_science_amount = Absensi::where(['kelas' => 'data_science'])->count();
+        $cyber_security_amount = Absensi::where(['kelas' => 'cyber_security'])->count();
+        $android_apps_1_amount = Absensi::where(['kelas' => 'android_apps_1'])->count();
+        $android_apps_2_amount = Absensi::where(['kelas' => 'android_apps_2'])->count();
+        $web_design_1_amount = Absensi::where(['kelas' => 'web_design_1'])->count();
+        $web_design_2_amount = Absensi::where(['kelas' => 'web_design_2'])->count();
+
+        $amount = array(
+            'web_apps_amount' => $web_apps_amount,
+            'database_amount' => $database_amount,
+            'data_science_amount' => $data_science_amount,
+            'cyber_security_amount' => $cyber_security_amount,
+            'android_apps_1_amount' => $android_apps_1_amount,
+            'android_apps_2_amount' => $android_apps_2_amount,
+            'web_design_1_amount' => $web_design_1_amount,
+            'web_design_2_amount' => $web_design_2_amount,
+        );
+        return view('daftar')->with('amount', $amount);
     }
     public function daftar(Request $request){
         $request->validate([
@@ -63,6 +84,30 @@ class DaftarController extends Controller
         }
         if($request['android_apps_2'] && $request['database']){
             return redirect('daftar')->with('alert','Jadwal kelas yang anda pilih bertabrakan')->withInput();
+        }
+
+        //cek kuota
+
+        $web_apps_amount = Absensi::where(['kelas' => 'web_apps'])->count();
+        $database_amount = Absensi::where(['kelas' => 'database'])->count();
+        $data_science_amount = Absensi::where(['kelas' => 'data_science'])->count();
+        $cyber_security_amount = Absensi::where(['kelas' => 'cyber_security'])->count();
+        $android_apps_1_amount = Absensi::where(['kelas' => 'android_apps_1'])->count();
+        $android_apps_2_amount = Absensi::where(['kelas' => 'android_apps_2'])->count();
+        $web_design_1_amount = Absensi::where(['kelas' => 'web_design_1'])->count();
+        $web_design_2_amount = Absensi::where(['kelas' => 'web_design_2'])->count();
+
+        if(
+            $request['web_apps'] && $web_apps_amount >= 40 ||
+            $request['database'] && $database_amount >= 40 ||
+            $request['data_science'] && $data_science_amount >= 40 ||
+            $request['cyber_security'] && $cyber_security_amount >= 40 ||
+            $request['android_apps_1'] && $android_apps_1_amount >= 40 ||
+            $request['android_apps_2'] && $android_apps_2_amount >= 40 ||
+            $request['web_design_1'] && $web_design_1_amount >= 40 ||
+            $request['web_design_2'] && $web_design_2_amount >= 40
+            ){
+            return redirect('daftar')->with('alert','Kuota untuk kelas yang anda pilih sudah penuh.')->withInput();
         }
 
         $kode = $this->generateKodePeserta();
