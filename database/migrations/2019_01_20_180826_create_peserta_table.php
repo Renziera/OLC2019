@@ -25,8 +25,10 @@ class CreatePesertaTable extends Migration
             $table->boolean('database');
             $table->boolean('cyber_security');
             $table->boolean('data_science');
-            $table->boolean('android_apps');
-            $table->boolean('web_design');
+            $table->boolean('android_apps_1');
+            $table->boolean('android_apps_2');
+            $table->boolean('web_design_1');
+            $table->boolean('web_design_2');
             
             $table->string('bukti_pembayaran', 255)->nullable(true);
             $table->integer('biaya')->unsigned();

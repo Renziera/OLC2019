@@ -52,11 +52,22 @@ class AdminController extends Controller
                 $absen->pertemuan4 = false;
                 $absen->save();
             }
-            if($peserta->web_design){
+            if($peserta->web_design_1){
                 $absen = new Absensi;
                 $absen->nama = $peserta->nama;
                 $absen->kode_peserta = $peserta->kode_peserta;
-                $absen->kelas = 'web_design';
+                $absen->kelas = 'web_design_1';
+                $absen->pertemuan1 = false;
+                $absen->pertemuan2 = false;
+                $absen->pertemuan3 = false;
+                $absen->pertemuan4 = false;
+                $absen->save();
+            }
+            if($peserta->web_design_2){
+                $absen = new Absensi;
+                $absen->nama = $peserta->nama;
+                $absen->kode_peserta = $peserta->kode_peserta;
+                $absen->kelas = 'web_design_2';
                 $absen->pertemuan1 = false;
                 $absen->pertemuan2 = false;
                 $absen->pertemuan3 = false;
@@ -85,11 +96,22 @@ class AdminController extends Controller
                 $absen->pertemuan4 = false;
                 $absen->save();
             }
-            if($peserta->android_apps){
+            if($peserta->android_apps_1){
                 $absen = new Absensi;
                 $absen->nama = $peserta->nama;
                 $absen->kode_peserta = $peserta->kode_peserta;
-                $absen->kelas = 'android_apps';
+                $absen->kelas = 'android_apps_1';
+                $absen->pertemuan1 = false;
+                $absen->pertemuan2 = false;
+                $absen->pertemuan3 = false;
+                $absen->pertemuan4 = false;
+                $absen->save();
+            }
+            if($peserta->android_apps_2){
+                $absen = new Absensi;
+                $absen->nama = $peserta->nama;
+                $absen->kode_peserta = $peserta->kode_peserta;
+                $absen->kelas = 'android_apps_2';
                 $absen->pertemuan1 = false;
                 $absen->pertemuan2 = false;
                 $absen->pertemuan3 = false;
@@ -123,11 +145,17 @@ class AdminController extends Controller
             case 'cyber_security':
                 $allPeserta = Peserta::where(['cyber_security' => '1'])->get();
                 break;
-            case 'android_apps':
-                $allPeserta = Peserta::where(['android_apps' => '1'])->get();
+            case 'android_apps_1':
+                $allPeserta = Peserta::where(['android_apps_1' => '1'])->get();
                 break;
-            case 'web_design':
-                $allPeserta = Peserta::where(['web_design' => '1'])->get();
+            case 'android_apps_2':
+                $allPeserta = Peserta::where(['android_apps_2' => '1'])->get();
+                break;
+            case 'web_design_1':
+                $allPeserta = Peserta::where(['web_design_1' => '1'])->get();
+                break;
+            case 'web_design_2':
+                $allPeserta = Peserta::where(['web_design_2' => '1'])->get();
                 break;
             case 'data_science':
                 $allPeserta = Peserta::where(['data_science' => '1'])->get();
@@ -155,36 +183,40 @@ class AdminController extends Controller
         $kelas = array(
             $request['web_apps'],
             $request['database'],
-            $request['android_apps'],
+            $request['android_apps_1'],
+            $request['android_apps_2'],
             $request['data_science'],
-            $request['web_design'],
+            $request['web_design_1'],
+            $request['web_design_2'],
             $request['cyber_security'],
         );
-
-        $harga = 100000;
 
         $biaya = 0;
 
         foreach ($kelas as $kelasku) {
             if($kelasku != null){
-                $biaya += $harga;
+                $biaya += 100000;
             }
         }
 
         if($biaya === 0){
-            return redirect('daftar')->with('alert','Silahkan pilih kelas yang ingin diikuti');
+            return redirect('daftar')->with('alert','Silahkan pilih kelas yang ingin diikuti')->withInput();
         }
 
         //cek kelas tabrakan
         
-        if($request['cyber_security'] && $request['web_design']){
-            return redirect('daftar')->with('alert','Jadwal kelas yang anda pilih bertabrakan');
+        if($request['cyber_security'] && $request['web_design_1'] || 
+            $request['data_science'] && $request['cyber_security']||
+            $request['web_design_1'] && $request['data_science']){
+            return redirect('daftar')->with('alert','Jadwal kelas yang anda pilih bertabrakan')->withInput();
         }
-        if($request['web_apps'] && $request['data_science']){
-            return redirect('daftar')->with('alert','Jadwal kelas yang anda pilih bertabrakan');
+        if($request['web_apps'] && $request['android_apps_1'] || 
+            $request['web_design_2'] && $request['web_apps'] ||
+            $request['android_apps_1'] && $request['web_design_2']){
+            return redirect('daftar')->with('alert','Jadwal kelas yang anda pilih bertabrakan')->withInput();
         }
-        if($request['android_apps'] && $request['database']){
-            return redirect('daftar')->with('alert','Jadwal kelas yang anda pilih bertabrakan');
+        if($request['android_apps_2'] && $request['database']){
+            return redirect('daftar')->with('alert','Jadwal kelas yang anda pilih bertabrakan')->withInput();
         }
 
         $kode = $this->generateKodePeserta();
@@ -199,8 +231,10 @@ class AdminController extends Controller
         $peserta->database = $request['database'] ? 1 : 0;
         $peserta->cyber_security = $request['cyber_security'] ? 1 : 0;
         $peserta->data_science = $request['data_science'] ? 1 : 0;
-        $peserta->android_apps = $request['android_apps'] ? 1 : 0;
-        $peserta->web_design = $request['web_design'] ? 1 : 0;
+        $peserta->android_apps_1 = $request['android_apps_1'] ? 1 : 0;
+        $peserta->android_apps_2 = $request['android_apps_2'] ? 1 : 0;
+        $peserta->web_design_1 = $request['web_design_1'] ? 1 : 0;
+        $peserta->web_design_2 = $request['web_design_2'] ? 1 : 0;
         
         $peserta->biaya = $biaya;
         $peserta->bukti_pembayaran = null;
@@ -218,11 +252,22 @@ class AdminController extends Controller
             $absen->pertemuan4 = false;
             $absen->save();
         }
-        if($peserta->web_design){
+        if($peserta->web_design_1){
             $absen = new Absensi;
             $absen->nama = $peserta->nama;
             $absen->kode_peserta = $peserta->kode_peserta;
-            $absen->kelas = 'web_design';
+            $absen->kelas = 'web_design_1';
+            $absen->pertemuan1 = false;
+            $absen->pertemuan2 = false;
+            $absen->pertemuan3 = false;
+            $absen->pertemuan4 = false;
+            $absen->save();
+        }
+        if($peserta->web_design_2){
+            $absen = new Absensi;
+            $absen->nama = $peserta->nama;
+            $absen->kode_peserta = $peserta->kode_peserta;
+            $absen->kelas = 'web_design_2';
             $absen->pertemuan1 = false;
             $absen->pertemuan2 = false;
             $absen->pertemuan3 = false;
@@ -251,11 +296,22 @@ class AdminController extends Controller
             $absen->pertemuan4 = false;
             $absen->save();
         }
-        if($peserta->android_apps){
+        if($peserta->android_apps_1){
             $absen = new Absensi;
             $absen->nama = $peserta->nama;
             $absen->kode_peserta = $peserta->kode_peserta;
-            $absen->kelas = 'android_apps';
+            $absen->kelas = 'android_apps_1';
+            $absen->pertemuan1 = false;
+            $absen->pertemuan2 = false;
+            $absen->pertemuan3 = false;
+            $absen->pertemuan4 = false;
+            $absen->save();
+        }
+        if($peserta->android_apps_2){
+            $absen = new Absensi;
+            $absen->nama = $peserta->nama;
+            $absen->kode_peserta = $peserta->kode_peserta;
+            $absen->kelas = 'android_apps_2';
             $absen->pertemuan1 = false;
             $absen->pertemuan2 = false;
             $absen->pertemuan3 = false;

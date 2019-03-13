@@ -14,7 +14,7 @@ Route::get('/', function () {
 });
 
 Route::view('/jadwal', 'jadwal')->name('jadwal');
-Route::view('/daftar', 'daftar')->name('daftar');
+Route::get('/daftar', 'DaftarController@showDaftar')->name('daftar');
 Route::post('/daftar', 'DaftarController@daftar');
 Route::view('/cek', 'pembayaran')->name('pembayaran');
 Route::post('/cek', 'PembayaranController@pembayaran');

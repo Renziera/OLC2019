@@ -90,19 +90,25 @@
                                     <label class="form-check-label">
                                         {{ __('Cyber Security') }}
                                     </label><br>
-                                    <br>
                                     <input class="form-check-input" type="checkbox" name="data_science" value="1">
                                     <label class="form-check-label">
                                         {{ __('Data Science') }}
                                     </label><br>
-                
-                                    <input class="form-check-input" type="checkbox" name="android_apps" value="1">
+                                    <input class="form-check-input" type="checkbox" name="android_apps_1" value="1">
                                     <label class="form-check-label">
-                                        {{ __('Android Apps') }}
+                                        {{ __('Android Apps Sesi 1') }}
                                     </label><br>
-                                    <input class="form-check-input" type="checkbox" name="web_design" value="1">
+                                    <input class="form-check-input" type="checkbox" name="android_apps_2" value="1">
                                     <label class="form-check-label">
-                                        {{ __('Web Design') }}
+                                        {{ __('Android Apps Sesi 2') }}
+                                    </label><br>
+                                    <input class="form-check-input" type="checkbox" name="web_design_1" value="1">
+                                    <label class="form-check-label">
+                                        {{ __('Web Design Sesi 1') }}
+                                    </label><br>
+                                    <input class="form-check-input" type="checkbox" name="web_design_2" value="1">
+                                    <label class="form-check-label">
+                                        {{ __('Web Design Sesi 2') }}
                                     </label>
                                     
                                 </div>
