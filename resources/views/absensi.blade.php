@@ -37,8 +37,10 @@
                 <a  class="kelas" href="/admin/absen/database">Database</a>
                 <a  class="kelas" href="/admin/absen/cyber_security">Cyber Security</a>   
                 <a  class="kelas" href="/admin/absen/data_science">Data Science</a>
-                <a  class="kelas" href="/admin/absen/android_apps">Android Apps</a>   
-                <a   class="kelas" href="/admin/absen/web_design">Web Design</a>
+                <a  class="kelas" href="/admin/absen/android_apps_1">Android Apps Sesi 1</a>   
+                <a  class="kelas" href="/admin/absen/android_apps_2">Android Apps Sesi 2</a>   
+                <a   class="kelas" href="/admin/absen/web_design_1">Web Design Sesi 1</a>
+                <a   class="kelas" href="/admin/absen/web_design_2">Web Design Sesi 2</a>
                 <br>
 
 
