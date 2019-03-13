@@ -47,9 +47,9 @@
 
         <div id="sidebar">
 
-           
+
             <a href="{{ route('jadwal') }}">Jadwal</a>
-             <a href="{{ route('jadwal') }}">Kelas</a>
+            <a href="{{ route('jadwal') }}">Kelas</a>
             <a href="{{ route('pembayaran') }}">Cek Pembayaran</a>
             @auth
             <a href="{{ route('admin') }}">Admin Panel</a>
@@ -111,7 +111,7 @@
     <!--Akhir Navbar-->
     <br>
 
- 
+
 
     <!--JumboTron-->
     <div class="jumbotron jumbotron-fluid">
@@ -123,27 +123,68 @@
         </div>
     </div>
 
-    
+
     <!--Akhir JUmbotron-->
+
+    <!--Penjelasan-->
+
+    <div class="penjelasan">
+        <img class="logokelas" src="{{URL::asset('/img/android.png')}}" alt="" width="200px">
+
+
+
+
+
     
-<!--Penjelasan-->
- 
- <div class="penjelasan">
-     <img class="logokelas" src="{{URL::asset('/img/android.png')}}" alt="" width="200px">
-     
-     
-     
-     
- </div>
- 
- 
- 
- 
- 
- 
- 
-<!--Akhir penjelasan-->
-   
+
+    </div>
+    
+    
+       <div class="materi">
+       <br>
+       <br>
+       
+       
+  
+           <ul>
+              <h1 class="judulkelas" style="color:#00e7ea">Yang akan Kamu Pelajari</h1>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Layout</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Activity</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Recycle View</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Fetch data Dari internet</li>
+               
+               
+               
+               
+           </ul>
+           
+           
+           
+           
+       </div>
+        
+
+
+
+
+    
+
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+    <!--Akhir penjelasan-->
+
     <footer class="wow fadeInUpBig" data-wow-duration="2s">
         <div class="container">
             <div class="links">
@@ -183,23 +224,23 @@
 
         <div class="infolanjut">
             <p>
-            Informasi lebih lanjut:
-            <a href="http://line.me/ti/p/@app3977t" target="_blank"><i class="fab fa-line"></i></a>
-            <a href="https://web.facebook.com/OmahTI.UGM" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/omahti_ugm" target="_blank"><i class="fab fa-instagram"></i></a>
-        </p>
-        <span>&copy; 2019 OmahTI</span>
-            
-            
+                Informasi lebih lanjut:
+                <a href="http://line.me/ti/p/@app3977t" target="_blank"><i class="fab fa-line"></i></a>
+                <a href="https://web.facebook.com/OmahTI.UGM" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/omahti_ugm" target="_blank"><i class="fab fa-instagram"></i></a>
+            </p>
+            <span>&copy; 2019 OmahTI</span>
+
+
         </div>
 
-        
+
     </footer>
 
 
 
 
-   
+
 
     <!-- Optional JavaScript -->
 

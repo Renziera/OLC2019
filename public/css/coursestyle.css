@@ -13,6 +13,40 @@ body {
     background-color: #273040;
 }
 
+.sub-materi{
+    color: #00e7ea;
+    font-size: 20px;
+    padding: 8px;
+    text-align: center;
+    
+   
+}
+
+li span{
+    padding: 10px;
+}
+
+
+
+
+.materi ul{
+    text-align: center;
+    padding: 24px;
+    
+    
+    
+}
+
+.materi{
+    text-align: center;
+}
+
+
+
+
+
+
+
 
 /*Jadwal*/
 
