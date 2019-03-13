@@ -126,28 +126,30 @@
 
     <!--Akhir JUmbotron-->
 
+   
     <!--Penjelasan-->
-
-    <div class="penjelasan">
-        <img class="logokelas" src="{{URL::asset('/img/android.png')}}" alt="" width="200px">
-
-
-
-
-
     
+    <div class="container">
+        <div class="penjelasan">
+        <img class="logokelas" src="{{URL::asset('/img/android.png')}}" alt="" width="200px">
+<h1 class="judulkelas">OVERVIEW</h1>
+        <p class="text-bidang">Pada pelatihan OLC cabang Android Apps, kita akan diajari bagaimana cara membuat aplikasi yang nantinya akan dijalankan di perangkat Android</p>
 
     </div>
     
+        
+        
+    </div>
+
     
-       <div class="materi">
-       <br>
-       <br>
-       
-       
-  
-           <ul>
-              <h1 class="judulkelas" style="color:#00e7ea">Yang akan Kamu Pelajari</h1>
+    
+    
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 center">
+                <ul class="dipelajari">
+              <h2 class="learn">Apa Yang akan Kamu Pelajari</h2>
                <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Layout</li>
                <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Activity</li>
                <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Recycle View</li>
@@ -157,29 +159,42 @@
                
                
            </ul>
-           
-           
-           
-           
-       </div>
+                
+                
+                
+                
+            </div>
+            <div class="col-md-6 center">
+                <ul class="dipelajari">
+              <h2 class="learn">Apa Yang Harus Kamu Persiapkan</h2>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Laptop Dengan Ram Min 4GB</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Memahami Konsep Pemrograman OOP</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Menginstall Softwere Android Studio</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Fetch data Dari internet</li>
+               
+               
+               
+               
+           </ul>
+                
+                
+                
+                
+            </div>
+            
+            
+            
+            
+        </div>
         
-
-
-
-
+        
+        
+        
+        
+    </div>
     
-
     
-
-
-
-
-    
-
-
-
-
-
+       
 
 
 

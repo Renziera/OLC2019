@@ -128,15 +128,68 @@
     
 <!--Penjelasan-->
  
- <div class="penjelasan">
-     <img class="logokelas" src="{{URL::asset('/img/webapps.png')}}" alt="" width="200px">
-     
-     
-     
-     
- </div>
+ <div class="container">
+        <div class="penjelasan">
+        <img class="logokelas" src="{{URL::asset('/img/webapps.png')}}" alt="" width="200px">
+<h1 class="judulkelas">OVERVIEW</h1>
+        <p class="text-bidang">Jika pada Web Design kita berbicara bagaimana membuat sebuah halaman web lebih menarik, di Web Apps kita akan
+                mempelajari bagaimana cara membuat web tersebut. Di sini kita akan mempelajari dari dasar, kemudian penggunaan framework, hingga pemanggilan API untuk web./p>
+
+    </div>
+    
+        
+        
+    </div>
  
  
+     
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 center">
+                <ul class="dipelajari">
+              <h2 class="learn">Apa Yang akan Kamu Pelajari</h2>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Database MySQL</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Activity</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Recycle View</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Fetch data Dari internet</li>
+               
+               
+               
+               
+           </ul>
+                
+                
+                
+                
+            </div>
+            <div class="col-md-6 center">
+                <ul class="dipelajari">
+              <h2 class="learn">Apa Yang Harus Kamu Persiapkan</h2>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Pemahaman Dasar PHP</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Memahami Konsep Pemrograman OOP</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Menginstall Softwere Android Studio</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Fetch data Dari internet</li>
+               
+               
+               
+               
+           </ul>
+                
+                
+                
+                
+            </div>
+            
+            
+            
+            
+        </div>
+        
+        
+        
+        
+        
+    </div>
  
  
  

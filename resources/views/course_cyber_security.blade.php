@@ -127,14 +127,71 @@
     <!--Akhir JUmbotron-->
     
 <!--Penjelasan-->
- 
- <div class="penjelasan">
+ <div class="container">
+     <div class="penjelasan">
      <img class="logokelas" src="{{URL::asset('/img/cyber.png')}}" alt="" width="150px">
      
+     <h1 class="judulkelas">OVERVIEW</h1>
+        <p class="text-bidang">Cyber Security adalah upaya untuk mengamankan sumber daya telematika dari segala upaya tindakan cyber crime.
+                Dalam mempelajarinya, seringkali kita menggunakan permainan Capture the Flag (CTF). Di permainan itu, kita dituntut
+                untuk mencari celah dalam suatu keamanan sumber daya telematika untuk mendapatkan flag yang sudah disematkan di celah tersebut.</p>
      
      
      
  </div>
+     
+     
+ </div>
+ 
+ <div class="container">
+        <div class="row">
+            <div class="col-md-6 center">
+                <ul class="dipelajari">
+              <h2 class="learn">Apa Yang akan Kamu Pelajari</h2>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Pengenalan Dasar Phyton</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Modul Phyton</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Basic SQL (injection)</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Scripting Pyton Untuk SQL injection</li>
+               
+               
+               
+               
+           </ul>
+                
+                
+                
+                
+            </div>
+            <div class="col-md-6 center">
+                <ul class="dipelajari">
+              <h2 class="learn">Apa Yang Harus Kamu Persiapkan</h2>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Basic Data Relation Knowledge</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Menginstall Softwere Phyton</li>
+               <br>
+               <br>
+               <br>
+               <br>
+               
+               
+               
+               
+           </ul>
+                
+                
+                
+                
+            </div>
+            
+           
+            
+        </div>
+        
+        
+        
+        
+        
+    </div>
+    
  
  
  

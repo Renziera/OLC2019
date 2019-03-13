@@ -127,15 +127,73 @@
     <!--Akhir JUmbotron-->
     
 <!--Penjelasan-->
- 
- <div class="penjelasan">
+ <div class="container">
+     <div class="penjelasan">
      <img class="logokelas" src="{{URL::asset('/img/wd.png')}}" alt="" width="200px">
-     
+     <h1 class="judulkelas">OVERVIEW</h1>
+        <p class="text-bidang">Web Design mencakup banyak keterampilan dan disiplin yang berbeda dalam produksi dan pemeliharaan situs web.
+                Berbagai bidang dalam Web Design antara lain desain grafis web, desain antar muka, desain pengalaman pengguna, dan optimasi mesin pencari.
+                Pada pelatihan OLC cabang Web Design, kita akan berfokus pada mendesain antar muka web supaya lebih menarik, tetap informatif, dan memudahkan pengunjung web dalam mengaksesnya.</p>
+
      
      
      
  </div>
+     
+     
+ </div>
  
+ <div class="container">
+        <div class="row">
+            <div class="col-md-6 center">
+                <ul class="dipelajari">
+              <h2 class="learn">Apa Yang akan Kamu Pelajari</h2>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Dasar HTML dan CSS</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Pengenalan Bootstrap</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Penggunaan Javascript</li>
+              
+               
+               
+               
+               
+           </ul>
+                
+                
+                
+                
+            </div>
+            <div class="col-md-6 center">
+                <ul class="dipelajari">
+              <h2 class="learn">Apa Yang Harus Kamu Persiapkan</h2>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Mengintstall Text Editor, Misalnya, Brackets, VScode, Sublime Text, dll</li>
+               
+               <br>
+               <br>
+               
+               
+               
+               
+               
+           </ul>
+                
+                
+                
+                
+            </div>
+            
+            
+            
+            
+        </div>
+        
+        
+        
+        
+        
+    </div>
+    
+    
+       
  
  
  
