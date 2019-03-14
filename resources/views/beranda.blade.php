@@ -242,7 +242,7 @@
     
 
     <!--Kelas-->
-    <div class="kelas wow fadeIn" data-wow-duration="2s">
+    <div class="kelas wow fadeIn" data-wow-duration="2s" id="course">
         <h1 class="judulkelas">WHAT'S THE COURSE?</h1>
 
 
