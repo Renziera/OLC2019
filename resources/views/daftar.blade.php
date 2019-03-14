@@ -123,12 +123,6 @@
                                         {{ __('Web Design Sesi 2') }}
                                     </label>
                                     {{$amount['web_design_2_amount']}}
-                                    <br>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" name="term" value="1">
-                                    <label class="form-check-label">
-                                        {{ __('Saya setuju dengan term & condition') }}
-                                    </label>
                                 </div>
                             </div>
                         </div>

@@ -43,10 +43,6 @@ class DaftarController extends Controller
             'email' => 'bail|required|max:64',
         ]);
 
-        if($request['term'] == null){
-            return redirect('daftar')->with('alert','Anda harus menyetujui term & condition')->withInput();
-        }
-
         $kelas = array(
             $request['web_apps'],
             $request['database'],
@@ -131,6 +127,8 @@ class DaftarController extends Controller
         $peserta->bukti_pembayaran = null;
         $peserta->sudah_bayar = false;
         $peserta->save();
+
+        $biaya = substr_replace($biaya, '.', -3, 0);
 
         return view('berhasildaftar')->with('kode', $kode)->with('biaya', $biaya);
     }

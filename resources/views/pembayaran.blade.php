@@ -13,21 +13,31 @@
                             <h4>Terima kasih,</h4>
                             <h3>{{ $nama }}</h3>
                             <h5>Biaya pendaftaran anda sudah lunas</h5>
+                            <h6>Terima kasih atas partisipasinya</h6>
                             <h6>See you on hari-H :D</h6>
                         @else
                             @if($sudahUpload)
-                                <h4>Bukti pembayaran anda sudah kami terima</h4>
+                                <h4>Bukti pembayaran atas nama {{$nama}} telah diterima.</h4>
                                 <h5>Sedang dalam proses</h5>
                             @else
-                                <h4>Silahkan upload bukti pembayaran anda.</h4>
+                                <h4>Hai {{$nama}}, silahkan upload bukti pembayaran anda.</h4>
                                 <form action="{{ route('pembayaran') }}" method="post" enctype="multipart/form-data">
                                 @method('PUT')
                                 @csrf
                                 <input type="hidden" name="kode" value="{{ $kode }}">
                                 <input type="file" name="bukti" accept="image/*" id="bukti">
-                                <br><br>
                                 <input type="submit" value="Upload">
                                 </form>
+                                <br><br>
+                                Pembayaran sebesar Rp{{$biaya}},00 ke rekening OLC:
+                                <br>
+                                BCA 0000000000 a.n. Yohan
+                                <br>
+                                BNI 1212199994 a.n. Dani Ihza Farrosi
+                                <br>
+                                BNI 0000000000 a.n. Arel
+                                <br>
+                                MANDIRI 0000000000 a.n. Fedora
                             @endif
                         @endif
                     @else

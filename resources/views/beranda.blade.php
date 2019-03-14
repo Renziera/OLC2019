@@ -50,7 +50,7 @@
 
        
             <a href="{{ route('jadwal') }}">Jadwal</a>
-             <a href="{{ route('jadwal') }}">Kelas</a>
+             <a href="/#course">Kelas</a>
             <a href="{{ route('pembayaran') }}">Cek Pembayaran</a>
             @auth
             <a href="{{ route('admin') }}">Admin Panel</a>
@@ -82,7 +82,7 @@
             <div class="kiri">
 
                 <a href="{{ route('jadwal') }}">Jadwal</a>
-                 <a href="{{ route('jadwal') }}">Kelas</a>
+                 <a href="/#course">Kelas</a>
                 <a href="{{ route('pembayaran') }}">Cek Pembayaran</a>
                 @auth
                 <a href="{{ route('admin') }}">Admin Panel</a>
@@ -242,7 +242,7 @@
     
 
     <!--Kelas-->
-    <div class="kelas wow fadeIn" data-wow-duration="2s">
+    <div class="kelas wow fadeIn" data-wow-duration="2s" id="course">
         <h1 class="judulkelas">WHAT'S THE COURSE?</h1>
 
 
