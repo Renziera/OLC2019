@@ -1981,8 +1981,9 @@ pre code {
     display: block;
     width: 100%;
     height: calc(2.19rem + 2px);
-    padding: .375rem .75rem;
-    font-size: .9rem;
+    padding: 22px;
+    font-size: 17px;
+    font-weight: 500;
     line-height: 1.6;
     color: white;
     background-color: #273040;
@@ -1994,7 +1995,9 @@ pre code {
 
 @media screen and (prefers-reduced-motion:reduce) {
     .form-control {
-        transition: none
+        transition: none;
+        
+    
     }
 }
 
@@ -2152,7 +2155,8 @@ textarea.form-control {
 }
 
 .form-check-label {
-    margin-bottom: 0
+    font-size: 17px;
+    margin-bottom: 0;
 }
 
 .form-check-inline {
