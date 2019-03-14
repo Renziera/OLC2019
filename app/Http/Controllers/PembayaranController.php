@@ -24,6 +24,8 @@ class PembayaranController extends Controller
             $sudahBayar = $peserta->sudah_bayar;
             $bukti = $peserta->bukti_pembayaran;
             $nama = $peserta->nama;
+            $biaya = $peserta->biaya;
+            $biaya = substr_replace($biaya, '.', -3, 0);
 
             if($bukti === null){
                 $bukti = false;
@@ -34,7 +36,7 @@ class PembayaranController extends Controller
             return view('pembayaran')->with('invalid', false);
         }
 
-        return view('pembayaran')->with('sudahBayar', $sudahBayar)->with('sudahUpload', $bukti)->with('kode', $kode)->with('nama', $nama);
+        return view('pembayaran')->with('sudahBayar', $sudahBayar)->with('sudahUpload', $bukti)->with('kode', $kode)->with('nama', $nama)->with('biaya', $biaya);
     }
 
     public function uploadBukti(Request $request){

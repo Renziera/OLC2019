@@ -43,10 +43,6 @@ class DaftarController extends Controller
             'email' => 'bail|required|max:64',
         ]);
 
-        if($request['term'] == null){
-            return redirect('daftar')->with('alert','Anda harus menyetujui term & condition')->withInput();
-        }
-
         $kelas = array(
             $request['web_apps'],
             $request['database'],

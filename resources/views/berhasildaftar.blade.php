@@ -16,7 +16,11 @@
                     <br>
                     Selanjutnya, silahkan lunasi biaya pendaftaran sebesar
                     <h2>Rp{{ $biaya }},00</h2>
-                    dengan cara transfer ke rekening BCA 1337428008 a.n. Tan Kiem Liong
+                    dengan cara transfer ke rekening
+                    <br>
+                    BCA 1337428008 a.n. Tan Kiem Liong
+                    <br>
+                    BNI 4534578543 a.n. Acong
                     <br>
                     Setelah itu <a href="{{ route('pembayaran') }}">upload bukti pembayaran.</a>
                 </div>
