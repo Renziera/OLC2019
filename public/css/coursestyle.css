@@ -635,6 +635,11 @@ li{
     .tot{
         display: none;
     }
+    .toggle-btn{
+        position: fixed;
+        left: 95%;
+        transform: translateX(-95%);
+    }
     .intro-oti{
         margin-bottom: -90px;
     }
