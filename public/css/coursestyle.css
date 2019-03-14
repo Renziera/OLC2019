@@ -7,9 +7,10 @@ html, body{
     scroll-behavior: smooth;
     width: 100vw;
     zoom: 1;
+    overflow-x: hidden;
 }
 body {
-    overflow-x: hidden;
+    
     background-color: #273040;
 }
 
@@ -570,6 +571,12 @@ li{
 
 
  @media (max-width: 768px) {
+     
+      html, body{
+         
+         width: 100vw;
+     }
+     
     
      .text-bidang{
    color: #c2c2c2;
@@ -647,11 +654,7 @@ li{
     .tot{
         display: none;
     }
-    .toggle-btn{
-        position: fixed;
-        left: 95%;
-        transform: translateX(-95%);
-    }
+   
     .intro-oti{
         margin-bottom: -90px;
     }
