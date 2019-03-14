@@ -31,13 +31,11 @@
                                 <br><br>
                                 Pembayaran sebesar Rp{{$biaya}},00 ke rekening OLC:
                                 <br>
-                                BCA 0000000000 a.n. Yohan
+                                BCA 1630377117 a.n. Yohan kristian Putrafame T
                                 <br>
                                 BNI 1212199994 a.n. Dani Ihza Farrosi
                                 <br>
-                                BNI 0000000000 a.n. Arel
-                                <br>
-                                MANDIRI 0000000000 a.n. Fedora
+                                MANDIRI 1410507122000 a.n. Fedora Ramadhanty Widijanto Putri
                             @endif
                         @endif
                     @else
