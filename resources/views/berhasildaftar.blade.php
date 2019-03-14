@@ -18,9 +18,13 @@
                     <h2>Rp{{ $biaya }},00</h2>
                     dengan cara transfer ke rekening
                     <br>
-                    BCA 1337428008 a.n. Tan Kiem Liong
+                    BCA 0000000000 a.n. Yohan
                     <br>
-                    BNI 4534578543 a.n. Acong
+                    BNI 1212199994 a.n. Dani Ihza Farrosi
+                    <br>
+                    BNI 0000000000 a.n. Arel
+                    <br>
+                    MANDIRI 0000000000 a.n. Fedora
                     <br>
                     Setelah itu <a href="{{ route('pembayaran') }}">upload bukti pembayaran.</a>
                 </div>

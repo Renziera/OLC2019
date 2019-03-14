@@ -31,9 +31,13 @@
                                 <br><br>
                                 Pembayaran sebesar Rp{{$biaya}},00 ke rekening OLC:
                                 <br>
-                                BNI 12345678 a.n. Joni
+                                BCA 0000000000 a.n. Yohan
                                 <br>
-                                BCA 987654321 a.n. ASDF 
+                                BNI 1212199994 a.n. Dani Ihza Farrosi
+                                <br>
+                                BNI 0000000000 a.n. Arel
+                                <br>
+                                MANDIRI 0000000000 a.n. Fedora
                             @endif
                         @endif
                     @else
