@@ -149,10 +149,10 @@
             <div class="col-md-6 center">
                 <ul class="dipelajari">
               <h2 class="learn">Apa Yang akan Kamu Pelajari</h2>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Layout</li>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Activity</li>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Recycle View</li>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Fetch data Dari internet</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Erd dan Pengenalan MySQL</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Basic Query (CRUD)</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Adv. Query (Relationship)</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Implementasi Dengan Bahasa Pemograman</li>
                
                
                
@@ -166,10 +166,7 @@
             <div class="col-md-6 center">
                 <ul class="dipelajari">
               <h2 class="learn">Apa Yang Harus Kamu Persiapkan</h2>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Laptop Dengan Ram Min 4GB</li>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Memahami Konsep Pemrograman OOP</li>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Menginstall Softwere Android Studio</li>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Fetch data Dari internet</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Menyiapkan Software XAMPP</li>
                
                
                

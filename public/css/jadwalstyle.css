@@ -7,6 +7,7 @@ html, body{
     scroll-behavior: smooth;
     width: 100vw;
     zoom: 1;
+   
 }
 body {
     overflow-x: hidden;
@@ -37,7 +38,40 @@ tr{
 .break{
     background: #00e7ea;
     color: #273040;
+   
     
+}
+
+.wd{
+    background-color: orange;
+    color: #273040;
+    
+}
+
+.db{
+    background-color: yellow;
+    color: #273040;
+}
+
+.ds{
+    background-color: deepskyblue;
+    color: #273040;
+}
+
+.cb{
+    color: #273040;
+    background-color: #c2c2c2;
+    
+}
+
+.ma{
+     color: #273040;
+    background-color: lawngreen;
+}
+
+.wa{
+    color: #273040;
+    background-color: mediumpurple;
 }
 
 
@@ -165,10 +199,10 @@ nav .kiri a {
     top: 20px;
     position: fixed;
     z-index: 6;
-
     color: #00e7ea;
     text-align: left;
-    left: 83%;
+    right: 5%;
+    transform: translateX(5%);
     transition: 1s;
 }
 
@@ -501,15 +535,21 @@ li{
 
 
  @media (max-width: 768px) {
+     
+      html, body{
+         overflow-x: hidden;
+         width: 100vw;
+     }
+     
      .course{
          margin-left: 5px;
      }
      
      
-     
-    .toggle-btn {
-        display: block;
-    }
+
+     .toggle-btn {
+    display: block;
+}
 
     nav .kiri {
         display: none;

@@ -148,10 +148,10 @@
             <div class="col-md-6 center">
                 <ul class="dipelajari">
               <h2 class="learn">Apa Yang akan Kamu Pelajari</h2>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Database MySQL</li>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Activity</li>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Recycle View</li>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Fetch data Dari internet</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>HTML / Layout</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>PHP</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Database</li>
+               
                
                
                
@@ -166,9 +166,8 @@
                 <ul class="dipelajari">
               <h2 class="learn">Apa Yang Harus Kamu Persiapkan</h2>
                <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Pemahaman Dasar PHP</li>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Memahami Konsep Pemrograman OOP</li>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Menginstall Softwere Android Studio</li>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Fetch data Dari internet</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Menyiapkan Software php, nginx, MySQL, IDE <a href="www.sonarlint.com"></a></li>
+               
                
                
                

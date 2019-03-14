@@ -152,7 +152,7 @@
             <img src="{{URL::asset('/img/workingspace.png')}}" alt="profile Pic" class="img-fluid">
 
         </div>
-        <div class="col-lg-5 wwow fadeInRightBig" data-wow-duration="2s">
+        <div class="col-lg-5 wow fadeInRightBig" data-wow-duration="2s">
             <h3 class="wow fadeInRightBig" data-wow-duration="2s">APA <span>ITU</span> OLC ? </h3>
             <p class="wow fadeInLeftBig" data-wow-duration="2s">
                 OmahTI Learning Center (OLC) merupakan kegiatan tahunan yang diselenggarakan OmahTI dalam
@@ -192,12 +192,12 @@
  <div class="container">
        <div class="row">
       <div class="col-md-12 col-lg-4 center">
-          <div class="foto-ceo"><img alt="CEO OMAHTI 2018/2019" src="{{URL::asset('/img/ceo.png')}}" /></div>
+          <div class="foto-ceo wow fadeInRightBig" data-wow-duration="2s"><img alt="CEO OMAHTI 2018/2019" src="{{URL::asset('/img/ceo.png')}}" /></div>
           <br>
           <div class="ceo-profile" style="text-align:center">
-              <h3 id="nama-ceo">Yusfi Adilaksa</h3>
+              <h3 class="wow fadeInUpBig" data-wow-duration="2s" id="nama-ceo">Yusfi Adilaksa</h3>
 
-<h5 style="color:#c2c2c2">CEO OTI 2018/2019</h5>
+<h5 class=" wow fadeInUpBig" data-wow-duration="2s" style="color:#c2c2c2">CEO OTI 2018/2019</h5>
 
               
               
@@ -208,7 +208,7 @@
       </div>
       
       
-      <div class="col-md-12 col-lg-8 center">
+      <div class="col-md-12 col-lg-8 center wow fadeInLeftBig" data-wow-duration="2s">
          <br>
           <h4 class="center salam"><strong>Assalamu&#39;alaikum</strong></h4>
 &nbsp;
@@ -285,7 +285,7 @@
         <a class="card wow fadeInUp" data-wow-duration="2s" href="/course/data_science">
             <img src="{{URL::asset('/img/ds.png')}}" alt="profile Pic" class="img-fluid" width="120" height="120">
             <h2>Data Science</h2>
-            <p id="datasci">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, totam.</p>
+            <p id="datasci">Pada pelatihan OLC cabang Data Science kita akan belajar untuk menindaklanjuti data yang telah kita kumpulkan yang mencakup tiga fase yaitu desain data, mengumpulkan data, dan analisis data</p>
 
         </a>
 

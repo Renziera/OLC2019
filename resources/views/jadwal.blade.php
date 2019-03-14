@@ -47,9 +47,9 @@
 
         <div id="sidebar">
 
-           
+           <a href="{{ url('/') }}"><img src="{{URL::asset('/img/logoOLC.png')}}" width="100px" alt=""></a>
             <a href="{{ route('jadwal') }}">Jadwal</a>
-             <a href="{{ route('jadwal') }}">Kelas</a>
+             <a href="{{ route('jadwal') }}" onclick="openside()">Kelas</a>
             <a href="{{ route('pembayaran') }}">Cek Pembayaran</a>
             @auth
             <a href="{{ route('admin') }}">Admin Panel</a>
@@ -138,33 +138,41 @@
 			<th>Jam</th>
 			<th>Kelas A</th>
 			<th>Kelas B</th>
+			<th>Kelas C</th>
 		</tr>
 		<tr class=" wow fadeInRightBig" data-wow-duration="2s">
 			<td>08.00-10.00</td>
-			<td>Cyber Security</td>
-			<td>Web Design</td>
+			<td class="cb">Cyber Security</td>
+			<td class="wd">Web Design</td>
+			<td class="ds">Data Science</td>
 		</tr>
 		<tr class=" wow fadeInLeftBig" data-wow-duration="2s">
 			<td class="break">10.00-10.20</td>
 			<td class="break">Break</td>
 			<td class="break">Break</td>
+			<td class="break">Break</td>
+			
 			
 
 		</tr>
 		<tr class=" wow fadeInRightBig" data-wow-duration="2s">
-			<td>10.20-12.20</td>
-			<td>Web Apps</td>
-			<td>Data Science</td>
+			<td>10.30-12.30</td>
+			<td class="wa">Web Apps</td>
+			<td class="ma">Mobile Apps</td>
+			<td class="wd">Web Design</td>
 		</tr>
 		<tr class=" wow fadeInLeftBig" data-wow-duration="2s"> 
-			<td class="break">12.20-13.10</td>
+			<td class="break">12.30-13.30</td>
 			<td class="break">Break</td>
 			<td class="break">Break</td>
+						<td class="break">Break</td>
+
+			
 		</tr>
 		<tr class=" wow fadeInRightBig" data-wow-duration="2s">
-			<td>13.10-15.10</td>
-			<td>Mobile Apps</td>
-			<td>Database</td>
+			<td>13.30-15.30</td>
+			<td class="ma">Mobile Apps</td>
+			<td class="db">Database</td>
 		</tr>
 	</tbody>
 </table>

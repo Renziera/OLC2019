@@ -132,7 +132,8 @@
         <div class="penjelasan">
         <img class="logokelas" src="{{URL::asset('/img/ds.png')}}" alt="" width="200px">
 <h1 class="judulkelas">OVERVIEW</h1>
-        <p class="text-bidang">Pada pelatihan OLC cabang Android Apps, kita akan diajari bagaimana cara membuat aplikasi yang nantinya akan dijalankan di perangkat Android</p>
+       <br>
+        <p class="text-bidang">Pada pelatihan OLC cabang Data Science kita akan belajar untuk menindaklanjuti data yang telah kita kumpulkan yang mencakup tiga fase yaitu desain data, mengumpulkan data, dan analisis data</p>
 
     </div>
     
@@ -149,10 +150,10 @@
             <div class="col-md-6 center">
                 <ul class="dipelajari">
               <h2 class="learn">Apa Yang akan Kamu Pelajari</h2>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Layout</li>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Activity</li>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Recycle View</li>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Fetch data Dari internet</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Pengenalan Data Mining Sambil Instalasi (Full Teori)</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Introduction to Phyton, Klasifikasi Pakai data iris</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Klasifikasi data, pakai Titanic KAggle</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Web Scraping, tweet mining</li>
                
                
                
@@ -166,10 +167,7 @@
             <div class="col-md-6 center">
                 <ul class="dipelajari">
               <h2 class="learn">Apa Yang Harus Kamu Persiapkan</h2>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Laptop Dengan Ram Min 4GB</li>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Memahami Konsep Pemrograman OOP</li>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Menginstall Softwere Android Studio</li>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Fetch data Dari internet</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Software Anaconda</li>
                
                
                
