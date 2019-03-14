@@ -9,6 +9,17 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+/*Checkbox*/
+
+
+
+
+
+
+/*End of Checkbox*/
+
+
+
 :root {
     --blue: #3490dc;
     --indigo: #6574cd;
@@ -2146,9 +2157,28 @@ textarea.form-control {
 
 .form-check-input {
     position: absolute;
-    margin-top: .3rem;
+    margin-top: 25px;
     margin-left: -1.25rem
 }
+
+.form-check-input[type="checkbox"]:checked + label{
+    background-color: #00e1ff;
+    color: #273040;
+    font-weight: 500;
+   
+}
+
+.form-check-input[type="checkbox"]{
+    width: 25px;
+    height: 25px;
+    margin-left: -30px;
+    color: white;
+    
+    
+}
+
+
+
 
 .form-check-input:disabled ~ .form-check-label {
     color: #6c757d
@@ -2157,6 +2187,11 @@ textarea.form-control {
 .form-check-label {
     font-size: 17px;
     margin-bottom: 0;
+    padding: 12px;
+    border: 1px solid #00e1ff;
+    border-radius: 20px;
+    margin-top: 8px;
+    transition: 1s;
 }
 
 .form-check-inline {
@@ -3824,9 +3859,9 @@ input[type=submit].btn-block {
 
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label:after {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3E%3Cpath stroke='%23fff' d='M0 2h4'/%3E%3C/svg%3E")
-}
+}form-check-label
 
-.custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label:before {
+.custom-checkbox .custom-control-input:disabled:form-check-label ~ .custom-control-label:before {
     background-color: rgba(52, 144, 220, .5)
 }
 
@@ -4269,6 +4304,7 @@ input[type=submit].btn-block {
 }
 
 .navbar-collapse {
+    margin-top: 16px;
     flex-basis: 100%;
     flex-grow: 1;
     align-items: center
@@ -4522,7 +4558,8 @@ input[type=submit].btn-block {
     color: white;
     padding-right: 30px;
     padding-left: 30px;
-    font-size: 16px;
+    font-size: 15px;
+    border-bottom: 1.5px solid white;
 }
 
 .navbar-light .navbar-nav .nav-link:focus,
@@ -4544,11 +4581,13 @@ input[type=submit].btn-block {
 
 .navbar-light .navbar-toggler {
     color: #00e7ea;
-    border-color: rgba(0, 0, 0, .1)
+    border-color: #00e7ea;
 }
 
+
+
 .navbar-light .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 231, 234, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
 }
 
 .navbar-light .navbar-text {
@@ -9600,7 +9639,7 @@ a.text-dark:hover {
 }
 
 .navbar-laravel {
-    background-color: #273040;
+    background-color: rgb(28, 35, 46);
     opacity: 0.9;
     z-index: 1;
     text-transform: uppercase;
