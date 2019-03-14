@@ -46,7 +46,7 @@
     <div class="container">
 
         <div id="sidebar">
-
+<a href="{{ url('/') }}"><img src="{{URL::asset('/img/logoOLC.png')}}" width="100px" alt=""></a>
            
             <a href="{{ route('jadwal') }}">Jadwal</a>
              <a href="{{ route('jadwal') }}">Kelas</a>
