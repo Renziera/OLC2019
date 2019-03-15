@@ -130,7 +130,8 @@
     <!--JumboTron-->
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-
+<br>
+           
             <h1 class="intro-oti"></h1>
             <h1 class="tahun"></h1>
 

@@ -39,7 +39,7 @@
                     <br>
                     
                     <br>
-                    Setelah itu <a href="{{ route('pembayaran') }}">upload bukti pembayaran.</a>
+                    <h5>Setelah itu</h5> <span><a href="{{ route('pembayaran') }}">Upload Bukti Pembayaran.</a></span> 
                 </div>
             </div>
         </div>
