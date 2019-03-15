@@ -81,49 +81,49 @@
                                     <label class="form-check-label">
                                         {{ __('Web Apps') }}
                                     </label>
-                                    {{$amount['web_apps_amount']}}
+                                    Tersisa: {{$amount['web_apps_amount']}}
                                     <br>
                                     <input class="form-check-input" type="checkbox" name="database" value="1">
                                     <label class="form-check-label">
                                         {{ __('Database') }}
                                     </label>
-                                    {{$amount['database_amount']}}
+                                    Tersisa: {{$amount['database_amount']}}
                                     <br>
                                     <input class="form-check-input" type="checkbox" name="cyber_security" value="1">
                                     <label class="form-check-label">
                                         {{ __('Cyber Security') }}
                                     </label>
-                                    {{$amount['cyber_security_amount']}}
+                                    Tersisa: {{$amount['cyber_security_amount']}}
                                     <br>
                                     <input class="form-check-input" type="checkbox" name="data_science" value="1">
                                     <label class="form-check-label">
                                         {{ __('Data Science') }}
                                     </label>
-                                    {{$amount['data_science_amount']}}
+                                    Tersisa: {{$amount['data_science_amount']}}
                                     <br>
                                     <input class="form-check-input" type="checkbox" name="android_apps_1" value="1">
                                     <label class="form-check-label">
                                         {{ __('Android Apps Sesi 1') }}
                                     </label>
-                                    {{$amount['android_apps_1_amount']}}
+                                    Tersisa: {$amount['android_apps_1_amount']}}
                                     <br>
                                     <input class="form-check-input" type="checkbox" name="android_apps_2" value="1">
                                     <label class="form-check-label">
                                         {{ __('Android Apps Sesi 2') }}
                                     </label>
-                                    {{$amount['android_apps_2_amount']}}
+                                    Tersisa: {{$amount['android_apps_2_amount']}}
                                     <br>
                                     <input class="form-check-input" type="checkbox" name="web_design_1" value="1">
                                     <label class="form-check-label">
                                         {{ __('Web Design Sesi 1') }}
                                     </label>
-                                    {{$amount['web_design_1_amount']}}
+                                    Tersisa: {{$amount['web_design_1_amount']}}
                                     <br>
                                     <input class="form-check-input" type="checkbox" name="web_design_2" value="1">
                                     <label class="form-check-label">
                                         {{ __('Web Design Sesi 2') }}
                                     </label>
-                                    {{$amount['web_design_2_amount']}}
+                                    Tersisa: {{$amount['web_design_2_amount']}}
                                 </div>
                             </div>
                         </div>

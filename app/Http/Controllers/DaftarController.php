@@ -14,14 +14,14 @@ class DaftarController extends Controller
             return view('lewatbatas');
         }
         
-        $web_apps_amount = Absensi::where(['kelas' => 'web_apps'])->count();
-        $database_amount = Absensi::where(['kelas' => 'database'])->count();
-        $data_science_amount = Absensi::where(['kelas' => 'data_science'])->count();
-        $cyber_security_amount = Absensi::where(['kelas' => 'cyber_security'])->count();
-        $android_apps_1_amount = Absensi::where(['kelas' => 'android_apps_1'])->count();
-        $android_apps_2_amount = Absensi::where(['kelas' => 'android_apps_2'])->count();
-        $web_design_1_amount = Absensi::where(['kelas' => 'web_design_1'])->count();
-        $web_design_2_amount = Absensi::where(['kelas' => 'web_design_2'])->count();
+        $web_apps_amount = 40 - Absensi::where(['kelas' => 'web_apps'])->count();
+        $database_amount = 40 - Absensi::where(['kelas' => 'database'])->count();
+        $data_science_amount = 40 - Absensi::where(['kelas' => 'data_science'])->count();
+        $cyber_security_amount = 40 - Absensi::where(['kelas' => 'cyber_security'])->count();
+        $android_apps_1_amount = 40 - Absensi::where(['kelas' => 'android_apps_1'])->count();
+        $android_apps_2_amount = 40 - Absensi::where(['kelas' => 'android_apps_2'])->count();
+        $web_design_1_amount = 40 - Absensi::where(['kelas' => 'web_design_1'])->count();
+        $web_design_2_amount = 40 - Absensi::where(['kelas' => 'web_design_2'])->count();
 
         $amount = array(
             'web_apps_amount' => $web_apps_amount,
