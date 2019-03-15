@@ -54,11 +54,14 @@ class PembayaranController extends Controller
             $image->move($destinationPath, $name);
 
             $peserta = Peserta::where('kode_peserta', '=', $kode)->first();
+            $nama = $peserta->nama;
+            $biaya = $peserta->biaya;
             $peserta->bukti_pembayaran = $name;
             $peserta->save();
-            return view('pembayaran')->with('sudahBayar', false)->with('sudahUpload', true);
+            
+            return view('pembayaran')->with('sudahBayar', false)->with('sudahUpload', true)->with('nama', $nama)->with('biaya', $biaya);
         }else{
-            return view('pembayaran')->with('sudahBayar', false)->with('sudahUpload', false)->with('kode', $kode);
+            return view('pembayaran')->with('sudahBayar', false)->with('sudahUpload', false)->with('kode', $kode)->with('nama', $nama)->with('biaya', $biaya);
         }
     }
 
