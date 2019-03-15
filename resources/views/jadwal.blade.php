@@ -49,7 +49,7 @@
 
            <a href="{{ url('/') }}"><img src="{{URL::asset('/img/logoOLC.png')}}" width="100px" alt=""></a>
             <a href="{{ route('jadwal') }}">Jadwal</a>
-             <a href="{{ route('jadwal') }}" onclick="openside()">Kelas</a>
+             <a href="/#course" onclick="openside()">Kelas</a>
             <a href="{{ route('pembayaran') }}">Cek Pembayaran</a>
             @auth
             <a href="{{ route('admin') }}">Admin Panel</a>
@@ -78,7 +78,7 @@
             <div class="kiri">
 
                 <a href="{{ route('jadwal') }}">Jadwal</a>
-                <a href="{{ route('jadwal') }}">Kelas</a>
+                <a href="/#course">Kelas</a>
                 <a href="{{ route('pembayaran') }}">Cek Pembayaran</a>
                 @auth
                 <a href="{{ route('admin') }}">Admin Panel</a>
