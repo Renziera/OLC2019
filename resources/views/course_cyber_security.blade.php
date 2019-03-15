@@ -148,11 +148,11 @@
         <div class="row">
             <div class="col-md-6 center">
                 <ul class="dipelajari">
-              <h2 class="learn">Apa Yang akan Kamu Pelajari</h2>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Pengenalan Dasar Phyton</li>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Modul Phyton</li>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Basic SQL (injection)</li>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Scripting Pyton Untuk SQL injection</li>
+              <h2 class="learn">Materi</h2>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Pengenalan dasar Python</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Modul Python</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Basic SQL (Injection)</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Scripting Python untuk SQL Injection</li>
                
                
                
@@ -165,9 +165,9 @@
             </div>
             <div class="col-md-6 center">
                 <ul class="dipelajari">
-              <h2 class="learn">Apa Yang Harus Kamu Persiapkan</h2>
+              <h2 class="learn">Requirements</h2>
                <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Basic Data Relation Knowledge</li>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Menginstall Software Phyton</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Software: Python</li>
                <br>
                <br>
                <br>
@@ -326,7 +326,7 @@
                 strings: ["Security"],
                 backSpeed: 40,
                 typeSpeed: 70,
-                startDelay: 2400,
+                startDelay: 800,
 
             });
         });

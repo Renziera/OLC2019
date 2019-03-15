@@ -132,7 +132,9 @@
         <div class="penjelasan">
         <img class="logokelas" src="{{URL::asset('/img/db.png')}}" alt="" width="200px">
 <h1 class="judulkelas">OVERVIEW</h1>
-        <p class="text-bidang">Pada pelatihan OLC cabang Android Apps, kita akan diajari bagaimana cara membuat aplikasi yang nantinya akan dijalankan di perangkat Android</p>
+        <p class="text-bidang">Di database kita akan mengupas bagaimana sebuah sistem komputer melihat dan mengolah data. Pada kelas ini, kita akan belajar
+                tentang MySQL, sebuah sistem database yang bersifat relasional. Kita akan mempelajari bagaimana MySQL melihat, memanggil, mengolah data-data yang diterimanya.
+                Sistem database juga digunakan untuk pengolahan dan penyimpanan di web, game, dan masih banyak lagi.</p>
 
     </div>
     
@@ -148,11 +150,11 @@
         <div class="row">
             <div class="col-md-6 center">
                 <ul class="dipelajari">
-              <h2 class="learn">Apa Yang akan Kamu Pelajari</h2>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Erd dan Pengenalan MySQL</li>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Basic Query (CRUD)</li>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Adv. Query (Relationship)</li>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Implementasi Dengan Bahasa Pemograman</li>
+              <h2 class="learn">Materi</h2>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Entity Relationship Diagram (ERD) dan pengenalan MySQL</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Basic query (Create, Read, Update, Delete)</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Advanced query (Relationship)</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Implementasi dengan bahasa pemrograman</li>
                
                
                
@@ -165,12 +167,8 @@
             </div>
             <div class="col-md-6 center">
                 <ul class="dipelajari">
-              <h2 class="learn">Apa Yang Harus Kamu Persiapkan</h2>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Menyiapkan Software XAMPP</li>
-               
-               
-               
-               
+              <h2 class="learn">Requirements</h2>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Software: XAMPP</li>   
            </ul>
                 
                 
@@ -320,7 +318,7 @@
                 strings: [""],
                 backSpeed: 40,
                 typeSpeed: 70,
-                startDelay: 2400,
+                startDelay: 1400,
 
             });
         });

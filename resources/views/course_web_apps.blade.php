@@ -147,31 +147,18 @@
         <div class="row">
             <div class="col-md-6 center">
                 <ul class="dipelajari">
-              <h2 class="learn">Apa Yang akan Kamu Pelajari</h2>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>HTML / Layout</li>
+              <h2 class="learn">Materi</h2>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>HTML/Layout</li>
                <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>PHP</li>
                <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Database</li>
-               
-               
-               
-               
-               
            </ul>
-                
-                
-                
                 
             </div>
             <div class="col-md-6 center">
                 <ul class="dipelajari">
-              <h2 class="learn">Apa Yang Harus Kamu Persiapkan</h2>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Pemahaman Dasar PHP</li>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Menyiapkan Software php, nginx, MySQL, IDE <a href="www.sonarlint.com"></a></li>
-               
-               
-               
-               
-               
+              <h2 class="learn">Requirements</h2>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Pemahaman dasar PHP</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Software: PHP, Nginx, MySQL, IDE: SonarLint</li>
            </ul>
                 
                 
@@ -320,7 +307,7 @@
                 strings: ["Apps"],
                 backSpeed: 40,
                 typeSpeed: 70,
-                startDelay: 2400,
+                startDelay: 1400,
 
             });
         });

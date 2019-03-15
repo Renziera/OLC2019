@@ -149,37 +149,23 @@
         <div class="row">
             <div class="col-md-6 center">
                 <ul class="dipelajari">
-              <h2 class="learn">Apa Yang akan Kamu Pelajari</h2>
+              <h2 class="learn">Materi</h2>
                <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Layout</li>
                <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Activity</li>
                <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Recycle View</li>
                <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Fetch data Dari internet</li>
-               
-               
-               
-               
-           </ul>
-                
-                
-                
-                
+                </ul> 
             </div>
+
             <div class="col-md-6 center">
                 <ul class="dipelajari">
-              <h2 class="learn">Apa Yang Harus Kamu Persiapkan</h2>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Laptop Dengan Ram Min 4GB</li>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Memahami Konsep Pemrograman OOP</li>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Menginstall Softwere Android Studio</li>
-               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Fetch data Dari internet</li>
-               
-               
-               
-               
+              <h2 class="learn">Requirements</h2>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Laptop dengan RAM minimal 4GB</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Memahami konsep Object-Oriented Programming</li>
+               <li class="sub-materi"> <span style='font-size:20px;'>&#10004;</span>Software: Android Studio</li>
+               <br>
+               <br>
            </ul>
-                
-                
-                
-                
             </div>
             
             
@@ -324,7 +310,7 @@
                 strings: ["Apps"],
                 backSpeed: 40,
                 typeSpeed: 70,
-                startDelay: 2400,
+                startDelay: 1400,
 
             });
         });
