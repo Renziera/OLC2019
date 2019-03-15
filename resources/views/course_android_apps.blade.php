@@ -187,7 +187,7 @@
 <br>
  <div class="card">
   
-  <h1 class="nama">Tommy Wahyu dan Natheal Gavin H S </h1>
+  <h1 class="nama">Tommy Wahyu dan Nathanael Gavin H S </h1>
   <p class="title">Android Developer at OmahTI</p>
   <p>Universitas Gadjah Mada</p>
 </div>

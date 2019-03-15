@@ -143,7 +143,7 @@
 		<tr class=" wow fadeInRightBig" data-wow-duration="2s">
 			<td>08.00-10.00</td>
 			<td class="cb">Cyber Security</td>
-			<td class="wd">Web Design</td>
+			<td class="wd">Web Design Sesi 1</td>
 			<td class="ds">Data Science</td>
 		</tr>
 		<tr class=" wow fadeInLeftBig" data-wow-duration="2s">
@@ -158,8 +158,8 @@
 		<tr class=" wow fadeInRightBig" data-wow-duration="2s">
 			<td>10.30-12.30</td>
 			<td class="wa">Web Apps</td>
-			<td class="ma">Mobile Apps</td>
-			<td class="wd">Web Design</td>
+			<td class="ma">Android Apps Sesi 1</td>
+			<td class="wd">Web Design Sesi 2</td>
 		</tr>
 		<tr class=" wow fadeInLeftBig" data-wow-duration="2s"> 
 			<td class="break">12.30-13.30</td>
@@ -171,7 +171,7 @@
 		</tr>
 		<tr class=" wow fadeInRightBig" data-wow-duration="2s">
 			<td>13.30-15.30</td>
-			<td class="ma">Mobile Apps</td>
+			<td class="ma">Android Apps Sesi 2 </td>
 			<td class="db">Database</td>
 		</tr>
 	</tbody>

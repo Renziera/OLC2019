@@ -197,8 +197,8 @@
 <br>
  <div class="card">
   
-  <h1 class="nama">Fadli Maulana</h1>
-  <p class="title">Database Analyst at OmahTI</p>
+  <h1 class="nama">Marisha Salsabila</h1>
+  <p class="title">Data Scientist at OmahTI</p>
   <p>Universitas Gadjah Mada</p>
 </div>
  
