@@ -201,6 +201,22 @@
  
  
 <!--Akhir penjelasan-->
+  
+  
+  <!--Profil Pengajar-->
+<h1 class="judulkelas">PENGAJAR</h1>
+<br>
+ <div class="card">
+  
+  <h1 class="nama">Bayu Fedra Abdullah</h1>
+  <p class="title">Freelance <br>-Penetration Testing Web dan Server sub Domain BKKBN [2018] <br><br>-Penetration Testing Web Rumah Sakit Karanganyar  [2018] <br><br>-Penetration Testing Web Start up Penyedia Layanan Sosial Media [2018]
+ 
+</div>
+ <br>
+<br>
+
+ 
+<!--End profil pengajar-->
    
     <footer class="wow fadeInUpBig" data-wow-duration="2s">
         <div class="container">

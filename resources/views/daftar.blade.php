@@ -78,52 +78,92 @@
                                 <div class="form-check">
                                    
                                     <input class="form-check-input" type="checkbox" name="web_apps" value="1">
-                                    <label class="form-check-label">
+                                    <label onclick="cek0()" class="form-check-label">
                                         {{ __('Web Apps') }}
                                     </label>
-                                    Tersisa: {{$amount['web_apps_amount']}}
+                                    
+                                    <div class="tersisa">
+                                        Tersisa: {{$amount['web_apps_amount']}}
+                                        
+                                        
+                                    </div>
+                                    
                                     <br>
                                     <input class="form-check-input" type="checkbox" name="database" value="1">
-                                    <label class="form-check-label">
+                                    <label onclick="cek1()" class="form-check-label">
                                         {{ __('Database') }}
                                     </label>
-                                    Tersisa: {{$amount['database_amount']}}
+                                    
+                                    <div class="tersisa">
+                                        Tersisa: {{$amount['database_amount']}}
+                                        
+                                        
+                                    </div>
+                                    
                                     <br>
                                     <input class="form-check-input" type="checkbox" name="cyber_security" value="1">
-                                    <label class="form-check-label">
+                                    <label onclick="cek2()" class="form-check-label">
                                         {{ __('Cyber Security') }}
                                     </label>
-                                    Tersisa: {{$amount['cyber_security_amount']}}
+                                    
+                                    <div class="tersisa">
+                                      Tersisa: {{$amount['cyber_security_amount']}}  
+                                        
+                                    </div>
+                                    
                                     <br>
                                     <input class="form-check-input" type="checkbox" name="data_science" value="1">
-                                    <label class="form-check-label">
+                                    <label onclick="cek3()" class="form-check-label">
                                         {{ __('Data Science') }}
                                     </label>
-                                    Tersisa: {{$amount['data_science_amount']}}
+                                    
+                                    <div class="tersisa">
+                                        Tersisa: {{$amount['data_science_amount']}}
+                                        
+                                        
+                                    </div>
+                                    
                                     <br>
                                     <input class="form-check-input" type="checkbox" name="android_apps_1" value="1">
-                                    <label class="form-check-label">
+                                    <label onclick="cek4()" class="form-check-label">
                                         {{ __('Android Apps Sesi 1') }}
                                     </label>
-                                    Tersisa: {$amount['android_apps_1_amount']}}
+                                    <div class="tersisa">
+                                      Tersisa: {{$amount['android_apps_1_amount']}}  
+                                        
+                                    </div>
+                                    
                                     <br>
                                     <input class="form-check-input" type="checkbox" name="android_apps_2" value="1">
-                                    <label class="form-check-label">
+                                    <label onclick="cek5()" class="form-check-label">
                                         {{ __('Android Apps Sesi 2') }}
                                     </label>
-                                    Tersisa: {{$amount['android_apps_2_amount']}}
+                                    
+                                    <div class="tersisa">
+                                         Tersisa: {{$amount['android_apps_2_amount']}}
+                                        
+                                    </div>
+                                   
                                     <br>
                                     <input class="form-check-input" type="checkbox" name="web_design_1" value="1">
-                                    <label class="form-check-label">
+                                    <label onclick="cek6()" class="form-check-label">
                                         {{ __('Web Design Sesi 1') }}
                                     </label>
-                                    Tersisa: {{$amount['web_design_1_amount']}}
+                                    <div class="tersisa">
+                                        Tersisa: {{$amount['web_design_1_amount']}}
+                                        
+                                    </div>
+                                    
                                     <br>
                                     <input class="form-check-input" type="checkbox" name="web_design_2" value="1">
-                                    <label class="form-check-label">
+                                    <label onclick="cek7()" class="form-check-label">
                                         {{ __('Web Design Sesi 2') }}
                                     </label>
-                                    Tersisa: {{$amount['web_design_2_amount']}}
+                                    <div class="tersisa">
+                                      Tersisa: {{$amount['web_design_2_amount']}}  
+                                        
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -143,4 +183,124 @@
         </div>
     </div>
 </div>
+
+<script>
+    function cek0(){
+        var input = document.getElementsByClassName("form-check-input")[0];
+        
+        
+       
+        if(input.checked==true){
+            input.checked = false;
+        }
+        
+        else if (input.checked==false){
+            input.checked = true;
+        }
+    }
+    
+    function cek1(){
+        var input = document.getElementsByClassName("form-check-input")[1];
+        
+        
+       
+        if(input.checked==true){
+            input.checked = false;
+        }
+        
+        else if (input.checked==false){
+            input.checked = true;
+        }
+    }
+    
+    function cek2(){
+        var input = document.getElementsByClassName("form-check-input")[2];
+        
+        
+       
+        if(input.checked==true){
+            input.checked = false;
+        }
+        
+        else if (input.checked==false){
+            input.checked = true;
+        }
+    }
+    
+    function cek3(){
+        var input = document.getElementsByClassName("form-check-input")[3];
+        
+        
+       
+        if(input.checked==true){
+            input.checked = false;
+        }
+        
+        else if (input.checked==false){
+            input.checked = true;
+        }
+    }
+    
+    function cek4(){
+        var input = document.getElementsByClassName("form-check-input")[4];
+        
+        
+       
+        if(input.checked==true){
+            input.checked = false;
+        }
+        
+        else if (input.checked==false){
+            input.checked = true;
+        }
+    }
+    
+    function cek5(){
+        var input = document.getElementsByClassName("form-check-input")[5];
+        
+        
+       
+        if(input.checked==true){
+            input.checked = false;
+        }
+        
+        else if (input.checked==false){
+            input.checked = true;
+        }
+    }
+    
+    function cek6(){
+        var input = document.getElementsByClassName("form-check-input")[6];
+        
+        
+       
+        if(input.checked==true){
+            input.checked = false;
+        }
+        
+        else if (input.checked==false){
+            input.checked = true;
+        }
+    }
+    
+    
+    function cek7(){
+        var input = document.getElementsByClassName("form-check-input")[7];
+        
+        
+       
+        if(input.checked==true){
+            input.checked = false;
+        }
+        
+        else if (input.checked==false){
+            input.checked = true;
+        }
+    }
+    
+    
+
+</script>
+
+
 @endsection

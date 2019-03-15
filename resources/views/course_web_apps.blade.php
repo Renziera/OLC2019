@@ -133,7 +133,7 @@
         <img class="logokelas" src="{{URL::asset('/img/webapps.png')}}" alt="" width="200px">
 <h1 class="judulkelas">OVERVIEW</h1>
         <p class="text-bidang">Jika pada Web Design kita berbicara bagaimana membuat sebuah halaman web lebih menarik, di Web Apps kita akan
-                mempelajari bagaimana cara membuat web tersebut. Di sini kita akan mempelajari dari dasar, kemudian penggunaan framework, hingga pemanggilan API untuk web./p>
+                mempelajari bagaimana cara membuat web tersebut. Di sini kita akan mempelajari dari dasar, kemudian penggunaan framework, hingga pemanggilan API untuk web.  </p>
 
     </div>
     
@@ -170,13 +170,25 @@
             
             
         </div>
-        
-        
-        
-        
+ 
         
     </div>
+    
+    
+<!--Profil Pengajar-->
+<h1 class="judulkelas">PENGAJAR</h1>
+<br>
+ <div class="card">
+  
+  <h1 class="nama">Dyan Galih Nugroho Wicaksi </h1>
+  <p class="title">Senior Developer <br>-Div. Academic Solution <br>-Sub Div.RDS</p>
+  <p>PT. Gamatechno (Yogyakarta)</p>
+</div>
+ <br>
+<br>
+
  
+<!--End profil pengajar-->
  
  
  

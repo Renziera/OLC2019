@@ -189,6 +189,24 @@
 
 
     <!--Akhir penjelasan-->
+    
+    
+    
+       <!--Profil Pengajar-->
+<h1 class="judulkelas">PENGAJAR</h1>
+<br>
+ <div class="card">
+  
+  <h1 class="nama">Fadli Maulana</h1>
+  <p class="title">Database Analyst at OmahTI</p>
+  <p>Universitas Gadjah Mada</p>
+</div>
+ 
+<br>
+<br>
+ 
+<!--End profil pengajar-->
+    
    
     <footer class="wow fadeInUpBig" data-wow-duration="2s">
         <div class="container">

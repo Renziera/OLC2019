@@ -194,7 +194,20 @@
     </div>
     
     
-       
+       <!--Profil Pengajar-->
+<h1 class="judulkelas">PENGAJAR</h1>
+<br>
+ <div class="card">
+  
+  <h1 class="nama">Galih Pradipto Wisnujati </h1>
+  <p class="title">Frontend Developer at OmahTI</p>
+  <p>Universitas Gadjah Mada</p>
+</div>
+ <br>
+ <br>
+
+ 
+<!--End profil pengajar-->
  
  
  

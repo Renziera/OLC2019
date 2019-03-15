@@ -45,7 +45,38 @@ li span{
     text-align: center;
 }
 
+/*Profil pengajar*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+    padding: 40px;
+    width: 33%;
+    background-color: #273040;
+    
+}
 
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+.nama{
+    color: #00e7ea;
+    font-size: 32px;
+}
+
+
+
+/*end of profil pengajar*/
 
 
 
@@ -295,7 +326,7 @@ nav .kiri a {
 .judulkelas{
         text-align: center;
     font-weight: 500;
-    margin-top: 110px;
+    margin-top: 90px;
     color: #00e7ea;
     margin-left: 0px;
     animation: texth1 3s 1;
@@ -316,29 +347,6 @@ nav .kiri a {
 
 }
 
-.course .card {
-    text-align: center;
-    display: inline-block;
-    padding: 30px;
-    margin: 20px;
-    border: none;
-    background-color: #273040;
-    width: 400px;
-    transition: 0.3s;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    color: white;
-    transition: 0.7s;
-}
-
-.course .card img {
-    padding-bottom: 20px;
-}
-
-.course .card:hover {
-    box-shadow: 0 8px 16px 0 #00e7ea;
-    text-decoration: none;
-    transform: scale(1.02);
-}
 
 .card p {
     color: #c2c2c2;
