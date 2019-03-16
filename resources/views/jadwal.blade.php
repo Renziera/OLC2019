@@ -183,6 +183,12 @@
 </div>
   
 <!--End of JAdwal-->
+  
+<!-- note-->
+  <h4 class="note">Pelatihan Akan dilaksanakan Setiap Hari Minggu dari Tanggal 21 April Sampai 12 Mei</h4>
+  
+  <br>
+  <br>
    
     <footer class="wow fadeInUpBig" data-wow-duration="2s">
         <div class="container">
