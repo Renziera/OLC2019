@@ -244,7 +244,7 @@
 
     <!--Kelas-->
     <div class="kelas wow fadeIn" data-wow-duration="2s" id="course">
-        <h1 class="judulkelas">WHAT'S THE COURSE?</h1>
+        <h1 class="judulkelas">WHAT ARE THE COURSES?</h1>
 
 
     </div>
