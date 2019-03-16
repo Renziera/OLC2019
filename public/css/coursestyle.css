@@ -331,6 +331,7 @@ nav .kiri a {
     color: #00e7ea;
     margin-left: 0px;
     animation: texth1 3s 1;
+    font-family: 'museo-sans-rounded';
 }
 
 .judulkelas::after {
