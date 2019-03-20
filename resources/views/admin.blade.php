@@ -45,6 +45,8 @@
                 <a class="kelas" href="/admin/kelas/android_apps_2">Android Apps Sesi 2</a>
                 <a class="kelas" href="/admin/kelas/web_design_1">Web Design Sesi 1</a>
                 <a class="kelas" href="/admin/kelas/web_design_2">Web Design Sesi 2</a>
+                <a class="kelas" href="/admin/kelas/lunas">Lunas</a>
+                <a class="kelas" href="/admin/kelas/cash">Bayar Cash</a>
                 <br>
 
 

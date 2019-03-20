@@ -160,6 +160,12 @@ class AdminController extends Controller
             case 'data_science':
                 $allPeserta = Peserta::where(['data_science' => '1'])->get();
                 break;
+            case 'lunas':
+                $allPeserta = Peserta::where(['sudah_bayar' => true])->get();
+                break;
+            case 'cash':
+                $allPeserta = Peserta::where(['sudah_bayar' => true, 'bukti_pembayaran' => null])->get();
+                break;            
             default:
                 $allPeserta = Peserta::all();
                 break;
