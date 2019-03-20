@@ -16,15 +16,30 @@
                     <br>
                     Selanjutnya, silahkan lunasi biaya pendaftaran sebesar
                     <h2>Rp{{ $biaya }},00</h2>
-                    dengan cara transfer ke rekening
                     <br>
-                    BCA 1630377117 a.n. Yohan kristian Putrafame T
+                    <h5>Metode Pembayaran dengan cara transfer ke rekening</h5>
                     <br>
-                    BNI 1212199994 a.n. Dani Ihza Farrosi
+                    
+                    <ul>
+                       <b>BCA </b>
+                        <li>1630377117 a.n. Yohan kristian Putrafame T</li>
+                    </ul>
+                    
+                    <ul>
+                       <b>MANDIRI </b>
+                        <li>1410507122000 a.n. Fedora Ramadhanty Widijanto Putri</li>
+                    </ul>
+                    
+                    <ul>
+                       <b>BNI  </b>
+                        <li>1212199994 a.n. Dani Ihza Farrosi</li>
+                    </ul>
+                    
+                    
                     <br>
-                    MANDIRI 1410507122000 a.n. Fedora Ramadhanty Widijanto Putri
+                    
                     <br>
-                    Setelah itu <a href="{{ route('pembayaran') }}">upload bukti pembayaran.</a>
+                    <h5>Setelah itu</h5> <span><a href="{{ route('pembayaran') }}">Upload Bukti Pembayaran.</a></span> 
                 </div>
             </div>
         </div>

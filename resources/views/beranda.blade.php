@@ -130,7 +130,8 @@
     <!--JumboTron-->
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-
+<br>
+           
             <h1 class="intro-oti"></h1>
             <h1 class="tahun"></h1>
 
@@ -243,7 +244,7 @@
 
     <!--Kelas-->
     <div class="kelas wow fadeIn" data-wow-duration="2s" id="course">
-        <h1 class="judulkelas">WHAT'S THE COURSE?</h1>
+        <h1 class="judulkelas">WHAT ARE THE COURSES?</h1>
 
 
     </div>

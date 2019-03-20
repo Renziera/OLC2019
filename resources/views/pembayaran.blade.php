@@ -29,13 +29,24 @@
                                 <input type="submit" value="Upload">
                                 </form>
                                 <br><br>
-                                Pembayaran sebesar Rp{{$biaya}},00 ke rekening OLC:
+                                
+                                <h5>Pembayaran sebesar Rp{{$biaya}},00 ke rekening OLC:</h5>
+                                
                                 <br>
-                                BCA 1630377117 a.n. Yohan kristian Putrafame T
-                                <br>
-                                BNI 1212199994 a.n. Dani Ihza Farrosi
-                                <br>
-                                MANDIRI 1410507122000 a.n. Fedora Ramadhanty Widijanto Putri
+                                <ul>
+                       <b>BCA </b>
+                        <li>1630377117 a.n. Yohan kristian Putrafame T</li>
+                    </ul>
+                    
+                    <ul>
+                       <b>MANDIRI </b>
+                        <li>1410507122000 a.n. Fedora Ramadhanty Widijanto Putri</li>
+                    </ul>
+                    
+                    <ul>
+                       <b>BNI  </b>
+                        <li>1212199994 a.n. Dani Ihza Farrosi</li>
+                    </ul>
                             @endif
                         @endif
                     @else

@@ -4686,6 +4686,10 @@ input[type=submit].btn-block {
         
 }
 
+.card-body ul{
+    font-size: 18px
+}
+
 .card-title {
     margin-bottom: .75rem
 }

@@ -45,6 +45,7 @@ li span{
     text-align: center;
 }
 
+
 /*Profil pengajar*/
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -330,6 +331,7 @@ nav .kiri a {
     color: #00e7ea;
     margin-left: 0px;
     animation: texth1 3s 1;
+    font-family: 'museo-sans-rounded';
 }
 
 .judulkelas::after {
