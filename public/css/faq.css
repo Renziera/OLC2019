@@ -1,0 +1,712 @@
+@import url("https://use.typekit.net/ypn1nlu.css");
+
+*{
+    font-family: "museo-sans-rounded", sans-serif;
+}
+html, body{
+    scroll-behavior: smooth;
+    width: 100vw;
+    zoom: 1;
+    overflow-x: hidden;
+}
+body {
+    
+    background-color: #273040;
+}
+
+.sub-materi{
+    color: #00e7ea;
+    font-size: 20px;
+    padding: 8px;
+    text-align: left;
+    font-weight: 300;
+    
+   
+}
+
+li span{
+    padding: 10px;
+}
+
+
+
+
+.materi ul{
+    text-align:left;
+    padding: 24px;
+    
+    
+    
+}
+
+
+
+.center{
+    text-align: center;
+}
+
+
+/*Profil pengajar*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+    padding: 40px;
+    width: 700px;
+    background-color: #273040;
+    
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+.nama{
+    color: #00e7ea;
+    font-size: 32px;
+}
+
+
+
+/*end of profil pengajar*/
+
+
+
+
+/*Jadwal*/
+
+.info{
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
+
+tr{
+    color: #c2c2c2;
+}
+
+.table-bordered td, .table-bordered th{
+    border : 1px solid #00e7ea;
+}
+
+.course-info{
+    padding-bottom: 56px;
+}
+
+.break{
+    background: #00e7ea;
+    color: #273040;
+    
+}
+
+
+
+/*Penjelasan Bidang*/
+.faq{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.question{
+    color: #00e7ea;
+    text-align: left;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+.answer{
+    text-align: left;
+    font-size: 15px;
+    color: #00abad;
+    font-weight: 300;
+    max-width: 650px;
+}
+
+
+.penjelasan{
+    margin-top: -120px;
+}
+
+.learn{
+    color: #00e7ea;
+    text-align: left;
+}
+
+.dipelajari{
+    border: 1px solid #00e7ea;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+/*End of Penjelasan Bidang*/
+
+
+/*end of Jadwal*/
+
+.tombol2 {
+    box-shadow: 0 1px 16px 0 #00e7ea;
+    background-color: #00e1ff;
+    border-radius: 18px;
+    padding: 7px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 1s;
+    border-color: white;
+    color: #273040;
+   text-transform: none;
+    
+    margin-left: 20px;
+    
+ 
+}
+
+.tombol2:hover {
+    background: none;
+    color: white;
+
+    border-radius: 18px;
+
+    border-color: #00e1ff;
+    
+
+
+}
+
+.tombol {
+    background: none;
+    color: white;
+    padding: 10px 40px;
+    font-size: 18px;
+    border-radius: 18px;
+    font-weight: 500;
+    border-color: #00e1ff;
+    transition: 1s;
+
+}
+
+.tombol:hover {
+    box-shadow: 0 1px 16px 0 #00e7ea;
+    background-color: #00e1ff;
+    color: #273040;
+}
+
+
+/*Navbar*/
+
+#navbar{
+    top: 0;
+    opacity: 0.9;
+}
+.nav-item{
+    margin-right: 40px;
+    border-radius: 30px;
+}
+nav {
+    background : none;
+    text-transform: uppercase;
+    z-index: 1;
+    position: fixed;
+    padding: 20px;
+    width: 100%;
+    transition: 1s;
+
+}
+
+
+
+.logindaftar a{
+    padding-right: 20px;
+    margin-right: 200px;
+}
+
+
+
+
+
+
+nav .kiri a {
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+   
+
+}
+
+
+
+
+
+
+#sidebar {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #273040;
+    z-index: 5;
+    left: -100%;
+    transition: 0.75s;
+}
+
+
+#sidebar a {
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    color: white;
+    font-size: 21px;
+    padding: 15px 10px;
+}
+
+.toggle-btn {
+    top: 20px;
+    position: fixed;
+    z-index: 6;
+    color: #00e7ea;
+    text-align: left;
+    right: 5%;
+    transform: translateX(5%);
+    transition: 1s;
+}
+
+.toggle-btn a {
+    position: absolute;
+    font-size: 35px;
+    margin: 10px;
+    color: #00e1ff;
+}
+
+
+/*Navbar*/
+
+
+
+/*Jumbotron*/
+.jumbotron {
+    
+    background-color: #273040;
+    margin-top: -50px;
+    background-size: cover;
+    /*biar gambar dk tepotong*/
+    height: 360px;
+    color: #00e7ea;
+    text-align: center;
+    
+    font-weight: 500;
+
+}
+
+@keyframes texth1 {
+    0% {
+        color: #273040;
+
+    }
+
+    55% {
+        letter-spacing: 7px;
+    }
+
+
+
+}
+
+
+/*Jumbotron*/
+
+
+/*about*/
+
+
+.about p {
+    color: #7c8898;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/*about*/
+
+/*Kelas*/
+
+.judulkelas{
+        text-align: center;
+    font-weight: 500;
+    margin-top: 90px;
+    color: #00e7ea;
+    margin-left: 0px;
+    animation: texth1 3s 1;
+    font-family: 'museo-sans-rounded';
+}
+
+.judulkelas::after {
+    content: '';
+    display: block;
+    padding: 10px;
+    border-bottom: 2px solid #00e7ea;
+    width: 70px;
+    margin: auto;
+}
+
+.course {
+    text-align: center;
+   
+
+}
+
+
+.card p {
+    color: #c2c2c2;
+}
+
+
+/*Kelas*/
+
+/*Galeri*/
+.seethe {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 110px;
+    color: #00e7ea;
+    margin-left: 0px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.gallery {
+    margin: 10px 50px;
+}
+
+.gallery img {
+    width: 380px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+    border-radius: 24px;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* .toggle-btn {
+    display: none;
+} */
+
+
+nav .kiri {
+    display: inline-block;
+
+    text-align: center;
+
+}
+
+nav .kiri a {
+    margin-left: 16px;
+    margin-right: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+}
+
+.toggle-btn {
+    display: none;
+}
+
+/*Galeri*/
+
+
+nav .kiri {
+    display: inline-block;
+
+    text-align: center;
+
+}
+
+nav .kiri a {
+    margin-left: 16px;
+    margin-right: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+}
+
+/*Jumvotron*/
+.jumbotron h1 {
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 110px;
+    
+
+}
+
+/*Jumbotrn*/
+
+/*ABout*/
+.about {
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+
+}
+
+
+
+.about p {
+    text-align: left;
+    color: #c2c2c2;
+    font-size: 15px;
+
+}
+
+.about h3 {
+    font-size: 52px;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 10px;
+    padding-right: 30px;
+    color: #00e7ea;
+}
+
+/*about*/
+
+
+
+.kelas .judulkelas {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 110px;
+    color: #00e7ea;
+    margin-left: 0px;
+    animation: texth1 3s 1;
+
+}
+.typed-cursor{
+    display: none;
+}
+.intro-oti{
+    margin-bottom: -120px;
+
+}
+.tahun{
+    margin-bottom: 40px;
+    
+}
+
+
+
+/*Logo*/
+
+.logo{
+    text-align: center;
+    display: inline-block;
+   
+}
+
+.logo img{
+     margin: 20px;
+    
+}
+
+/*end of logo*/
+
+/*Footer*/
+footer{
+    background: #1c232e;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+footer p{
+    color: #00e7ea;
+    display: inline-block;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 13px;
+    margin-bottom: -2px;
+}
+footer p a{
+    color: #00e7ea;
+    font-size: 16px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: -2px;
+}
+footer p a:hover{
+    text-decoration: none;
+    transform: scale(2);
+    color: #11bdc0;
+}
+footer span{
+    color: #00e7ea;
+    float: right;
+    text-align: right;
+    margin-right: 35px;
+    font-size: 13px;
+    margin-bottom: -10px;
+}
+
+h3{
+    color: #11bdc0;
+}
+
+li{
+    color: #00e7ea;
+    margin-left: -30px;
+}
+footer ul li{
+    list-style: none;
+}
+.infolanjut{
+    background-color:  #121417;
+    padding: 10px;
+}
+.links ul li a{
+    color: #00e7ea;
+    transition: 0.75s;
+}
+.indent li{
+    margin-left: -18px;
+}
+.links ul li{
+    color: #00e7ea;
+    transition: 0.75s;
+    margin-left: -40px;
+}
+.links ul li a:hover{
+    text-decoration: none;
+    color: #00abad;
+}
+
+
+
+/*Footer*/
+
+
+ @media (max-width: 768px) {
+     
+      html, body{
+         
+         width: 100vw;
+     }
+     
+ 
+    
+     .text-bidang{
+   color: #c2c2c2;
+    font-size: 16px;
+    
+    text-align: center;
+}
+.faq{
+    margin-top: -100px;
+    width: 95%;
+    margin: auto;
+}
+.question{
+    font-size: 16px;
+}
+.answer{
+    font-size: 14px;
+}
+     
+     
+     .course{
+         margin-left: 5px;
+     }
+     
+     .logokelas{
+         width: 150px;
+     }
+     
+     
+    .toggle-btn {
+        display: block;
+    }
+
+    nav .kiri {
+        display: none;
+        margin-left: 100px;
+    }
+    
+    .logdaf{
+        display: none;
+    }
+
+    .kelas .judulkelas {
+        text-align: center;
+        font-weight: 500;
+        margin-top: 110px;
+        color: #00e7ea;
+        margin-left: 65px;
+    }
+    .jumbotron{
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        background: #273040;
+    }
+    .jumbotron h1 {
+        margin-top: 90px;
+        font-weight: bold;
+        animation: texth1 3s 1;
+        text-align: center;
+    }
+
+
+    .about h3 {
+        font-size: 52px;
+        font-weight: 200;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        margin-top: 40px;
+        color: #00e7ea;
+    }
+
+    .about {
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 27px;
+        width: auto;
+    }
+    .nav-item{
+        display: block;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 20px;
+        width: 50%;
+    }
+    .tot{
+        display: none;
+    }
+   
+    .intro-oti{
+        margin-bottom: -90px;
+    }
+    #sidebar .tombol2{
+        box-shadow: 0 1px 16px 0 #00e7ea;
+        background-color: #00e1ff;
+        color: #273040;
+    }
+    #sidebar .tombol2:hover{
+        border-radius: 30px;
+        color: #00e1ff;
+        background: #273040;
+        text-decoration: none;
+    }
+    #sidebar a:hover{
+        text-decoration: none;
+    }
+}
