@@ -50,6 +50,7 @@
            
             <a href="{{ route('jadwal') }}">Jadwal</a>
              <a href="/#course">Kelas</a>
+             <a href="{{ route('faq') }}">FAQ</a>
             <a href="{{ route('pembayaran') }}">Cek Pembayaran</a>
             @auth
             <a href="{{ route('admin') }}">Admin Panel</a>
@@ -79,6 +80,7 @@
 
                 <a href="{{ route('jadwal') }}">Jadwal</a>
                 <a href="/#course">Kelas</a>
+                <a href="{{ route('faq') }}">FAQ</a>
                 <a href="{{ route('pembayaran') }}">Cek Pembayaran</a>
                 @auth
                 <a href="{{ route('admin') }}">Admin Panel</a>
