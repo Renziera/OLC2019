@@ -175,6 +175,7 @@
 			<td>13.30-15.30</td>
 			<td class="ma">Android Apps Sesi 2 </td>
 			<td class="db">Database</td>
+			<td class="ds">Data Science</td>
 		</tr>
 	</tbody>
 </table>
