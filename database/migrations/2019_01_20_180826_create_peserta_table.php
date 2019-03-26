@@ -25,6 +25,7 @@ class CreatePesertaTable extends Migration
             $table->boolean('database');
             $table->boolean('cyber_security');
             $table->boolean('data_science');
+            $table->boolean('data_science_2');
             $table->boolean('android_apps_1');
             $table->boolean('android_apps_2');
             $table->boolean('web_design_1');

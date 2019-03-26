@@ -96,6 +96,17 @@ class AdminController extends Controller
                 $absen->pertemuan4 = false;
                 $absen->save();
             }
+            if($peserta->data_science_2){
+                $absen = new Absensi;
+                $absen->nama = $peserta->nama;
+                $absen->kode_peserta = $peserta->kode_peserta;
+                $absen->kelas = 'data_science_2';
+                $absen->pertemuan1 = false;
+                $absen->pertemuan2 = false;
+                $absen->pertemuan3 = false;
+                $absen->pertemuan4 = false;
+                $absen->save();
+            }
             if($peserta->android_apps_1){
                 $absen = new Absensi;
                 $absen->nama = $peserta->nama;
@@ -160,6 +171,9 @@ class AdminController extends Controller
             case 'data_science':
                 $allPeserta = Peserta::where(['data_science' => '1'])->get();
                 break;
+            case 'data_science_2':
+                $allPeserta = Peserta::where(['data_science_2' => '1'])->get();
+                break;
             case 'lunas':
                 $allPeserta = Peserta::where(['sudah_bayar' => true])->get();
                 break;
@@ -192,6 +206,7 @@ class AdminController extends Controller
             $request['android_apps_1'],
             $request['android_apps_2'],
             $request['data_science'],
+            $request['data_science_2'],
             $request['web_design_1'],
             $request['web_design_2'],
             $request['cyber_security'],
@@ -221,7 +236,9 @@ class AdminController extends Controller
             $request['android_apps_1'] && $request['web_design_2']){
             return redirect('daftar')->with('alert','Jadwal kelas yang anda pilih bertabrakan')->withInput();
         }
-        if($request['android_apps_2'] && $request['database']){
+        if($request['android_apps_2'] && $request['database'] || 
+            $request['android_apps_2'] && $request['data_science_2'] ||
+            $request['database'] && $request['data_science_2']){
             return redirect('daftar')->with('alert','Jadwal kelas yang anda pilih bertabrakan')->withInput();
         }
 
@@ -237,6 +254,7 @@ class AdminController extends Controller
         $peserta->database = $request['database'] ? 1 : 0;
         $peserta->cyber_security = $request['cyber_security'] ? 1 : 0;
         $peserta->data_science = $request['data_science'] ? 1 : 0;
+        $peserta->data_science_2 = $request['data_science_2'] ? 1 : 0;
         $peserta->android_apps_1 = $request['android_apps_1'] ? 1 : 0;
         $peserta->android_apps_2 = $request['android_apps_2'] ? 1 : 0;
         $peserta->web_design_1 = $request['web_design_1'] ? 1 : 0;
@@ -296,6 +314,17 @@ class AdminController extends Controller
             $absen->nama = $peserta->nama;
             $absen->kode_peserta = $peserta->kode_peserta;
             $absen->kelas = 'data_science';
+            $absen->pertemuan1 = false;
+            $absen->pertemuan2 = false;
+            $absen->pertemuan3 = false;
+            $absen->pertemuan4 = false;
+            $absen->save();
+        }
+        if($peserta->data_science_2){
+            $absen = new Absensi;
+            $absen->nama = $peserta->nama;
+            $absen->kode_peserta = $peserta->kode_peserta;
+            $absen->kelas = 'data_science_2';
             $absen->pertemuan1 = false;
             $absen->pertemuan2 = false;
             $absen->pertemuan3 = false;

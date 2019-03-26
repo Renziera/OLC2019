@@ -114,7 +114,7 @@
                                     <br>
                                     <input class="form-check-input" type="checkbox" name="data_science" value="1">
                                     <label onclick="cek3()" class="form-check-label">
-                                        {{ __('Data Science') }}
+                                        {{ __('Data Science Sesi 1') }}
                                     </label>
                                     
                                     <div class="tersisa">
@@ -124,8 +124,20 @@
                                     </div>
                                     
                                     <br>
-                                    <input class="form-check-input" type="checkbox" name="android_apps_1" value="1">
+                                    <input class="form-check-input" type="checkbox" name="data_science_2" value="1">
                                     <label onclick="cek4()" class="form-check-label">
+                                        {{ __('Data Science Sesi 2') }}
+                                    </label>
+                                    
+                                    <div class="tersisa">
+                                        Tersisa: {{$amount['data_science_2_amount']}}
+                                        
+                                        
+                                    </div>
+
+                                    <br>
+                                    <input class="form-check-input" type="checkbox" name="android_apps_1" value="1">
+                                    <label onclick="cek5()" class="form-check-label">
                                         {{ __('Android Apps Sesi 1') }}
                                     </label>
                                     <div class="tersisa">
@@ -135,7 +147,7 @@
                                     
                                     <br>
                                     <input class="form-check-input" type="checkbox" name="android_apps_2" value="1">
-                                    <label onclick="cek5()" class="form-check-label">
+                                    <label onclick="cek6()" class="form-check-label">
                                         {{ __('Android Apps Sesi 2') }}
                                     </label>
                                     
@@ -146,7 +158,7 @@
                                    
                                     <br>
                                     <input class="form-check-input" type="checkbox" name="web_design_1" value="1">
-                                    <label onclick="cek6()" class="form-check-label">
+                                    <label onclick="cek7()" class="form-check-label">
                                         {{ __('Web Design Sesi 1') }}
                                     </label>
                                     <div class="tersisa">
@@ -156,7 +168,7 @@
                                     
                                     <br>
                                     <input class="form-check-input" type="checkbox" name="web_design_2" value="1">
-                                    <label onclick="cek7()" class="form-check-label">
+                                    <label onclick="cek8()" class="form-check-label">
                                         {{ __('Web Design Sesi 2') }}
                                     </label>
                                     <div class="tersisa">

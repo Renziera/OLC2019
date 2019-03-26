@@ -17,6 +17,7 @@ class DaftarController extends Controller
         $web_apps_amount = 40 - Absensi::where(['kelas' => 'web_apps'])->count();
         $database_amount = 40 - Absensi::where(['kelas' => 'database'])->count();
         $data_science_amount = 40 - Absensi::where(['kelas' => 'data_science'])->count();
+        $data_science_2_amount = 40 - Absensi::where(['kelas' => 'data_science_2'])->count();
         $cyber_security_amount = 40 - Absensi::where(['kelas' => 'cyber_security'])->count();
         $android_apps_1_amount = 40 - Absensi::where(['kelas' => 'android_apps_1'])->count();
         $android_apps_2_amount = 40 - Absensi::where(['kelas' => 'android_apps_2'])->count();
@@ -27,6 +28,7 @@ class DaftarController extends Controller
             'web_apps_amount' => $web_apps_amount,
             'database_amount' => $database_amount,
             'data_science_amount' => $data_science_amount,
+            'data_science_2_amount' => $data_science_2_amount,
             'cyber_security_amount' => $cyber_security_amount,
             'android_apps_1_amount' => $android_apps_1_amount,
             'android_apps_2_amount' => $android_apps_2_amount,
@@ -49,6 +51,7 @@ class DaftarController extends Controller
             $request['android_apps_1'],
             $request['android_apps_2'],
             $request['data_science'],
+            $request['data_science_2'],
             $request['web_design_1'],
             $request['web_design_2'],
             $request['cyber_security'],
@@ -78,7 +81,9 @@ class DaftarController extends Controller
             $request['android_apps_1'] && $request['web_design_2']){
             return redirect('daftar')->with('alert','Jadwal kelas yang anda pilih bertabrakan')->withInput();
         }
-        if($request['android_apps_2'] && $request['database']){
+        if($request['android_apps_2'] && $request['database'] ||
+            $request['android_apps_2'] && $request['data_science_2'] ||
+            $request['database'] && $request['data_science_2']){
             return redirect('daftar')->with('alert','Jadwal kelas yang anda pilih bertabrakan')->withInput();
         }
 
@@ -87,6 +92,7 @@ class DaftarController extends Controller
         $web_apps_amount = Absensi::where(['kelas' => 'web_apps'])->count();
         $database_amount = Absensi::where(['kelas' => 'database'])->count();
         $data_science_amount = Absensi::where(['kelas' => 'data_science'])->count();
+        $data_science_2_amount = Absensi::where(['kelas' => 'data_science_2'])->count();
         $cyber_security_amount = Absensi::where(['kelas' => 'cyber_security'])->count();
         $android_apps_1_amount = Absensi::where(['kelas' => 'android_apps_1'])->count();
         $android_apps_2_amount = Absensi::where(['kelas' => 'android_apps_2'])->count();
@@ -97,6 +103,7 @@ class DaftarController extends Controller
             $request['web_apps'] && $web_apps_amount >= 40 ||
             $request['database'] && $database_amount >= 40 ||
             $request['data_science'] && $data_science_amount >= 40 ||
+            $request['data_science_2'] && $data_science_2_amount >= 40 ||
             $request['cyber_security'] && $cyber_security_amount >= 40 ||
             $request['android_apps_1'] && $android_apps_1_amount >= 40 ||
             $request['android_apps_2'] && $android_apps_2_amount >= 40 ||
@@ -118,6 +125,7 @@ class DaftarController extends Controller
         $peserta->database = $request['database'] ? 1 : 0;
         $peserta->cyber_security = $request['cyber_security'] ? 1 : 0;
         $peserta->data_science = $request['data_science'] ? 1 : 0;
+        $peserta->data_science_2 = $request['data_science_2'] ? 1 : 0;
         $peserta->android_apps_1 = $request['android_apps_1'] ? 1 : 0;
         $peserta->android_apps_2 = $request['android_apps_2'] ? 1 : 0;
         $peserta->web_design_1 = $request['web_design_1'] ? 1 : 0;

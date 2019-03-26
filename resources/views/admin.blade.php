@@ -41,6 +41,7 @@
                 <a class="kelas" href="/admin/kelas/database">Database</a>
                 <a class="kelas" href="/admin/kelas/cyber_security">Cyber Security</a>
                 <a class="kelas" href="/admin/kelas/data_science">Data Science</a>
+                <a class="kelas" href="/admin/kelas/data_science_2">Data Science 2</a>
                 <a class="kelas" href="/admin/kelas/android_apps_1">Android Apps Sesi 1</a>
                 <a class="kelas" href="/admin/kelas/android_apps_2">Android Apps Sesi 2</a>
                 <a class="kelas" href="/admin/kelas/web_design_1">Web Design Sesi 1</a>
@@ -87,6 +88,9 @@
                             @endif
                             @if($peserta->data_science)
                             Data Science <br>
+                            @endif
+                            @if($peserta->data_science_2)
+                            Data Science 2<br>
                             @endif
                             @if($peserta->android_apps_1)
                             Android Apps Sesi 1<br>

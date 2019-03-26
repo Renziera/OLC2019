@@ -94,6 +94,10 @@
                                     <label class="form-check-label">
                                         {{ __('Data Science') }}
                                     </label><br>
+                                    <input class="form-check-input" type="checkbox" name="data_science_2" value="1">
+                                    <label class="form-check-label">
+                                        {{ __('Data Science 2') }}
+                                    </label><br>
                                     <input class="form-check-input" type="checkbox" name="android_apps_1" value="1">
                                     <label class="form-check-label">
                                         {{ __('Android Apps Sesi 1') }}
