@@ -111,12 +111,9 @@ tr{
 
 
 /*Penjelasan Bidang*/
-.faq{
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+ .faq{
+    width: 610px;
+    margin: auto;
 }
 .question{
     color: #00e7ea;
