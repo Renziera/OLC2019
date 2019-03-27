@@ -226,6 +226,55 @@
                     Ya, peserta harus membawa laptop dan juga memasang aplikasi yang dibutuhkan bidang yang peserta ikuti.
                 </p>
             </li>
+            <li class="faq-list">
+                <p class="question">
+                    Apakah terdapat batas minimum dan batas maksimum usia bagi peserta OLC 2019?
+                </p>
+                <p class="answer">
+                    Tidak ada batas usia untuk peserta OLC 2019.
+                </p>
+            </li>
+            <li class="faq-list">
+                <p class="question">
+                    Apakah panitia bersedia mengiinstalkan software yang dibutuhkan selama OLC 2019?
+                </p>
+                <p class="answer">
+                Sebelum pelatihan dimulai, panitia akan mengadakan 
+                technical meeting untuk membantu peserta menginstal software yang dibutuhkan.
+                </p>
+            </li>
+            <li class="faq-list">
+                <p class="question">
+                    Berapa kelas yang dapat diikuti dengan membayar biaya pendaftaran sebanyak Rp 100.000,00?
+                </p>
+                <p class="answer">
+                    Dengan biaya pendaftaran Rp100.000,00, peserta dapat mengikuti satu kelas.
+                </p>
+            </li>
+            <li class="faq-list">
+                <p class="question">
+                    Apakah panitia menyediakan silabus pembelajaran selama OLC 2019?
+                </p>
+                <p class="answer">
+                    Silabus pembelajaran dapat dilihat di website OLC 2019.
+                </p>
+            </li>
+            <li class="faq-list">
+                <p class="question">
+                    Apakah peserta mendapatkan fasilitas berupa handbook atau e-book atau modul?
+                </p>
+                <p class="answer">
+                    Panitia tidak menyediakan handbook maupun e-book pada saat pelatihan.
+                </p>
+            </li>
+            <li class="faq-list">
+                <p class="question">
+                    Cashback dalam bentuk apa yang akan diterima peserta OLC 2019?
+                </p>
+                <p class="answer">
+                    Cashback diterima peserta dalam bentuk uang.
+                </p>
+            </li>
         </ol>
         
     </div>
